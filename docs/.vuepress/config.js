@@ -19,13 +19,17 @@ export default defineUserConfig({
         link: "/guide",
       },
       {
+        text: "快捷键",
+        link: "/shortcuts",
+      },
+      {
         text: "FAQ",
         link: "/FAQ",
       },
     ],
     repo: "NagaseIori/DyNode",
     docsRepo: "NagaseIori/DyNode-docs",
-    docsBranch: "master",
+    docsBranch: "main",
     docsDir: "docs",
     editLinkText: "在 Github 上编辑此页",
     sidebar: {
@@ -35,8 +39,10 @@ export default defineUserConfig({
           children: [
             "/guide/index.md",
             "/guide/getting-started.md",
+            "/guide/import.md",
             "/guide/edit.md",
             "/guide/timing.md",
+            "/guide/file-formats.md",
           ],
         },
       ],

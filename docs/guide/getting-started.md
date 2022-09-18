@@ -2,6 +2,18 @@
 
 本页面旨在提供让人快速上手 DyNode 编辑谱面的操作方式教程。
 
+## 下载 & 安装
+
+你可以在 [主页](/) 上选择一个选项下载 DyNode 对应平台的最新版本。
+
+如果国内用户访问 Github 存在困难，则可以使用网盘的方式进行下载。
+
+下载完毕后，解压压缩文件，执行 `DyNode.exe` 即可打开 DyNode 。
+
+::: warning 注意
+DyNode 从 0.1.6 版本开始将不支持 32 位系统。若你对此存在需求，目前可以下载 0.1.5 之前的版本并正常使用。
+:::
+
 ## 从 Dynamaker 开始
 
 如果你曾使用过 Dynamaker ，了解 Dynamaker 的基本操作方式，则可以从此开始快速上手 DyNode 。
@@ -40,7 +52,7 @@ DyNode 提供从 Dynamaker 直接导入谱面的方式。
 
 以此方式你至少需要的文件有：
 
-- 谱面的音乐文件。主流的音乐格式全部都可以使用（如 .mp3/.flac/.wav/.ogg/.mid 等）。关于使用 .mp3 与 .wav 音乐文件的延迟问题，你可以在 [校时](https://github.com/NagaseIori/DyNode/wiki/%E6%A0%A1%E6%97%B6-Timing#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%90%8C%E4%B8%80%E6%AE%B5%E9%9F%B3%E4%B9%90mp3-%E7%9B%B8%E5%AF%B9-wav-%E6%A0%BC%E5%BC%8F%E5%AD%98%E5%9C%A8%E5%BE%88%E6%98%8E%E6%98%BE%E7%9A%84%E5%BB%B6%E8%BF%9F) 页面中看到更多内容。
+- 谱面的音乐文件。主流的音乐格式全部都可以使用（如 .mp3/.flac/.wav/.ogg/.mid 等）。关于使用 .mp3 与 .wav 音乐文件的延迟问题，你可以在 [校时](/guide/timing#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%90%8C%E4%B8%80%E6%AE%B5%E9%9F%B3%E4%B9%90mp3-%E7%9B%B8%E5%AF%B9-wav-%E6%A0%BC%E5%BC%8F%E5%AD%98%E5%9C%A8%E5%BE%88%E6%98%8E%E6%98%BE%E7%9A%84%E5%BB%B6%E8%BF%9F) 页面中看到更多内容。
 - 谱面的 .xml 文件（从 Dynamaker 中导出）。
 
 在音乐文件一栏中选择你的谱面音乐文件。在导入谱面文件中选择你的 .xml 文件。如果有需要，你也可以添加背景文件。**所有右侧的谱面配置都可以无视**。
@@ -53,7 +65,7 @@ DyNode 提供从 Dynamaker 直接导入谱面的方式。
 
 ### 将从 Dynamaker 中导入的谱面进行校时
 
-校时在 DyNode 中是与 Dynamaker 中的 Bar 存在差异的概念。详见 Wiki 中的 [校时](https://github.com/NagaseIori/DyNode/wiki/%E6%A0%A1%E6%97%B6-Timing) 页面。
+校时在 DyNode 中是与 Dynamaker 中的 Bar 存在差异的概念。详见 Wiki 中的 [校时](/guide/timing) 页面。
 
 若你不想了解原理，也不想制作变 BPM 谱面，并且已经在 Dynamaker 中将 Bars Per Minute 配置正确（它被配置为 Beats Per Minute 的 1/4 倍），则可以用以下向导进行简单的校时配置。
 
@@ -64,7 +76,7 @@ DyNode 提供从 Dynamaker 直接导入谱面的方式。
 若你在 Dynamaker 中的 Bars Per Minute 并非 Beats Per Minute 的 1/4 倍，则它可能不会被正确自动配置到 DyNode 中（因为 Dynamaker 中导出的 .xml 文件其实并不包含 Beats Per Minute 的任何信息）。以下是针对这种情况的向导以进行简单的校时配置。
 
 - 如果你已经放置了错误的 BPM ，则你可以在该 BPM 线上放置一个 Note，在选中该 Note 的情况下使用组合键 <kbd>Ctrl</kbd> + <kbd>Delete</kbd> 来删除该 Timing Point。
-- 切换到 Edit 模式，单击第一个 Note，记录 Note 左上角的时间，按下 <kbd>Y</kbd> 键，依次填写：你之前记录的时间、谱面的正确 BPM、谱面的正确节拍数。你可以在 Wiki 中的 [校时](https://github.com/NagaseIori/DyNode/wiki/%E6%A0%A1%E6%97%B6-Timing) 页面简单了解这些乐理概念。
+- 切换到 Edit 模式，单击第一个 Note，记录 Note 左上角的时间，按下 <kbd>Y</kbd> 键，依次填写：你之前记录的时间、谱面的正确 BPM、谱面的正确节拍数。你可以在 Wiki 中的 [校时](/guide/timing) 页面简单了解这些乐理概念。
 - 同理，第一个 Note 可能并非**小节的第一拍**。若有需要，你可以选中在此之后的某个位置准确的 Note ，此时可以直接按下 <kbd>T</kbd> 键以对齐**小节的第一拍**。
 
 以某谱面为例，正确对齐节拍线的界面应当如下（此时节拍细分默认为 1/4）：
@@ -85,7 +97,7 @@ DyNode 提供从 Dynamaker 直接导入谱面的方式。
 
 全部的功能可以查看 [快捷键](https://github.com/NagaseIori/DyNode/wiki/%E5%BF%AB%E6%8D%B7%E9%94%AE-Shortcuts) 页面。
 
-你也可以无需通过 Dynamaker 进行谱面的创建。此时你需要手动配置 Timing Points 与所有的谱面信息。如果你通过 osu! 或 osu!lazer 等编辑器对谱面进行校时并无需配合 Dynamaker 使用，则推荐使用这种方式来进行谱面编辑。详见 [校时](https://github.com/NagaseIori/DyNode/wiki/%E6%A0%A1%E6%97%B6-Timing#%E4%BB%8E-osu-file-%E4%B8%AD%E5%AF%BC%E5%85%A5-timing-points) 页面。
+你也可以无需通过 Dynamaker 进行谱面的创建。此时你需要手动配置 Timing Points 与所有的谱面信息。如果你通过 osu! 或 osu!lazer 等编辑器对谱面进行校时并无需配合 Dynamaker 使用，则推荐使用这种方式来进行谱面编辑。详见 [校时](/guide/timing#%E4%BB%8E-osu-file-%E4%B8%AD%E5%AF%BC%E5%85%A5-timing-points) 页面。
 
 如果你有更多其他的问题，可以查看 [FAQ](/FAQ) 页面。
 

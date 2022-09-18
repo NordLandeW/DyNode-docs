@@ -107,7 +107,7 @@
 
 ## 网格吸附与拍线
 
-开启纵向网格吸附与拍线的前提是正确配置 Timing Point ，详看 [校时](https://github.com/NagaseIori/DyNode/wiki/%E6%A0%A1%E6%97%B6-Timing) 页面。
+开启纵向网格吸附与拍线的前提是正确配置 Timing Point ，详看 [校时](/guide/timing) 页面。
 
 ### 节拍细分（组）
 
