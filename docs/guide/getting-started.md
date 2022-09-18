@@ -91,6 +91,8 @@ DyNode 提供从 Dynamaker 直接导入谱面的方式。
 
 你可以使用 <kbd>F5</kbd> 来导出 .xml 格式的谱面，以用于导入游戏或 Dynamaker 中进行编辑（如果你有正确的 Bars Per Minute 设置）。
 
+你可以使用 <kbd>F7</kbd> 来切换全屏。如果此时你没有处于粘贴模式，你可以使用 <kbd>Esc</kbd> 来退出 DyNode 。
+
 如果你更改了音乐或图片文件的位置，则 DyNode 对文件的加载可能会出现错误。此时你可以使用 <kbd>F3</kbd> / <kbd>F4</kbd> 来手动加载音乐和图片文件。
 
 如果比起蓝色你更喜欢粉色，你可以使用 <kbd>F9</kbd> 来切换主题。
