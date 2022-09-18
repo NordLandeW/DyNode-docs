@@ -7,7 +7,7 @@ actions:
     link: /guide/getting-started.html
     type: primary
   - text: 下载 - Github
-    link: https://github.com/NagaseIori/DyNode/Releases/Latest
+    link: https://github.com/NagaseIori/DyNode/releases/latest
     type: secondary
   - text: 下载 - 网盘
     link: https://pan.baidu.com/s/1RyZdpPNNMWxifeuhUdRcow?pwd=6gwt
