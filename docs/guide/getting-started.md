@@ -52,7 +52,7 @@ DyNode 提供从 Dynamaker 直接导入谱面的方式。
 
 以此方式你至少需要的文件有：
 
-- 谱面的音乐文件。主流的音乐格式全部都可以使用（如 .mp3/.flac/.wav/.ogg/.mid 等）。关于使用 .mp3 与 .wav 音乐文件的延迟问题，你可以在 [校时](/guide/timing#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%90%8C%E4%B8%80%E6%AE%B5%E9%9F%B3%E4%B9%90mp3-%E7%9B%B8%E5%AF%B9-wav-%E6%A0%BC%E5%BC%8F%E5%AD%98%E5%9C%A8%E5%BE%88%E6%98%8E%E6%98%BE%E7%9A%84%E5%BB%B6%E8%BF%9F) 页面中看到更多内容。
+- 谱面的音乐文件。主流的音乐格式全部都可以使用（如 .mp3/.flac/.wav/.ogg/.mid 等）。关于使用 .mp3 与 .wav 音乐文件的延迟问题，你可以在 [校时](/guide/timing.html#mp3-与-wav-格式的延迟处理-在-0-1-5-之后) 页面中看到更多内容。
 - 谱面的 .xml 文件（从 Dynamaker 中导出）。
 
 在音乐文件一栏中选择你的谱面音乐文件。在导入谱面文件中选择你的 .xml 文件。如果有需要，你也可以添加背景文件。**所有右侧的谱面配置都可以无视**。
@@ -95,7 +95,7 @@ DyNode 提供从 Dynamaker 直接导入谱面的方式。
 
 如果比起蓝色你更喜欢粉色，你可以使用 <kbd>F9</kbd> 来切换主题。
 
-全部的功能可以查看 [快捷键](https://github.com/NagaseIori/DyNode/wiki/%E5%BF%AB%E6%8D%B7%E9%94%AE-Shortcuts) 页面。
+全部的功能可以查看 [快捷键](/shortcuts) 页面。
 
 你也可以无需通过 Dynamaker 进行谱面的创建。此时你需要手动配置 Timing Points 与所有的谱面信息。如果你通过 osu! 或 osu!lazer 等编辑器对谱面进行校时并无需配合 Dynamaker 使用，则推荐使用这种方式来进行谱面编辑。详见 [校时](/guide/timing#%E4%BB%8E-osu-file-%E4%B8%AD%E5%AF%BC%E5%85%A5-timing-points) 页面。
 

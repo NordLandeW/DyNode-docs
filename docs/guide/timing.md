@@ -44,7 +44,7 @@ DyNode 中添加 Timing Point 的方式共有三种。
 
 从 `beatLength` 到 `BPM` 的换算以上方为例有：`1 / 324.324324324324 * 1000 * 60 = 185`。
 
-编辑完成后，你需要手动重新打开该项目的文件。详见 [文件格式](https://github.com/NagaseIori/DyNode/wiki/%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F-File-Formats#dyn) 页面。
+编辑完成后，你需要手动重新打开该项目的文件。详见 [文件格式](/guide/file-formats) 页面。
 
 ### 撤销/还原
 
