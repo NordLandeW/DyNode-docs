@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: DyNode
-tagline: 另一个全新的 Dynamix 制谱工具。
+tagline: 另一个全新的 Dynamix 制谱工具
 actions:
   - text: 快速上手
     link: /guide/getting-started.html

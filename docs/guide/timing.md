@@ -52,11 +52,9 @@ DyNode 中添加 Timing Point 的方式共有三种。
 
 ## 从 Osu File 中导入 Timing Points
 
-DyNode 支持从 [osu file format v14](https://osu.ppy.sh/wiki/zh/Client/File_formats/Osu_%28file_format%29) (.osu) 格式的文件中直接导入 Timing Points 信息。这意味着你可以使用 osu! 或 osu!lazer 提供的官方谱面编辑器进行校时。
+DyNode 支持从 [osu file format v14](https://osu.ppy.sh/wiki/zh/Client/File_formats/Osu_%28file_format%29) (.osu) 格式的文件中直接导入 Timing Points 信息。这意味着你可以使用 osu! 或 osu!lazer 提供的官方谱面编辑器进行校时。详见 [谱面导入](/guide/import.html#导入-osu-谱面)。
 
-DyNode 目前不支持 .osz 的导入，因为一个 .osz 包含多个谱面难度。目前你可以将 .osz 文件解压（.osz 是一个压缩文件），之后再导入其中包含的 .osu 文件。
-
-## Dynamaker 的 Bar 与 Bar Per Minute 去哪了？
+## Bar / Bar Per Minute 
 
 Dynamaker 中引入 Bar 的概念便于在 Dynamaker 中以固定的节拍线格式或文本方式进行直接编辑，而实际上谱面的播放仍旧基于时间逻辑。DyNode 提供了更加灵活的节拍线与可变 BPM 设置，因此弃用了 Bar 相关的概念，将所有编辑与播放过程全部基于时间与 BPM (Beats Per Minute) 逻辑。
 
@@ -64,7 +62,13 @@ DyNode 同时也提供了向 Dynamaker 进行兼容的功能。若想同时使�
 
 从 Dynamaker 中导入的谱面信息所包含的 Bar Per Minute 与 Offset 将会直接同步到 DyNode 上。此时 DyNode 中的全局 Bar Offset 可以与 Dynamaker 保持一致，便于在两个编辑器中来回切换编辑。但注意，DyNode 中任何的 Timing 信息将无法同步到 Dynamaker 上（例如，你无法直接像在 DyNode 上那样在 Dynamaker 上编辑变速谱面）。详见 [快速上手](/guide/getting-started.md) 页面。
 
-## MP3 与 WAV 格式的延迟处理（在 0.1.5 之后）
+## MP3 与 WAV 格式的延迟处理
+
+::: warning 关于旧版本的警告
+
+针对 .mp3 的延迟处理在 0.1.5 版本之后产生了较大变动。该条目底部详细阐述了你应当如何在 0.1.5 版本之后打开旧版本项目时处理有关 .mp3 文件的延迟。
+
+:::
 
 DyNode 已经力所能及地将音乐对谱面延迟降到了最低，但 MP3 仍旧会与 WAV 格式存在一定的延迟。
 
