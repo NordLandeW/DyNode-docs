@@ -41,5 +41,7 @@ export default defineUserConfig({
         },
       ],
     },
+    contributorsText: '贡献者',
+    lastUpdatedText: '最后更新'
   }),
 });
