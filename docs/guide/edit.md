@@ -25,9 +25,9 @@
 最后一次手动放置单个音符的宽度将作为下一次放置音符的 _设置宽度_ 。
 
 :::center
-![Drop a note](https://user-images.githubusercontent.com/31349569/184546816-cc813b1b-844b-4eef-a959-e69022702f50.gif =300x)
+![Drop a note](https://user-images.githubusercontent.com/31349569/184546816-cc813b1b-844b-4eef-a959-e69022702f50.gif =400x)
 
-![Drop_a_hold](https://user-images.githubusercontent.com/31349569/184546887-17f5d3d3-b9dc-4a36-a0b1-ab13a10130e2.gif =300x)
+![Drop_a_hold](https://user-images.githubusercontent.com/31349569/184546887-17f5d3d3-b9dc-4a36-a0b1-ab13a10130e2.gif =400x)
 :::
 
 ### 移动音符
@@ -35,7 +35,7 @@
 拖拽。
 
 :::center
-![Drag a note](https://user-images.githubusercontent.com/31349569/184546984-f9bae40d-f543-4544-ab07-1902c2a80dd3.gif =300x)
+![Drag a note](https://user-images.githubusercontent.com/31349569/184546984-f9bae40d-f543-4544-ab07-1902c2a80dd3.gif =400x)
 :::
 
 ### 选中音符
@@ -45,7 +45,7 @@
 你可以按住 <kbd>Ctrl</kbd> 键来多选音符或反选音符。
 
 :::center
-![Multiselect](https://user-images.githubusercontent.com/31349569/184547121-032231e9-4c4a-4a7b-9cc1-b6c5c3e4e122.gif =300x)
+![Multiselect](https://user-images.githubusercontent.com/31349569/184547121-032231e9-4c4a-4a7b-9cc1-b6c5c3e4e122.gif =400x)
 :::
 
 #### 批量移动音符
@@ -69,7 +69,7 @@
 在选中音符后，按下 <kbd>Ctrl</kbd> + <kbd>C</kbd> ，右下角即会提示复制音符数量。
 
 :::center
-![Copy](https://user-images.githubusercontent.com/31349569/184547227-bbb12d78-0f0e-40b9-b0c2-77e69e3b8887.gif =300x)
+![Copy](https://user-images.githubusercontent.com/31349569/184547227-bbb12d78-0f0e-40b9-b0c2-77e69e3b8887.gif =400x)
 :::
 
 #### 粘贴音符
@@ -85,7 +85,7 @@
 可以用 <kbd>Ctrl</kbd> + <kbd>1</kbd>/<kbd>2</kbd> 来批量转换你想粘贴的音符。
 
 :::center
-![Paste](https://user-images.githubusercontent.com/31349569/184547335-9d6a2e4e-d2f1-4908-92d8-038683a371f4.gif =300x)
+![Paste](https://user-images.githubusercontent.com/31349569/184547335-9d6a2e4e-d2f1-4908-92d8-038683a371f4.gif =400x)
 :::
 
 ### 撤销与还原
@@ -101,7 +101,7 @@
 亮起的判定线代表你正在编辑的侧面。
 
 :::center
-![Switch side](https://user-images.githubusercontent.com/31349569/184547647-4e148234-543a-413e-bdcb-b0498ca618be.gif =300x)
+![Switch side](https://user-images.githubusercontent.com/31349569/184547647-4e148234-543a-413e-bdcb-b0498ca618be.gif =400x)
 :::
 
 ### 透明化非编辑侧音符
@@ -109,7 +109,7 @@
 按下 <kbd>F</kbd> 即可隐去非编辑侧音符。
 
 :::center
-![Fade side](https://user-images.githubusercontent.com/31349569/184547770-ef9add4d-0300-4a1e-89d1-dcd6af67d599.gif =300x)
+![Fade side](https://user-images.githubusercontent.com/31349569/184547770-ef9add4d-0300-4a1e-89d1-dcd6af67d599.gif =400x)
 :::
 
 ### 切换侧面下落类型
@@ -125,6 +125,13 @@
 ## 网格吸附与拍线
 
 开启纵向网格吸附与拍线的前提是正确配置 Timing Point ，详看 [校时](/guide/timing) 页面。
+### 节拍线
+
+使用 <kbd>↓</kbd> / <kbd>←</kbd> / <kbd>→</kbd> 来调整对应编辑侧的节拍线透明度。共三档：0% / 50% / 100% 。
+
+:::tip 提示
+若不存在 Timing Point 或拍线在第一个 Timing Point 之前，则拍线不会被显示。
+:::
 
 ### 节拍细分（组）
 
@@ -147,13 +154,6 @@
 由于 Dynamix 的防糊机制，我们十分不建议在关闭纵向网格吸附的情况下手动放置双押。如果一定要这么操作，目前建议先确保两个音符在时间上准确对齐（例如，他们先吸附在拍线上），再利用剪切粘贴等方式来进行音符放置。
 :::
 
-### 节拍线
-
-使用 <kbd>↓</kbd> / <kbd>←</kbd> / <kbd>→</kbd> 来调整对应编辑侧的节拍线透明度。共三档：0% / 50% / 100% 。
-
-:::tip 提示
-若不存在 Timing Point 或拍线在第一个 Timing Point 之前，则拍线不会被显示。
-:::
 
 ## 其它
 

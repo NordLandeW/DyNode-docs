@@ -60,5 +60,6 @@ export default defineUserConfig({
 
     docsRepo: "NagaseIori/DyNode-docs",
     docsDir: "docs/",
+    iconAssets: "iconfont",
   }),
 });
