@@ -1,19 +1,17 @@
 import { defineUserConfig } from "vuepress";
 import { hopeTheme } from "vuepress-theme-hope";
-import { gitPlugin } from '@vuepress/plugin-git'
 
 export default defineUserConfig({
-  lang: "zh-CN",
+  locales: {
+    "/": {
+      lang: "zh-CN",
+      title: "DyNode",
+      description: "另一个 Dynamix 谱面编辑器",
+    },
+  },
   title: "DyNode",
   description: "Yet another dynamix chart tool.",
   theme: hopeTheme({
-    locales: {
-      "/": {
-        lang: "zh-CN",
-        title: "DyNode",
-        description: "另一个 Dynamix 谱面编辑器",
-      },
-    },
     plugins: {
       mdEnhance: {
         imageMark: true,
@@ -63,8 +61,4 @@ export default defineUserConfig({
     docsRepo: "NagaseIori/DyNode-docs",
     docsDir: "docs/",
   }),
-
-  plugins: [
-    gitPlugin(),
-  ]
 });
