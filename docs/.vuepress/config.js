@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import { hopeTheme } from "vuepress-theme-hope";
+import { gitPlugin } from '@vuepress/plugin-git'
 
 export default defineUserConfig({
   lang: "zh-CN",
@@ -62,4 +63,8 @@ export default defineUserConfig({
     docsRepo: "NagaseIori/DyNode-docs",
     docsDir: "docs/",
   }),
+
+  plugins: [
+    gitPlugin(),
+  ]
 });
