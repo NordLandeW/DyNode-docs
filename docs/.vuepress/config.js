@@ -42,6 +42,7 @@ export default defineUserConfig({
             "/guide/import.md",
             "/guide/edit.md",
             "/guide/timing.md",
+            "/guide/export.md",
             "/guide/file-formats.md",
           ],
         },
