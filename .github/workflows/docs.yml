@@ -22,22 +22,7 @@ jobs:
         with:
           # 选择要使用的 node 版本
           node-version: '16'
-
-      # 缓存 node_modules
-      - name: Cache NPM dependencies
-        uses: actions/cache@v3
-        id: npm-cache
-        with:
-          path: |
-            **/node_modules
-          key: ${{ runner.OS }}-npm-cache-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.OS }}-npm-cache-
-
-      # 如果缓存没有命中，安装依赖
-      - name: Install dependencies
-        if: steps.npm-cache.outputs.cache-hit != 'true'
-        uses: bahmutov/npm-install@v1
+          cache: npm
 
       # 运行构建脚本
       - name: Build VuePress site
