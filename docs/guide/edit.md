@@ -24,14 +24,19 @@
 
 最后一次手动放置单个音符的宽度将作为下一次放置音符的 _设置宽度_ 。
 
-![Drop a note](https://user-images.githubusercontent.com/31349569/184546816-cc813b1b-844b-4eef-a959-e69022702f50.gif)
-![Drop_a_hold](https://user-images.githubusercontent.com/31349569/184546887-17f5d3d3-b9dc-4a36-a0b1-ab13a10130e2.gif)
+:::center
+![Drop a note](https://user-images.githubusercontent.com/31349569/184546816-cc813b1b-844b-4eef-a959-e69022702f50.gif =300x)
+
+![Drop_a_hold](https://user-images.githubusercontent.com/31349569/184546887-17f5d3d3-b9dc-4a36-a0b1-ab13a10130e2.gif =300x)
+:::
 
 ### 移动音符
 
 拖拽。
 
-![Drag a note](https://user-images.githubusercontent.com/31349569/184546984-f9bae40d-f543-4544-ab07-1902c2a80dd3.gif)
+:::center
+![Drag a note](https://user-images.githubusercontent.com/31349569/184546984-f9bae40d-f543-4544-ab07-1902c2a80dd3.gif =300x)
+:::
 
 ### 选中音符
 
@@ -39,7 +44,9 @@
 
 你可以按住 <kbd>Ctrl</kbd> 键来多选音符或反选音符。
 
-![Multiselect](https://user-images.githubusercontent.com/31349569/184547121-032231e9-4c4a-4a7b-9cc1-b6c5c3e4e122.gif)
+:::center
+![Multiselect](https://user-images.githubusercontent.com/31349569/184547121-032231e9-4c4a-4a7b-9cc1-b6c5c3e4e122.gif =300x)
+:::
 
 #### 批量移动音符
 
@@ -61,7 +68,9 @@
 
 在选中音符后，按下 <kbd>Ctrl</kbd> + <kbd>C</kbd> ，右下角即会提示复制音符数量。
 
-![Copy](https://user-images.githubusercontent.com/31349569/184547227-bbb12d78-0f0e-40b9-b0c2-77e69e3b8887.gif)
+:::center
+![Copy](https://user-images.githubusercontent.com/31349569/184547227-bbb12d78-0f0e-40b9-b0c2-77e69e3b8887.gif =300x)
+:::
 
 #### 粘贴音符
 
@@ -75,7 +84,9 @@
 
 可以用 <kbd>Ctrl</kbd> + <kbd>1</kbd>/<kbd>2</kbd> 来批量转换你想粘贴的音符。
 
-![Paste](https://user-images.githubusercontent.com/31349569/184547335-9d6a2e4e-d2f1-4908-92d8-038683a371f4.gif)
+:::center
+![Paste](https://user-images.githubusercontent.com/31349569/184547335-9d6a2e4e-d2f1-4908-92d8-038683a371f4.gif =300x)
+:::
 
 ### 撤销与还原
 
@@ -89,13 +100,17 @@
 
 亮起的判定线代表你正在编辑的侧面。
 
-![Switch side](https://user-images.githubusercontent.com/31349569/184547647-4e148234-543a-413e-bdcb-b0498ca618be.gif)
+:::center
+![Switch side](https://user-images.githubusercontent.com/31349569/184547647-4e148234-543a-413e-bdcb-b0498ca618be.gif =300x)
+:::
 
 ### 透明化非编辑侧音符
 
 按下 <kbd>F</kbd> 即可隐去非编辑侧音符。
 
-![Fade side](https://user-images.githubusercontent.com/31349569/184547770-ef9add4d-0300-4a1e-89d1-dcd6af67d599.gif)
+:::center
+![Fade side](https://user-images.githubusercontent.com/31349569/184547770-ef9add4d-0300-4a1e-89d1-dcd6af67d599.gif =300x)
+:::
 
 ### 切换侧面下落类型
 

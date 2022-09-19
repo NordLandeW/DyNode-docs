@@ -42,7 +42,7 @@ DyNode 中添加 Timing Point 的方式共有三种。
 
 上面是 Timing Point json 格式的一个样例，其中 `beatLength` 代表一拍的长度（以毫秒计），`meter` 代表节拍，`time` 代表 offset。
 
-从 `beatLength` 到 `BPM` 的换算以上方为例有：`1 / 324.324324324324 * 1000 * 60 = 185`。
+从 `beatLength` 到 `BPM` 的换算以上方为例有：$1 / 324.324324324324 * 1000 * 60 = 185$。
 
 编辑完成后，你需要手动重新打开该项目的文件。详见 [文件格式](/guide/file-formats) 页面。
 
