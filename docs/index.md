@@ -36,7 +36,7 @@ features:
   - title: 从 Dynamaker 快速开始
     icon: light
     details: 熟悉却更加强大，使用来自 Dynamaker 的经验与记忆来快速上手 DyNode 。
-    link: /guide/getting-started
+    link: /guide/getting-started.html#从-dynamaker-开始
   - title: Sapphire 升级中...
     icon: update
     details: DyNode 仍在持续不断地改进与开发中：新功能，更少的错误，更快的性能。
@@ -46,14 +46,21 @@ footer: MIT Licensed | Copyright © 2022 NagaseIori
 
 
 ## 🚀 安装与使用
-
-确认你的 PC 符合以下最低要求，并从主页的两种方式中选择一种方式来下载 DyNode ：
-* 操作系统：Windows 7/10/11 64bit
+:::info 最低系统要求
+* 操作系统：Windows 7/10/11 64位 （32位 仅 0.1.5 以前）
 * 内存：4GB RAM
+:::
+
+
+从主页的两种方式中选择一种方式来下载 DyNode 。
 
 下载压缩文件并解压后，双击 `DyNode.exe` 即可运行 DyNode 。
 
-## ✨ 问题反馈
+## ✨ 问题反馈 / 求助
+
+:::tip 不想使用 DyNode？
+如果你不想使用 DyNode，你也可以在 [这里](https://dym.iorinn.moe/app/src) 使用 Dynamaker-modified 的网页分发版本。
+:::
 
 如果你在使用 DyNode 的过程中遇到了任何问题，可以通过 DyNode Github 页面中的 issues / discussions 处反馈与求助。
 
