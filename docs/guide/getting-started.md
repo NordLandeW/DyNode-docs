@@ -44,7 +44,7 @@ DyNode 的大多数基本操作方式是 Dynamaker 的改进与增强。因此�
 
 DyNode 提供从 Dynamaker 直接导入谱面的方式。
 
-在开始界面时，你应当选择“创建项目”而非“打开已有项目”。项目在 DyNode 中是一个独立的概念，所有项目的信息将以 JSON 形式被储存在以 ".dyn" 为后缀结尾的文件中。详见 Wiki 的“项目”页面。
+在开始界面时，你应当选择“创建项目”而非“打开已有项目”。项目在 DyNode 中是一个独立的概念，所有项目的信息将以 JSON 形式被储存在以 ".dyn" 为后缀结尾的文件中。详见 [项目](/guide/project.md) 。
 
 ![创建项目](https://user-images.githubusercontent.com/31349569/183947720-5340d57b-922e-4676-a555-dd9410b1e3cc.png)
 
@@ -83,7 +83,12 @@ DyNode 提供从 Dynamaker 直接导入谱面的方式。
 
 ![哒哒☆ 恭喜你正确对齐节拍线了呢~](https://user-images.githubusercontent.com/31349569/183874896-c247e938-b8db-4afa-b95c-453a6d9027a4.png)
 
-### 其它需要注意的事项
+
+## 从 DyNode 开始
+
+如果你准备创建一个全新的空项目并使用 DyNode 创作新谱面，则此处可以为你快速上手提供指引。
+
+## 在这之后...
 
 你可以使用 <kbd>Ctrl</kbd> + <kbd>S</kbd> 来保存 .dyn 格式的项目文件。项目文件将包含谱面所含有的所有基本信息与内容，因此无需特意导出谱面。第一次保存将会询问具体的保存位置，在此之后无需再次选择保存位置。
 
@@ -102,7 +107,3 @@ DyNode 提供从 Dynamaker 直接导入谱面的方式。
 你也可以无需通过 Dynamaker 进行谱面的创建。此时你需要手动配置 Timing Points 与所有的谱面信息。如果你通过 osu! 或 osu!lazer 等编辑器对谱面进行校时并无需配合 Dynamaker 使用，则推荐使用这种方式来进行谱面编辑。详见 [校时](/guide/timing#%E4%BB%8E-osu-file-%E4%B8%AD%E5%AF%BC%E5%85%A5-timing-points) 页面。
 
 如果你有更多其他的问题，可以查看 [FAQ](/FAQ) 页面。
-
-## 从 DyNode 开始
-
-如果你准备创建一个全新的空项目并使用 DyNode 创作新谱面，则此处可以为你快速上手提供指引。

@@ -39,9 +39,10 @@ export default defineUserConfig({
           children: [
             "/guide/index.md",
             "/guide/getting-started.md",
-            "/guide/import.md",
-            "/guide/edit.md",
+            "/guide/project.md",
             "/guide/timing.md",
+            "/guide/edit.md",
+            "/guide/import.md",
             "/guide/export.md",
             "/guide/file-formats.md",
           ],
@@ -49,6 +50,7 @@ export default defineUserConfig({
       ],
     },
     contributorsText: '贡献者',
-    lastUpdatedText: '最后更新'
+    lastUpdatedText: '最后更新',
+    tip: '提示'
   }),
 });

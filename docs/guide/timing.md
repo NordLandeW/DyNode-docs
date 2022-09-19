@@ -1,6 +1,6 @@
 # 校时
 
-本条目介绍有关 DyNode 中 Timing（校时） 与 Timing Points 等概念。
+本页面介绍有关 DyNode 中 Timing（校时） 与 Timing Points 等概念。
 
 ## Timing Point
 
