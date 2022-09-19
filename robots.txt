@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: https://dyn-docs.iorinn.moe/sitemap.xml
