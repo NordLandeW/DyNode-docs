@@ -1,6 +1,5 @@
 import { defineUserConfig } from "vuepress";
 import { hopeTheme } from "vuepress-theme-hope";
-import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 
 export default defineUserConfig({
   lang: "zh-CN",
@@ -14,7 +13,15 @@ export default defineUserConfig({
         description: "另一个 Dynamix 谱面编辑器",
       },
     },
-
+    plugins: {
+      mdEnhance: {
+        imageMark: true,
+        imageSize: true,
+        katex: true,
+        align: true,
+        container: true,
+      },
+    },
     hostname: "https://dyn-docs.iorinn.moe",
 
     navbar: [
@@ -55,13 +62,4 @@ export default defineUserConfig({
     docsRepo: "NagaseIori/DyNode-docs",
     docsDir: "docs/",
   }),
-  plugins: [
-    mdEnhancePlugin({
-      imageMark: true,
-      imageSize: true,
-      katex: true,
-      align: true,
-      container: true,
-    }),
-  ],
 });
