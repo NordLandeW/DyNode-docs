@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://dyn-docs.iorinn.moe/sitemap.xml
+Sitemap: https://dyn.iorinn.moe/sitemap.xml
