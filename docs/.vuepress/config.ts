@@ -30,7 +30,7 @@ export default defineUserConfig({
         container: true,
       },
     },
-    hostname: "https://dyn-docs.iorinn.moe",
+    hostname: "https://dyn.iorinn.moe",
 
     navbar: [
       {
