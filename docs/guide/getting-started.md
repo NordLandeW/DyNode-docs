@@ -67,13 +67,13 @@ DyNode 提供从 Dynamaker 直接导入谱面的方式。
 
 校时在 DyNode 中是与 Dynamaker 中的 Bar 存在差异的概念。详见 Wiki 中的 [校时](/guide/timing) 页面。
 
-若你不想了解原理，也不想制作变 BPM 谱面，并且已经在 Dynamaker 中将 Bars Per Minute 配置正确（它被配置为 Beats Per Minute 的 1/4 倍），则可以用以下向导进行简单的校时配置。
+若你不想了解原理，也不想制作变 BPM 谱面，并且已经在 Dynamaker 中将 Bar Per Minute 配置正确（它被配置为 Beats Per Minute 的 1/4 倍），则可以用以下向导进行简单的校时配置。
 
 - 该谱面中存在至少一个正确放置的 Note 。
 - 切换到 Edit 模式，单击第一个 Note，按下 <kbd>T</kbd> 键。则节拍线将会以该 Note 作为**小节的第一拍**进行对齐。
 - 第一个 Note 可能并非**小节的第一拍**。若有需要，你可以在之后某个位置准确的 Note 上进行同样的操作，按下 <kbd>T</kbd> 键以对齐**小节的第一拍**。
 
-若你在 Dynamaker 中的 Bars Per Minute 并非 Beats Per Minute 的 1/4 倍，则它可能不会被正确自动配置到 DyNode 中（因为 Dynamaker 中导出的 .xml 文件其实并不包含 Beats Per Minute 的任何信息）。以下是针对这种情况的向导以进行简单的校时配置。
+若你在 Dynamaker 中的 Bar Per Minute 并非 Beats Per Minute 的 1/4 倍，则它可能不会被正确自动配置到 DyNode 中（因为 Dynamaker 中导出的 .xml 文件其实并不包含 Beats Per Minute 的任何信息）。以下是针对这种情况的向导以进行简单的校时配置。
 
 - 如果你已经放置了错误的 BPM ，则你可以在该 BPM 线上放置一个 Note，在选中该 Note 的情况下使用组合键 <kbd>Ctrl</kbd> + <kbd>Delete</kbd> 来删除该 Timing Point。
 - 切换到 Edit 模式，单击第一个 Note，记录 Note 左上角的时间，按下 <kbd>Y</kbd> 键，依次填写：你之前记录的时间、谱面的正确 BPM、谱面的正确节拍数。你可以在 Wiki 中的 [校时](/guide/timing) 页面简单了解这些乐理概念。
@@ -94,7 +94,7 @@ DyNode 提供从 Dynamaker 直接导入谱面的方式。
 
 你可以使用 <kbd>F8</kbd> 来启用自动保存功能。自动保存将会以 5 分钟为间隔自动保存谱面（启用自动保存功能至少需要手动保存一次）。默认关闭。
 
-你可以使用 <kbd>F5</kbd> 来导出 .xml 格式的谱面，以用于导入游戏或 Dynamaker 中进行编辑（如果你有正确的 Bars Per Minute 设置）。
+你可以使用 <kbd>F5</kbd> 来导出 .xml 格式的谱面，以用于导入游戏或 Dynamaker 中进行编辑（如果你有正确的 Bar Per Minute 设置）。
 
 你可以使用 <kbd>F7</kbd> 来切换全屏。如果此时你没有处于粘贴模式，你可以使用 <kbd>Esc</kbd> 来退出 DyNode 。
 
