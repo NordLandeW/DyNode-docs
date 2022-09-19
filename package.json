@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo >w<",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "docs:debug": "vuepress dev docs --debug"
   },
   "repository": {
     "type": "git",
