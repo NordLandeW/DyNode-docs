@@ -56,6 +56,10 @@ export default defineUserConfig({
         text: "常见问题",
         link: "/FAQ",
       },
+      {
+        text: "关于",
+        link: "/about",
+      },
     ],
 
     repo: "NagaseIori/DyNode",

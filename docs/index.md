@@ -51,10 +51,10 @@ footer: MIT Licensed | Copyright © 2022 NagaseIori
 * 内存：4GB RAM
 :::
 
-:::warning
-DyNode 仍处于测试阶段，可能会有比较多的 Bug 出现。
+:::warning Beta 警告
+DyNode 仍处于测试阶段——因此可能会有较明显的难以预料的问题出现。
 
-请视情况定期备份谱面项目。
+你可能需要视情况定期备份谱面项目... 你也可以选择向我们反馈问题来帮助我们改进 DyNode ♥
 :::
 
 
@@ -65,7 +65,7 @@ DyNode 仍处于测试阶段，可能会有比较多的 Bug 出现。
 ## ✨ 问题反馈 / 求助
 
 :::tip 不想使用 DyNode？
-如果你不想使用 DyNode，你也可以在 [这里](https://dym.iorinn.moe/app/src) 使用 Dynamaker-modified 的网页分发版本。
+如果你不想使用 DyNode，你也可以在 [这里](https://dym.iorinn.moe/app/src) 使用由 Jmak 等人制作的 Dynamaker-modified 的网页分发版本，或者前往 Dynamaker-modified 的 [项目页面](https://github.com/jmakxd/dynamaker-modified) 下载使用 Electron 打包分发的版本。
 :::
 
 如果你在使用 DyNode 的过程中遇到了任何问题，可以 [提交 Issue](https://github.com/NagaseIori/DyNode/issues/new) 来反馈，或是前往 [Discussions](https://github.com/NagaseIori/DyNode/discussions) 进行求助。
