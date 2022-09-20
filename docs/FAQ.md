@@ -31,9 +31,9 @@ toc: false
 * Linux 版本可能会在之后支持
 
 -----------
-**Q:** 为什么不支持 32 位版本？
+**Q:** 为什么不支持 Windows 32 位版本？
 
-**A:** YoYoGames 在他们 Gamemaker 的 Runtime 2022.8 版本中取消了对 32 位系统的支持，同时 DyNode 使用了 Gamemaker 最新版本的新特性与性能改进、问题修复，因此在之后很可能不会再提供 32 位系统的支持，除非 Gamemaker 对此有所改变。
+**A:** YoYoGames 在他们 Gamemaker 的 Runtime 2022.8 版本中取消了对 Windows x86 的支持，同时 DyNode 使用了 Gamemaker 最新版本的新特性与性能改进、问题修复，因此在之后很可能不会再提供 Windows 32-bit 的支持。
 
 -----------
 **Q:** 我想要的一些功能没有...
