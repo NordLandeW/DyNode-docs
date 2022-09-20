@@ -48,7 +48,7 @@ toc: false
 -----------
 **Q:** 我的屏幕刷新率是 144+，为什么 DyNode 运行在 60 帧？
 
-**A:** 你可能开了 G-SYNC 等 VRR 技术。你可以在运行一次 DyNode 后，编辑程序目录下的 config.json，将其中 FPS 一项改为你想要的限制帧率。
+**A:** 你可能开了 G-SYNC 等 VRR 技术。你可以在运行一次 DyNode 后，编辑程序目录下的 config.json，将其中 FPS 一项改为你想要的限制帧率。详见 [配置](/guide/configuration.html#fps) 。
 
 -----------
 **Q:** 我想关闭自动更新提示。
@@ -59,6 +59,11 @@ toc: false
 **Q:** 这是用什么东西/软件/引擎做的？
 
 **A:** Gamemaker.
+
+-----------
+**Q:** icon 为什么是...
+
+**A:** Sapphire 可爱！以及十分欢迎您为 DyNode 提供更好的 icon 方案 。
 
 -----------
 **Q:** 为什么要制作 DyNode ？

@@ -4,6 +4,10 @@
 
 所有 DyNode 的配置都在第一次启动并关闭后自动存储在文件 `config.json` 中。
 
+:::tip
+在关闭游戏的状态下编辑 `config.json` 并保存后启动游戏来令改动生效。
+:::
+
 ## 基础配置
 
 ### fullscreen
