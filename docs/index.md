@@ -32,7 +32,7 @@ features:
     details: 仅 30M 的程序包体积，无障碍地高速加载、编辑、导入与导出各种格式的谱面。
   - title: 全新的画面表现
     icon: play
-    details: 重新经过精心调整的过渡动画与粒子效果，更加流程的编辑过程与谱面预览。
+    details: 重新经过精心调整的过渡动画与粒子效果，更加流畅的编辑过程与谱面预览。
   - title: 从 Dynamaker 快速开始
     icon: light
     details: 熟悉却更加强大，使用来自 Dynamaker 的经验与记忆来快速上手 DyNode 。
