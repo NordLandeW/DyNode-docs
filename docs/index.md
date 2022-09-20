@@ -51,6 +51,12 @@ footer: MIT Licensed | Copyright © 2022 NagaseIori
 * 内存：4GB RAM
 :::
 
+:::warning
+DyNode 仍处于测试阶段，可能会有比较多的 Bug 出现。
+
+请视情况定期备份谱面项目。
+:::
+
 
 从主页的两种方式中选择一种方式来下载 DyNode 。
 
