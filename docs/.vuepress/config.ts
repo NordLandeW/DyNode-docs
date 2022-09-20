@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import { hopeTheme } from "vuepress-theme-hope";
+import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 
 export default defineUserConfig({
   locales: {
@@ -11,6 +12,11 @@ export default defineUserConfig({
   },
   title: "DyNode",
   description: "Yet another dynamix chart tool.",
+  plugins: [
+    googleAnalyticsPlugin({
+      id: '	G-GHC453BDJN'
+    }),
+  ],
   head: [
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
     ['link', { rel: 'icon', type:'image/png', sizes: '32x32', href: '/favicon-32x32.png' }],
