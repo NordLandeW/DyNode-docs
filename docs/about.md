@@ -2,6 +2,8 @@
 toc: false
 pageInfo: false
 editLink: false
+lastUpdated: false
+contributors: false
 ---
 
 # 关于
