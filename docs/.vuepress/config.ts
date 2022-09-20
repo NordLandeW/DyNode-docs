@@ -27,6 +27,7 @@ export default defineUserConfig({
     ['meta', { name: 'theme-color', content: '#ffffff' }],
   ],
   theme: hopeTheme({
+    logo: '/Icon.png',
     plugins: {
       mdEnhance: {
         imageMark: true,
