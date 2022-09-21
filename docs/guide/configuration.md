@@ -12,8 +12,8 @@
 
 ### fullscreen
 
-* 类型：`0 | 1`
-* 默认值：`0`
+* 类型：`boolean`
+* 默认值：`false`
 
 启动时是否为全屏模式。将会记录上一次 DyNode 时关闭的全屏状态。
 
@@ -37,8 +37,8 @@ DyNode 运行的帧率。
 
 ### autosave
 
-* 类型：`0 | 1`
-* 默认值：`0`
+* 类型：`boolean`
+* 默认值：`false`
 
 是否开启自动保存。
 
@@ -52,14 +52,14 @@ DyNode 的显示语言。
 ### theme
 
 * 类型：`number`
-* 默认值：`0`
+* 默认值：`false`
 
 DyNode 的显示主题。
 
 ### autoupdate
 
-* 类型：`0 | 1`
-* 默认值：`1`
+* 类型：`boolean`
+* 默认值：`true`
 
 是否开启自动检查更新。
 
@@ -79,6 +79,13 @@ DyNode 的显示主题。
 * 默认值：`60.0`
 
 FMOD 播放 .mp3 格式文件时的延迟时间（以毫秒计）。详见 [校时](/guide/timing.html#mp3-与-wav-格式的延迟处理) 。
+
+### ANNOUNCEMENT_MAX_LIMIT
+
+* 类型：`number`
+* 默认值：`7`
+
+右下角提醒信息条数的最大限制值。
 
 ## 信息
 
