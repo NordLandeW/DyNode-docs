@@ -34,6 +34,7 @@ sidebar: "auto"
 |     `Ctrl+Left/Right`     |                   切换粘贴中心音符                    |
 |    `Ctrl(+Alt)+方向键`    |                   微调选中音符位置                    |
 |            `M`            |                   镜像选中/粘贴音符                   |
+|            `R`            |                   侧面对称选中音符                    |
 |           `Esc`           |                     退出粘贴模式                      |
 |  `Delete` / `Backspace`   |                       删除音符                        |
 |          `Enter`          |                       回放谱面                        |
