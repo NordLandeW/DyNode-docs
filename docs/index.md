@@ -52,9 +52,9 @@ footer: MIT Licensed | Copyright © 2022 NagaseIori
 :::
 
 :::warning Beta 警告
-DyNode 仍处于测试阶段——因此可能会有较明显的难以预料的问题出现。
+DyNode 仍处于较不稳定的测试阶段...
 
-你可能需要视情况定期备份谱面项目... 你也可以选择向我们反馈问题来帮助我们改进 DyNode ♥
+你可能需要视情况定期备份谱面项目——你也可以选择向我们反馈问题来帮助我们改进 DyNode ♥
 :::
 
 
