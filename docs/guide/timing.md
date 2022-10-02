@@ -26,7 +26,7 @@ DyNode 中添加 Timing Point 的方式共有三种。
 
 ### 删除 Timing Point
 
-在你想要删除 Timing Point 的时间点上放置一个 Note 并选中，按下 <kbd>Ctrl</kbd> + <kbd>Delete</kbd> 即可删除在该时间点上的一个 Note 。
+在你想要删除 Timing Point 的时间点上放置一个 Note 并选中，按下 <kbd>Ctrl</kbd> + <kbd>Delete</kbd> 即可删除在该时间点上的一个 Timing Point 。
 
 ### 手动修改
 
