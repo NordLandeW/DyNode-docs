@@ -88,6 +88,12 @@
 ![Paste](https://user-images.githubusercontent.com/31349569/184547335-9d6a2e4e-d2f1-4908-92d8-038683a371f4.gif =400x)
 :::
 
+### 对称 / 镜像音符
+
+选中音符后，使用 <kbd>M</kbd> 来以该编辑侧的中心为准镜像音符。使用 <kbd>Ctrl+M</kbd> 来镜像复制音符。
+
+选中**侧面**音符后，使用 <kbd>R</kbd> 来将音符对称移动到另一侧面。使用 <kbd>Ctrl+R</kbd> 来对称复制音符。
+
 ### 撤销与还原
 
 使用 <kbd>Ctrl</kbd> + <kbd>Z</kbd>/<kbd>Y</kbd> 来撤销与还原。

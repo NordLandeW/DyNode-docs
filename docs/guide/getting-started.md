@@ -88,15 +88,15 @@ DyNode 提供从 Dynamaker 直接导入谱面的方式。
 
 若你不想了解原理，也不想制作变 BPM 谱面，并且已经在 Dynamaker 中将 Bar Per Minute 配置正确（它被配置为 Beats Per Minute 的 1/4 倍），则可以用以下向导进行简单的校时配置。
 
-- 该谱面中存在至少一个正确放置的 Note 。
-- 切换到 Edit 模式，单击第一个 Note，按下 <kbd>T</kbd> 键。则节拍线将会以该 Note 作为**小节的第一拍**进行对齐。
-- 第一个 Note 可能并非**小节的第一拍**。若有需要，你可以在之后某个位置准确的 Note 上进行同样的操作，按下 <kbd>T</kbd> 键以对齐**小节的第一拍**。
+- 该谱面中存在至少一个**在 Dynamaker 中正确放置**的 Note 。
+- 切换到 Edit 模式，选中第一个你在 Dynamaker 中正确放置的 Note，按下 <kbd>T</kbd> 键。则节拍线将会以该 Note 作为**小节的第一拍**进行对齐。
+- 第一个 Note 可能并非小节的第一拍。若有需要，你可以在之后某个位置准确的 Note 上进行同样的操作，按下 <kbd>T</kbd> 键以对齐小节的第一拍。
 
 若你在 Dynamaker 中的 Bar Per Minute 并非 Beats Per Minute 的 1/4 倍，则它可能不会被正确自动配置到 DyNode 中（因为 Dynamaker 中导出的 .xml 文件其实并不包含 Beats Per Minute 的任何信息）。以下是针对这种情况的向导以进行简单的校时配置。
 
-- 如果你已经放置了错误的 BPM ，则你可以在该 BPM 线上放置一个 Note，在选中该 Note 的情况下使用组合键 <kbd>Ctrl</kbd> + <kbd>Delete</kbd> 来删除该 Timing Point。
+- 如果你已经放置了错误的 BPM ，则你可以在该 BPM 线上放置一个 Note，在选中该 Note 的情况下使用组合键 <kbd>Ctrl+Delete</kbd> 来删除该 Timing Point。
 - 切换到 Edit 模式，单击第一个 Note，记录 Note 左上角的时间，按下 <kbd>Y</kbd> 键，依次填写：你之前记录的时间、谱面的正确 BPM、谱面的正确节拍数。你可以在 Wiki 中的 [校时](/guide/timing) 页面简单了解这些乐理概念。
-- 同理，第一个 Note 可能并非**小节的第一拍**。若有需要，你可以选中在此之后的某个位置准确的 Note ，此时可以直接按下 <kbd>T</kbd> 键以对齐**小节的第一拍**。
+- 同理，第一个 Note 可能并非**小节的第一拍**。若有需要，你可以选中在此之后的某个位置准确的 Note ，此时可以直接按下 <kbd>T</kbd> 键以对齐小节的第一拍。
 
 以某谱面为例，正确对齐节拍线的界面应当如下（此时节拍细分默认为 1/4）：
 

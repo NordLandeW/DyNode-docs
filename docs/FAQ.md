@@ -41,11 +41,6 @@ toc: false
 **A:** coming s∞n / 提 issue 反馈 😇 
 
 -----------
-**Q:** No English version? / 有繁中嗎？
-
-**A:** coming s∞n in version 0.2.0
-
------------
 **Q:** 我的屏幕刷新率是 144+，为什么 DyNode 运行在 60 帧？
 
 **A:** 你可能开了 G-SYNC 等 VRR 技术。你可以在运行一次 DyNode 后，编辑程序目录下的 config.json，将其中 FPS 一项改为你想要的限制帧率。详见 [配置](/guide/configuration.html#fps) 。
