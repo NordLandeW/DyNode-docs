@@ -1,4 +1,4 @@
-# 校时
+# Timing
 
 本页面介绍有关 DyNode 中 Timing（校时） 与 Timing Points 等概念。
 
@@ -97,6 +97,7 @@ MP3 格式众所周知地不适合用于对音乐延迟、衔接要求较高的�
 > [https://lame.sourceforge.io/tech-FAQ.txt](https://lame.sourceforge.io/tech-FAQ.txt)
 
 > FMOD doesn’t chop the start off .mp3 decodes, a format which has inherent latency in it.
+> 
 > ----brett, FMOD CEO
 
 更多针对此问题的 FMOD 社区讨论详见：[https://qa.fmod.com/t/fmod-add-air-on-tracks/12073](https://qa.fmod.com/t/fmod-add-air-on-tracks/12073)
