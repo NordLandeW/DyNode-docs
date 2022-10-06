@@ -60,7 +60,7 @@ DyNode 中添加 Timing Point 的方式共有三种。
 
 DyNode 支持从 [osu file format v14](https://osu.ppy.sh/wiki/zh/Client/File_formats/Osu_%28file_format%29) (.osu) 格式的文件中直接导入 Timing Points 信息。这意味着你可以使用 osu! 或 osu!lazer 提供的官方谱面编辑器进行校时。详见 [谱面导入](/guide/import.html#导入-osu-谱面) 。
 
-## 从 Dynamaker 中导入校时
+## 从 Dynamaker 中导入 Timing
 
 你可以选择从 Dynamaker 中导入已有的 BPM 信息，但你需要作额外的校正工作。详见 [快速上手](/guide/getting-started.html#将从-dynamaker-中导入的谱面进行校时) 。
 
