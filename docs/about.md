@@ -60,4 +60,4 @@ Dynamaker (under MIT License) Copyright (c) 2019 omegaPi
 
 Dynamix produced by C4Cat Entertainment Limited
 
-Arcaea produced by lowiro
+Arcaea produced by lowiro limited
