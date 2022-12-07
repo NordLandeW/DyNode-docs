@@ -14,8 +14,10 @@
 
 你可以选择是否导入谱面物件与信息。导入的信息将会包含谱面难度、标题等。
 
-::: tip
-当你使用 Dynamaker-modified 来导出谱面文件时，我们建议其以 Save for Dynamite 形式导出，或者选择不导入 BPM 数据。
+:::warning 关于 Dynamaker-modifed 的谱面导入提示
+你应当使用**最新版本**的 Dynamaker-modifed 来导出谱面以避免不必要的错误。
+
+同时，当你使用 Dynamaker-modified 来导出谱面文件时，我们**建议其以 Save for Dynamite 形式导出，或者选择不导入 BPM 数据**。
 
 从 Dynamaker-modified 中直接导出的文件包含变 BPM 数据，这些数据在 0.1.3 版本之后的 DyNode 支持导入，但由于实现上的差别，目前导入过后的节拍线会与音符存在不可避免的误差。而之后校正 BPM 与 offset 的过程将会是复杂与繁琐的。
 
