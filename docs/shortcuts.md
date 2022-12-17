@@ -47,6 +47,7 @@ sidebar: "auto"
 |           <kbd>U</kbd>            |                   全局时间偏移修改                    |
 |           <kbd>N</kbd>            |                     切换简化模式                      |
 |           <kbd>L</kbd>            |                 切换设置默认宽度模式                  |
+|           <kbd>K</kbd>            |                     设置默认宽度                      |
 
 ## 校时
 
