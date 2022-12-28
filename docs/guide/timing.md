@@ -22,7 +22,7 @@ DyNode 中添加 Timing Point 的方式共有三种。
 
 * 按 <kbd>Y</kbd> 来手动添加 Timing Point ，并依次输入 offset，BPM，节拍 三项信息便可直接添加一个 Timing Point。
 * 按 <kbd>T</kbd> 来复制时间上最末尾的 Timing Point 到你选定的 Note 上。这可能会方便谱面重拍位置的调整以及从 Dynamaker 中导入谱面的校时。
-* 按 <kbd>F10</kbd> 来从 .osu 中导入谱面所有的 Timing Point。这会覆盖掉之前的设置。
+* 按 <kbd>F2</kbd> 来从 .osu 中导入谱面所有的 Timing Point。这会覆盖掉之前的设置。
 
 :::tip
 在使用 <kbd>Y</kbd> 来添加 Timing Point 时，你可以先选中**单个** Note ，再使用 <kbd>Y</kbd> 键，则可以直接使用选中的 Note 的时间作为 offset 。
