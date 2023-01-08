@@ -51,7 +51,7 @@ DyNode 的大多数基本操作方式是 Dynamaker 的改进与增强。因此�
 - <kbd>C</kbd> / <kbd>V</kbd> 将会改变**节拍线**的密度与细分方式。
 - Note 左上角默认情况下显示的并非 Note 的 Bar，而是 Note 所在的时间值（以毫秒为单位）。
 - 可以使用 <kbd>Ctrl</kbd> 与拖拽框选来进行音符的多选/反选。
-- 可以使用 <kbd>Ctrl</kbd> + <kbd>C</kbd> / <kbd>X</kbd> / <kbd>V</kbd> / <kbd>Z</kbd> / <kbd>Y</kbd> 来进行复制/剪切/粘贴/撤销/还原等操作。
+- 可以使用 <kbd>Ctrl + C/X/V/Z/Y</kbd> 来进行复制/剪切/粘贴/撤销/还原等操作。
 - 可以使用 <kbd>Ctrl</kbd> + 鼠标滚轮 来进行快速的音符流速调整。若此时选中了音符，则可以进行快速的批量音符宽度调整。
 - 可以使用 <kbd>Ctrl</kbd> + <kbd>C</kbd> / <kbd>V</kbd> 来复制单个音符的宽度并批量设置选中音符的宽度。
 - 可以用 <kbd>Ctrl</kbd> + ( <kbd>Shift</kbd> + ) 方向键 来对选中音符进行微调。
