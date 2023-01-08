@@ -54,7 +54,7 @@ DyNode 中添加 Timing Point 的方式共有三种。
 
 ### 撤销/还原
 
-使用 <kbd>Ctrl</kbd> + <kbd>Z</kbd>/<kbd>Y</kbd> 来进行撤销与还原。
+使用 <kbd>Ctrl + Z/Y</kbd> 来进行撤销与还原。
 
 ## 从 Osu File 中导入 Timing Points
 
