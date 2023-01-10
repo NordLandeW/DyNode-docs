@@ -31,8 +31,7 @@ export default defineUserConfig({
     logo: '/Icon.png',
     plugins: {
       mdEnhance: {
-        imageMark: true,
-        imageSize: true,
+        imgSize: true,
         katex: true,
         align: true,
         container: true,
