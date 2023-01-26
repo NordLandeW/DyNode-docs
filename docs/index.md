@@ -64,7 +64,13 @@ DyNode 仍处于较不稳定的测试阶段...
 
 ## ✨ 问题反馈 / 求助
 
-:::tip 不想使用 DyNode？
+:::tip 与使用者交流来获取帮助！
+QQ 交流/反馈群：347048298
+
+你可以直接在此处交流/反馈/获取工具与最新消息/与开发者激情对线，也有可能通过测试版帮助直接改进DyNode！😇
+:::
+
+:::info 不想使用 DyNode？
 如果你不想使用 DyNode，你也可以在 [这里](https://dym.iorinn.moe/app/src) 使用由 Jmak 等人制作的 Dynamaker-modified 的网页分发版本，或者前往 Dynamaker-modified 的 [项目页面](https://github.com/jmakxd/dynamaker-modified) 下载使用 Electron 打包分发的版本。
 :::
 
