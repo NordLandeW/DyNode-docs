@@ -77,6 +77,7 @@ sidebar: "auto"
 |    <kbd>F2</kbd>    |             导入谱面文件              |
 |    <kbd>F3</kbd>    |             导入音乐文件              |
 |    <kbd>F4</kbd>    |             导入背景文件              |
+| <kbd>Ctrl+F4</kbd>  |             重设所有背景              |
 |    <kbd>F5</kbd>    |             导出谱面文件              |
 |    <kbd>F6</kbd>    | 设置全局 Bar Per Minute 与 Bar Offset |
 |    <kbd>F7</kbd>    |                 全屏                  |
