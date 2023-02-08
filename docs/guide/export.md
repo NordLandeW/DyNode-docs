@@ -12,7 +12,7 @@
 * Dynamaker
 * Dynamaker-modified
 
-导出的基本信息不包括：
+导出的基本信息**不包括**：
 
 * 校时（BPM、Offset、节拍）
 

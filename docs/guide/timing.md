@@ -64,7 +64,7 @@ DyNode 支持从 [osu file format v14](https://osu.ppy.sh/wiki/zh/Client/File_fo
 
 你可以选择从 Dynamaker 中导入已有的 BPM 信息，但你需要作额外的校正工作。详见 [快速上手](/guide/getting-started.html#将从-dynamaker-中导入的谱面进行校时) 。
 
-不建议从 Dynamaker-modified 中导入多 BPM 信息。详见 [谱面导入](/guide/import.html) 。
+你可以从 Dynamaker-modified 中导入变 BPM 信息，但 DyNode 目前不支持导出变 BPM 信息至 XML 格式谱面中。详见 [谱面导出](/guide/export.html) 。
 
 ## Bar
 
