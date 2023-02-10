@@ -259,13 +259,19 @@ ffmpeg -i input -c:v libx264 -crf 20 -preset fast -an -sn -map_metadata -1 -map_
 
 ## Bar
 
-:::tip
+:::info 提示
 如果你不了解什么是 [Bar](/guide/timing.html#bar) 且你不打算使用 Dynamaker ，则你很可能无需使用到与 Bar 相关的任何功能。
 :::
 
-### 设置全局 Bar 信息
+### 设置/删除全局 Bar 信息
 
-若你的谱面并非从 Dynamaker 导入，你可以使用 <kbd>F6</kbd> 来设置全局 Bar 信息。这些信息包括 Bar Per Minute 与 Bar Offset 。
+若你的谱面并非从 Dynamaker 导入，你可以使用 <kbd>F6</kbd> 来设置/删除全局 Bar 信息。这些信息包括 Bar Per Minute 与 Bar Offset 。
+
+:::tip 默认 Bar 配置
+DyNode 将会询问你是否进行默认 Bar 配置。一般情况下，若你不想做额外的配置，则选择“是”即可。DyNode 将会以**时间上最早的 Timing Point 为基准**为你做好所有的工作，之后你可以将此谱面导出 Dynamaker 进行正常编辑。
+
+目前不支持导出多 BPM 信息至 Dynamaker 中。
+:::
 
 ### 切换 Bar / Time 显示
 

@@ -12,11 +12,13 @@
 * Dynamaker
 * Dynamaker-modified
 
-导出的基本信息**不包括**：
-
-* 校时（BPM、Offset、节拍）
-
 .xml 谱面具体的包含内容详见 [文件格式](/guide/file-formats.html#xml) 。
+
+:::tip 默认 Bar 配置
+导出的时候 DyNode 将会询问你是否进行默认的 Bar 配置。这一般只在你未使用从 Dynamaker 导入的谱面情况下询问。
+
+一般情况下，我们建议所有人选择“是”。在保存项目后，DyNode 不会进行第二遍询问，详见 [Bar](/guide/edit.html#bar)。
+:::
 
 :::tip 整数时间转换
 如果你打算将导出的谱面进行实机测试或发布，则建议在导出时同意进行**整数时间转换**。
@@ -38,7 +40,7 @@
 
 ### 对校时的默认处理
 
-若你的谱面不是从 Dynamaker 导入且没有设置全局 Bar 信息，则导出的 .xml 谱面中将会设置以下默认值：
+若你的谱面不是从 Dynamaker 导入且没有设置全局 Bar 信息（这意味着你也没有设置默认 Bar 配置），则导出的 .xml 谱面中将会设置以下默认值：
 
 * Bar Per Minute : 校时中第一个 Timing Point 的 BPM 的 $1/4$ 。
 * Bar Offset : 设置为 $0$ 。
