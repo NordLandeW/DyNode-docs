@@ -82,9 +82,7 @@ DyNode 支持从 [osu file format v14](https://osu.ppy.sh/wiki/zh/Client/File_fo
 
 ### 从 Dynamaker 中导入 Timing
 
-你可以选择从 Dynamaker 中导入已有的 BPM 信息，而无需再作额外的校正工作。
-
-你可以从 Dynamaker-modified 中导入变 BPM 信息，但 DyNode 目前不支持导出变 BPM 信息至 XML 格式谱面中。详见 [谱面导出](/guide/export.html) 。
+你可以选择从 Dynamaker 或 Dynamaker-modified 中导入完整的 BPM 信息，而无需再作额外的校正工作。
 
 ## DyNode 与 Bar
 
