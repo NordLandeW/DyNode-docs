@@ -88,10 +88,6 @@ DyNode 提供从 Dynamaker 直接导入谱面的方式。
 
 若你已经在 Dynamaker 中正确设置了 BPM，则你可以正常从 Dynamaker 的各个版本中导入 BPM（亦或是多 BPM）信息，并可以直接在 DyNode 中进行编辑。
 
-:::info 提示
-多 BPM 信息无法再被导出至 XML 谱面中。详见 [谱面导出](/guide/export) 。
-:::
-
 在**预览模式**下，节拍线默认不会显示，此时你应当使用数字键 <kbd>1</kbd> ~ <kbd>4</kbd> 来切换到**编辑模式**，并使用**方向键**来切出节拍线。与 Dynamaker 类似，你可以使用 <kbd>Z/C</kbd> 来切换节拍细分，与 Dynamaker 不同的地方在于节拍线的显示会随着你使用的节拍细分而改变。
 
 :::info 提示
