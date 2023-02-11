@@ -88,9 +88,7 @@ DyNode 支持从 [osu file format v14](https://osu.ppy.sh/wiki/zh/Client/File_fo
 
 Dynamaker 中引入 Bar 的概念便于在 Dynamaker 中以固定的节拍线格式或文本方式进行直接编辑，而实际上谱面的播放仍旧基于时间逻辑。DyNode 提供了更加灵活的节拍线与可变 BPM 设置，因此弃用了 Bar 相关的概念，将所有编辑与播放过程全部基于时间与 BPM (Beats Per Minute) 逻辑。
 
-DyNode 同时也提供了向 Dynamaker 进行兼容的功能。若想同时使用 Dynamaker 与 DyNode ，目前可以现在 Dynamaker 中设置好 Bar Per Minute 并放置至少一个音符后，再将 DyNode 的 Timing 进行校准（由此对齐音符的节拍线以进行放置）。
-
-从 Dynamaker 中导入的谱面信息所包含的 Bar Per Minute 与 Offset 将会直接同步到 DyNode 上。此时 DyNode 中的全局 Bar Offset 可以与 Dynamaker 保持一致，便于在两个编辑器中来回切换编辑。但注意，DyNode 中任何的 Timing 信息将无法同步到 Dynamaker 上（例如，你无法直接像在 DyNode 上那样在 Dynamaker 上编辑变速谱面）。详见 [快速上手](/guide/getting-started.md) 。
+DyNode 同时提供了对 Bar 导入/导出功能的完整支持。
 
 ## MP3 与 WAV 格式的延迟
 
