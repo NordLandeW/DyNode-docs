@@ -14,29 +14,35 @@
 
 .xml 谱面具体的包含内容详见 [文件格式](/guide/file-formats.html#xml) 。
 
-:::tip 默认 Bar 配置
-导出的时候 DyNode 将会询问你是否进行默认的 Bar 配置。这一般只在你未使用从 Dynamaker 导入的谱面情况下询问。
+### 导出为 Dynamaker-modifed 谱面格式
 
-一般情况下，我们建议所有人选择“是”。在保存项目后，DyNode 不会进行第二遍询问，详见 [Bar](/guide/edit.html#bar)。
+该谱面格式**仅用于** Dynamaker-modifed 与 DyNode 谱面编辑器的读取。以该谱面格式导出的谱面将**强制进行** [默认 Bar 配置](#默认-bar-配置)。
+
+通过该谱面格式导出的谱面将包含完整的可被 Dynamaker-modifed 读取的 Timing 信息。
+
+:::warning
+**以该格式导出的谱面无法用于 Dynamite 等实机调试与发布场景。**
 :::
 
-:::tip 整数时间转换
+### 默认 Bar 配置
+导出的时候 DyNode 将会询问你是否进行默认的 Bar 配置。这一般只在你未使用从 Dynamaker 导入的谱面情况下询问。
+
+默认 Bar 配置将以该谱面中时间上最早的 Timing Point 为准配置**全局**的 Bar Per Minute 与 Bar Offset 。
+
+一般情况下，我们建议所有人选择“是”。在保存项目后，DyNode 不会进行第二遍询问，详见 [Bar](/guide/edit.html#bar)。
+
+### 整数时间转换
+
 如果你打算将导出的谱面进行实机测试或发布，则建议在导出时同意进行**整数时间转换**。
 
 这能有效解决毫秒级以下时间误差造成的防糊机制意外触发，但请注意：转换过后的导出谱面再次被导入时会丢失小数部分的时间信息。
 
 我们不建议导入这类谱面进行编辑。如有需要，你应该导出未经过时间转换的谱面来用于导入编辑。
-:::
+
 
 ### 在 Dynamite 上游玩
 
 .xml 谱面可以直接导入 Dynamite 进行游玩。阅读 [此处](https://www.bilibili.com/read/cv17021429) 以了解如何导入谱面。
-
-### 与 Dynamaker 共同编辑
-
-如果你的谱面是从 Dynamaker 导入，则你可以正常使用与 Bar 相关的所有功能。导出的谱面可以直接在 Dynamaker 上进行编辑，当然前提是你在 Dynamaker 上正确配置了 Bar 相关的信息。
-
-否则，如果你想让导出的谱面能同时在 Dynamaker 上编辑，你需要设置全局 [Bar](/guide/timing.html#bar) 信息，详见 [编辑](/guide/edit.html#设置全局-bar-信息) 。
 
 ### 对校时的默认处理
 

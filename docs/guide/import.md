@@ -14,10 +14,8 @@
 
 你可以选择是否导入谱面物件与信息。导入的信息将会包含谱面难度、标题等。
 
-:::tip 关于 Dynamaker-modifed 的谱面导入提示
-你应当使用**最新版本**的 Dynamaker-modifed 来导出谱面以避免不必要的错误。
-
-若你的谱面包含变 BPM 信息，则你应当注意 DyNode 目前无法导出变 BPM 信息到 XML 格式谱面中，因此你无法将变 BPM 信息保留并与 Dynamaker-modified 协作编辑。详见 [谱面导出](/guide/export.html)。
+:::info 关于 Dynamaker-modified
+DyNode 提供对 Dynamaker-modified 谱面格式导入的完整支持。
 :::
 
 ## 导入 .osu 谱面
