@@ -14,6 +14,26 @@ Timing Point 包括了一首曲目的 offset, BPM 与节拍等信息。
 
 编辑器中的纵向网格（节拍线）将以设定的 Timing 为基准。
 
+:::tip “什么是 Timing ？我还是不懂！”
+
+以通俗的方式说，如果从歌曲的 **100ms** 开始，歌曲按照 **180 BPM**，**四拍子**的速度去运行，那么与之对应的 Timing 就是：
+```
+offset: 100
+BPM: 180
+meter: 4
+```
+
+如果从歌曲的 **3000ms** 开始，歌曲按照 **2023 BPM**，**三拍子**的速度去运行，那么与之对应的 Timing 就是：
+```
+offset: 3000
+BPM: 2023
+meter: 3
+```
+
+把这两个 Timing 作为 Timing Point 加入到同一首曲目中，这样就能把一首曲目中的变速段落用简单的方式分割开来了！
+
+:::
+
 ## 编辑 Timing
 
 ### 添加 Timing Point
@@ -26,8 +46,6 @@ DyNode 中添加 Timing Point 的方式共有三种。
 
 :::tip
 在使用 <kbd>Y</kbd> 来添加 Timing Point 时，你可以先选中**单个** Note ，再使用 <kbd>Y</kbd> 键，则可以直接使用选中的 Note 的时间作为 offset 。
-
-这在 Timing Point 的 offset 需要为精准小数的时候十分有用：例如，你选择从 Dynamaker-modifed 中导入变 BPM 谱面时需要对 Timing 进行校准，而 Note 的时间却为小数时（即使时间显示为整数）。
 :::
 
 ### 删除 Timing Point
@@ -56,17 +74,19 @@ DyNode 中添加 Timing Point 的方式共有三种。
 
 使用 <kbd>Ctrl + Z/Y</kbd> 来进行撤销与还原。
 
-## 从 Osu File 中导入 Timing Points
+## 导入 Timing
+
+### 从 Osu File 中导入 Timing
 
 DyNode 支持从 [osu file format v14](https://osu.ppy.sh/wiki/zh/Client/File_formats/Osu_%28file_format%29) (.osu) 格式的文件中直接导入 Timing Points 信息。这意味着你可以使用 osu! 或 osu!lazer 提供的官方谱面编辑器进行校时。详见 [谱面导入](/guide/import.html#导入-osu-谱面) 。
 
-## 从 Dynamaker 中导入 Timing
+### 从 Dynamaker 中导入 Timing
 
-你可以选择从 Dynamaker 中导入已有的 BPM 信息，但你需要作额外的校正工作。详见 [快速上手](/guide/getting-started.html#将从-dynamaker-中导入的谱面进行校时) 。
+你可以选择从 Dynamaker 中导入已有的 BPM 信息，而无需再作额外的校正工作。
 
-不建议从 Dynamaker-modified 中导入多 BPM 信息。详见 [谱面导入](/guide/import.html) 。
+你可以从 Dynamaker-modified 中导入变 BPM 信息，但 DyNode 目前不支持导出变 BPM 信息至 XML 格式谱面中。详见 [谱面导出](/guide/export.html) 。
 
-## Bar
+## DyNode 与 Bar
 
 Dynamaker 中引入 Bar 的概念便于在 Dynamaker 中以固定的节拍线格式或文本方式进行直接编辑，而实际上谱面的播放仍旧基于时间逻辑。DyNode 提供了更加灵活的节拍线与可变 BPM 设置，因此弃用了 Bar 相关的概念，将所有编辑与播放过程全部基于时间与 BPM (Beats Per Minute) 逻辑。
 
@@ -74,7 +94,7 @@ DyNode 同时也提供了向 Dynamaker 进行兼容的功能。若想同时使�
 
 从 Dynamaker 中导入的谱面信息所包含的 Bar Per Minute 与 Offset 将会直接同步到 DyNode 上。此时 DyNode 中的全局 Bar Offset 可以与 Dynamaker 保持一致，便于在两个编辑器中来回切换编辑。但注意，DyNode 中任何的 Timing 信息将无法同步到 Dynamaker 上（例如，你无法直接像在 DyNode 上那样在 Dynamaker 上编辑变速谱面）。详见 [快速上手](/guide/getting-started.md) 。
 
-## MP3 与 WAV 格式的延迟处理
+## MP3 与 WAV 格式的延迟
 
 ::: warning 关于旧版本的警告
 

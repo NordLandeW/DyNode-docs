@@ -82,29 +82,34 @@ DyNode 提供从 Dynamaker 直接导入谱面的方式。
 
 之后你应当可以正常预览从 Dynamaker 中导入的谱面。
 
-### 将从 Dynamaker 中导入的谱面进行校时
+### 校时与节拍细分
 
 校时在 DyNode 中是与 Dynamaker 中的 Bar 存在差异的概念。详见 Wiki 中的 [校时](/guide/timing) 页面。
 
-若你不想了解原理，也不想制作变 BPM 谱面，并且已经在 Dynamaker 中将 Bar Per Minute 配置正确（它被配置为 Beats Per Minute 的 1/4 倍），则可以用以下向导进行简单的校时配置。
+若你已经在 Dynamaker 中正确设置了 BPM，则你可以正常从 Dynamaker 的各个版本中导入 BPM（亦或是多 BPM）信息，并可以直接在 DyNode 中进行编辑。
 
-- 该谱面中存在至少一个**在 Dynamaker 中正确放置**的 Note 。
-- 切换到 Edit 模式，选中第一个你在 Dynamaker 中正确放置的 Note，按下 <kbd>T</kbd> 键。则节拍线将会以该 Note 作为**小节的第一拍**进行对齐。
-- 第一个 Note 可能并非小节的第一拍。若有需要，你可以在之后某个位置准确的 Note 上进行同样的操作，按下 <kbd>T</kbd> 键以对齐小节的第一拍。
+:::info 提示
+多 BPM 信息无法再被导出至 XML 谱面中。详见 [谱面导出](/guide/export) 。
+:::
 
-若你在 Dynamaker 中的 Bar Per Minute 并非 Beats Per Minute 的 1/4 倍，则它可能不会被正确自动配置到 DyNode 中（因为 Dynamaker 中导出的 .xml 文件其实并不包含 Beats Per Minute 的任何信息）。以下是针对这种情况的向导以进行简单的校时配置。
+在**预览模式**下，节拍线默认不会显示，此时你应当使用数字键 <kbd>1</kbd> ~ <kbd>4</kbd> 来切换到**编辑模式**，并使用**方向键**来切出节拍线。与 Dynamaker 类似，你可以使用 <kbd>Z/C</kbd> 来切换节拍细分，与 Dynamaker 不同的地方在于节拍线的显示会随着你使用的节拍细分而改变。
 
-- 如果你已经放置了错误的 BPM ，则你可以在该 BPM 线上放置一个 Note，在选中该 Note 的情况下使用组合键 <kbd>Ctrl+Delete</kbd> 来删除该 Timing Point。
-- 切换到 Edit 模式，单击第一个 Note，记录 Note 左上角的时间，按下 <kbd>Y</kbd> 键，依次填写：你之前记录的时间、谱面的正确 BPM、谱面的正确节拍数。你可以在 Wiki 中的 [校时](/guide/timing) 页面简单了解这些乐理概念。
-- 同理，第一个 Note 可能并非**小节的第一拍**。若有需要，你可以选中在此之后的某个位置准确的 Note ，此时可以直接按下 <kbd>T</kbd> 键以对齐小节的第一拍。
+:::info 提示
+若你已经处于**编辑模式**却没有显示节拍线，则你可以尝试检查：
+* 你是否选择了导入谱面相关信息？
+* 你是否在 Dynamaker-modified 中正确配置了 BPM？
+* 你是否添加了音乐文件？
+:::
 
-以某谱面为例，正确对齐节拍线的界面应当如下（此时节拍细分默认为 1/4）：
+如果你想对导入的 Timing Point 中的重拍（或第一拍）进行额外的校准，则你可以尝试使用快捷键 <kbd>T</kbd> 。它会将时间上最晚的 Timing Point 复制并添加到你**选中**的**单个音符**上。
 
-![哒哒☆ 恭喜你正确对齐节拍线了呢~](https://user-images.githubusercontent.com/31349569/183874896-c247e938-b8db-4afa-b95c-453a6d9027a4.png)
+以某谱面为例，正常的编辑界面应当如下（此时节拍细分默认为 1/4）：
 
-
+![](https://user-images.githubusercontent.com/31349569/183874896-c247e938-b8db-4afa-b95c-453a6d9027a4.png)
 
 ### 在这之后...
+
+想了解更多关于 DyNode 对编辑方式的改动，请前往查看 [谱面编辑](/guide/edit) 。
 
 新建项目之后请不要忘记保存项目，否则进度可能会轻易丢失。详见 [保存项目](/guide/project.html#保存项目) 。
 

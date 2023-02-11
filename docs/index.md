@@ -29,7 +29,7 @@ features:
     link: /guide/project
   - title: 从 Dynamaker 快速开始
     icon: light
-    details: 熟悉却更加强大，使用来自 Dynamaker 的经验与记忆来快速上手 DyNode 。
+    details: 熟悉却更加强大，与 Dynamaker 无缝衔接。使用来自 Dynamaker 的经验与记忆来快速上手。
     link: /guide/getting-started.html#从-dynamaker-开始
   - title: 轻量而高效
     icon: launch

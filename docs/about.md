@@ -14,19 +14,13 @@ contributors: false
 
 # DyNode
 
-$\text{Yet another Dynamix chart tool.}$
+$\text{Yet another Dynamix charting tool.}$
 
 ------------
 
 由 NagaseIori x NordLandeW 制作
 
 :::
-
-## 感谢
-
-这个项目的改进离不开来自以下人们的帮助：
-
-Jmak, TLChicken
 
 ## 许可与版权
 
