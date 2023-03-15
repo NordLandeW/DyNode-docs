@@ -14,11 +14,11 @@
 
 .xml 谱面具体的包含内容详见 [文件格式](/guide/file-formats.html#xml) 。
 
-### 导出为 Dynamaker-modifed 谱面格式
+### 导出为 Dynamaker-modified 谱面格式
 
-该谱面格式**仅用于** Dynamaker-modifed 与 DyNode 谱面编辑器的读取。以该谱面格式导出的谱面将**强制进行** [默认 Bar 配置](#默认-bar-配置)。
+该谱面格式**仅用于** Dynamaker-modified 与 DyNode 谱面编辑器的读取。以该谱面格式导出的谱面将**强制进行** [默认 Bar 配置](#默认-bar-配置)。
 
-通过该谱面格式导出的谱面将包含完整的可被 Dynamaker-modifed 读取的 Timing 信息。
+通过该谱面格式导出的谱面将包含完整的可被 Dynamaker-modified 读取的 Timing 信息。
 
 :::warning
 **以该格式导出的谱面无法用于 Dynamite 等实机调试与发布场景。**

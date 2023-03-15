@@ -42,6 +42,10 @@ Clean Shapes (under MIT License) Copyright (c) 2020 Juju Adams
 
 SNAP (under MIT License) Copyright (c) 2020 Juju Adams
 
+[JSON](https://json.nlohmann.me/home/license/) (under MIT License) Copyright © 2013-2022 Niels Lohmann
+
+[delaunator-cpp](https://github.com/abellgithub/delaunator-cpp/blob/master/LICENSE) (under MIT License) Copyright (c) 2018 Volodymyr Bilonenko
+
 FMODGMS (under [BSD 2-Clause "Simplified" License](https://github.com/mstop4/FMODGMS/blob/master/LICENSE)) Copyright (c) 2016-2017, M.S.T.O.P.
 
 -------------------
