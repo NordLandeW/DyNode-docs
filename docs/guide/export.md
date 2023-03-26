@@ -16,21 +16,13 @@
 
 ### 导出为 Dynamaker-modified 谱面格式
 
-该谱面格式**仅用于** Dynamaker-modified 与 DyNode 谱面编辑器的读取。以该谱面格式导出的谱面将**强制进行** [默认 Bar 配置](#默认-bar-配置)。
+该谱面格式**仅用于** Dynamaker-modified 与 DyNode 谱面编辑器的读取。以该谱面格式导出的谱面将由 DyNode 强制进行 Bar 相关的配置。这是正常的配置过程，只是这会永久覆盖你之前对 Bar 的所有手动配置。
 
 通过该谱面格式导出的谱面将包含完整的可被 Dynamaker-modified 读取的 Timing 信息。
 
 :::warning
 **以该格式导出的谱面无法用于 Dynamite 等实机调试与发布场景。**
 :::
-
-### 默认 Bar 配置
-导出的时候 DyNode 将会询问你是否进行默认的 Bar 配置。这一般只在你未使用从 Dynamaker 导入的谱面情况下询问。
-
-默认 Bar 配置将以该谱面中时间上最早的 Timing Point 为准配置**全局**的 Bar Per Minute 与 Bar Offset 。
-
-一般情况下，我们建议所有人选择“是”。在保存项目后，DyNode 不会进行第二遍询问，详见 [Bar](/guide/edit.html#bar)。
-
 ### 整数时间转换
 
 如果你打算将导出的谱面进行实机测试或发布，则建议在导出时同意进行**整数时间转换**。
@@ -53,6 +45,6 @@
 若你的谱面不是从 Dynamaker 导入且没有设置全局 Bar 信息（这意味着你也没有设置默认 Bar 配置），则导出的 .xml 谱面中将会设置以下默认值：
 
 * Bar Per Minute : 校时中第一个 Timing Point 的 BPM 的 $1/4$ 。
-* Bar Offset : 设置为 $0$ 。
+* Bar Offset : 设置为第一个 Timing Point 的 offset 对应 Bar 的负数，代表整体 Bar 值的偏移量。
 
 所有音符的时间都将通过此默认 Bar 信息配置转化为其所在的 Bar 。以此默认信息导出的谱面能够正常游玩，但你大概率无法在 Dynamaker 上正常编辑此谱面。
