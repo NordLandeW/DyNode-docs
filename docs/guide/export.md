@@ -47,4 +47,4 @@
 * Bar Per Minute : 校时中第一个 Timing Point 的 BPM 的 $1/4$ 。
 * Bar Offset : 设置为第一个 Timing Point 的 offset 对应 Bar 的负数，代表整体 Bar 值的偏移量。
 
-所有音符的时间都将通过此默认 Bar 信息配置转化为其所在的 Bar 。以此默认信息导出的谱面能够正常游玩，但你大概率无法在 Dynamaker 上正常编辑此谱面。
+所有音符的时间都将通过此默认 Bar 信息配置转化为其所在的 Bar 。以此默认信息导出的谱面能够正常游玩，但你大概率无法在 Dynamaker 上正常编辑多 BPM 谱面。
