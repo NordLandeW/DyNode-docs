@@ -14,3 +14,16 @@ kbd {
 .home.project .features {
     padding: 1.2rem 1.2rem;
 }
+
+kbd {
+    display: inline-block;
+    min-width: 1em;
+    margin-inline: 0.125rem;
+    padding: 0.2em;
+    border: 1px solid #eee;
+    border-radius: 0.25em;
+    box-shadow: 1px 1px 4px #00000026;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0em;
+}

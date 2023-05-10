@@ -1,5 +1,5 @@
 ---
-sidebar: "auto"
+sidebar: false
 ---
 
 # 快捷键
