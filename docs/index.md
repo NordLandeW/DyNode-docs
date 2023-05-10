@@ -2,7 +2,7 @@
 home: true
 title: 主页
 heroText: DyNode
-tagline: "> 又一个全新的 Dynamix 制谱工具。"
+tagline: "> 另一个 Dynamix 制谱工具。"
 actions:
   - text: 快速上手
     link: /guide/getting-started.html
@@ -41,7 +41,7 @@ features:
     icon: update
     details: DyNode 仍在持续不断地改进与开发中：新功能，更少的错误，更快的性能。
 
-footer: MIT Licensed | Copyright © 2022 NagaseIori
+footer: MIT Licensed | Copyright © 2023 NagaseIori
 ---
 
 
