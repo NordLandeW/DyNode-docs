@@ -20,6 +20,7 @@ sidebar: false
 |          <kbd>Ctrl</kbd>          |              微调音符宽度（放置音符时）               |
 |         <kbd>C / V</kbd>          |                     调整节拍细分                      |
 |           <kbd>G</kbd>            |                   调整节拍细分分组                    |
+|           <kbd>J</kbd>            |                     调整拍线样式                      |
 |     <kbd>1</kbd>~<kbd>5</kbd>     |  调整编辑模式：Note / Chain / Hold / Edit / Playback  |
 |         <kbd>Ctrl+F</kbd>         |              切换侧面类型：MULTI / MIXER              |
 |           <kbd>Z</kbd>            |               切换纵向（时间）网格吸附                |
