@@ -24,22 +24,22 @@ features:
     link: /guide/edit
   - title: 简化的校时过程
     icon: time
-    details: 用更加稳定、便捷的方式并借助外部工具来高效制作变速谱面。
+    details: 用便捷的方式并借助外部工具来高效制作变速谱面。
     link: /guide/timing
   - title: 集中的项目管理
     icon: folder
-    details: 用一个文件来集中保存谱面的所有信息，便于灵活地修改与管理。
+    details: 用一个文件来集中保存谱面的所有信息。
     link: /guide/project
   - title: 从 Dynamaker 快速开始
     icon: light
-    details: 熟悉却更加强大，与 Dynamaker 无缝衔接。使用来自 Dynamaker 的经验与记忆来快速上手。
+    details: 使用来自 Dynamaker 的经验与记忆快速上手 DyNode。
     link: /guide/getting-started.html#从-dynamaker-开始
   - title: 轻量而高效
     icon: launch
-    details: 仅 30M 的程序包体积，无障碍地高速加载、编辑、导入与导出各种格式的谱面。
+    details: 仅 30M 的程序包体积，高速加载、编辑、导入与导出各种格式的谱面。
   - title: 流畅的画面表现
     icon: play
-    details: 重新经过精心调整的过渡动画与粒子效果，更加流畅的编辑过程与谱面预览，对高刷新率的更好支持。
+    details: 重新调整的过渡动画与粒子效果，流畅的编辑过程与谱面预览，支持高刷新率。
   - title: Sapphire 升级中...
     icon: update
     details: DyNode 仍在持续不断地改进与开发中：新功能，更少的错误，更快的性能。
