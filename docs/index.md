@@ -18,9 +18,9 @@ actions:
     type: secondary
 heroImage: /Icon.png
 features:
-  - title: 重新设计的操作逻辑
+  - title: 直观的操作逻辑
     icon: emoji
-    details: 使用拖拽、多选、镜像与复制，直观且人性化的操作来简化谱面制作过程。 
+    details: 使用拖拽、多选、镜像与复制等操作来简化谱面制作过程。 
     link: /guide/edit
   - title: 简化的校时过程
     icon: time

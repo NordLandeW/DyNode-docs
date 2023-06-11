@@ -89,6 +89,10 @@ export default defineUserConfig({
         link: "/FAQ",
       },
       {
+        text: "更新日志",
+        link: "/changelog",
+      },
+      {
         text: "关于",
         link: "/about",
       },
@@ -105,6 +109,7 @@ export default defineUserConfig({
         "/guide/edit.md",
         "/guide/import.md",
         "/guide/export.md",
+        "/guide/advanced-edit.md",
         "/guide/configuration.md",
         "/guide/file-formats.md",
       ],
