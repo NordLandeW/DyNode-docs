@@ -314,6 +314,20 @@ ffmpeg -i input -c:v libx264 -crf 20 -preset fast -an -sn -map_metadata -1 -map_
 你可以在 [Timing](timing#mp3-与-wav-格式的延迟) 与 [配置](configuration) 中看到更详细的说明。
 :::
 
+## 工具栏
+
+使用 <kbd>Tab</kbd> 来切换顶部工具栏的显示。
+
+### 音乐 / 打击音
+
+使用 Main Volume 与 Hitsound Volume 来调整音乐音量与打击音效音量。
+
+使用 <kbd>Ctrl+H</kbd> 来开启 / 关闭打击音。
+
+### 背景亮度
+
+使用 Background Dim 调整背景亮度。
+
 ## 其它
 
 ### 全屏模式
