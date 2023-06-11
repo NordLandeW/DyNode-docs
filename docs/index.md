@@ -2,6 +2,9 @@
 home: true
 title: 主页
 heroText: DyNode
+bgImage: /sun-tornado.svg
+bgImageStyle:
+  background-attachment: fixed
 tagline: "> 另一个 Dynamix 制谱工具。"
 actions:
   - text: 快速上手

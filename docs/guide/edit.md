@@ -277,6 +277,30 @@ ffmpeg -i input -c:v libx264 -crf 20 -preset fast -an -sn -map_metadata -1 -map_
 
 使用 <kbd>Ctrl+B</kbd> 将音符显示的信息从毫秒切换至与 Dynamaker 相同的 Bar 显示。
 
+## 延迟调整
+
+你可以在 DyNode 中分别调整音乐播放与谱面音符的延迟。
+
+### 谱面音符延迟调整
+
+使用 <kbd>-/=</kbd> 来快速调整当前编辑谱面音符的延迟。
+
+使用 <kbd>U</kbd> 来手动输入延迟进行精准的调整。
+
+:::info 提示
+该延迟调整的对象为谱面中**已经存在**的所有音符与Timing Points。
+:::
+
+### 全局音乐延迟调整
+
+使用 <kbd>Ctrl + -/=</kbd> 来快速调整全局音乐播放的延迟。
+
+:::info 提示
+该延迟将与 MP3 固有的延迟 `FMOD_MP3_DELAY` 进行叠加，并且会作为配置保存在 DyNode 中。
+
+你可以在 [Timing](timing#mp3-与-wav-格式的延迟) 与 [配置](configuration) 中看到更详细的说明。
+:::
+
 ## 其它
 
 ### 全屏模式
