@@ -2,6 +2,16 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.1.12.1](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.12.1) (2023-06-17)
+
+该版本修复了 v0.1.12 中的一个主要问题。这个问题可能导致输出的谱面无法正常读取。
+
+* 修复了 XML 解析器的一个问题，其可能导致导出的谱面有概率无法被正常读取。
+  * 这个问题的原因是 XML 文件中第一行 XML Declaration 中 version 与 encoding 的属性顺序发生了错误，正确的写法应当为`<?xml version="1.0" encoding="UTF-8"?>`，而 DyNode 使用的 XML 解析器有概率将其输出为 `<?xml encoding="UTF-8" version="1.0"?>`。
+  * 这个问题可能自 `v0.1.11.5` 版本起就会发生。
+  * 移除了 XML Declaration 中的 encoding 属性。
+* 稍微提高了一点 Hold 的亮度。
+
 ## [v0.1.12](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.12) (2023-06-11)
 
 DyNode v0.1.12 相对于 v0.1.11 产生的主要变化如下。
