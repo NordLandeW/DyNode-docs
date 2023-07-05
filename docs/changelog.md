@@ -2,6 +2,18 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.1.12.2](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.12.2) (2023-07-05)
+
+该版本包含一些问题修复。
+
+* 移除了一个外部库，因此修复了其带来的一些问题，例如：
+  * OBS无法通过游戏录制捕获DyNode画面。
+  * 在对话框出现时点击游戏画面使得游戏响应变慢。
+  * 前台的 DyNode 被 Windows 识别为后台应用。
+  * 一些不明原因的卡顿问题。
+* 修复了“NOTE DELETE ERROR”报错导致的游戏终止问题。
+* Gamemaker Runtime 更新至 2023.6 。
+
 ## [v0.1.12.1](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.12.1) (2023-06-17)
 
 该版本修复了 v0.1.12 中的一个主要问题。这个问题可能导致输出的谱面无法正常读取。
