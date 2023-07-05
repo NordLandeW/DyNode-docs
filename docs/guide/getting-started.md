@@ -39,7 +39,7 @@ DyNode 从 0.1.6 版本开始将不支持 32 位系统。若你对此存在需�
 
 ### 基本操作方式
 
-DyNode 的大多数基本操作方式是 Dynamaker 的改进与增强。因此，若你熟悉 Dynamaker 的操作，则你应当可以快速上手 DyNode 更加人性化且易懂的基本操作方式。
+DyNode 的大多数基本操作方式是 Dynamaker 的修改与增强。因此，若你熟悉 Dynamaker 的操作，则你应当可以快速上手 DyNode 的基本操作方式。
 
 下面讲解 DyNode 与 Dynamaker 的主要操作区别。
 
@@ -55,7 +55,7 @@ DyNode 的大多数基本操作方式是 Dynamaker 的改进与增强。因此�
 - 可以使用 <kbd>Ctrl</kbd> + 鼠标滚轮 来进行快速的音符流速调整。若此时选中了音符，则可以进行快速的批量音符宽度调整。
 - 可以使用 <kbd>Ctrl</kbd> + <kbd>C</kbd> / <kbd>V</kbd> 来复制单个音符的宽度并批量设置选中音符的宽度。
 - 可以用 <kbd>Ctrl</kbd> + ( <kbd>Shift</kbd> + ) 方向键 来对选中音符进行微调。
-- 右键栏暂时性的没有加入 DyNode 当中。
+- 拖拽右键来快速切换编辑侧。
 
 其它基本操作/键位等与 Dynamaker 基本完全一致。
 

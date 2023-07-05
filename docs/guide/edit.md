@@ -181,12 +181,12 @@ DyNode 提供四种设置默认宽度的模式，因为在 Dynamix 中，正侧�
 
 ## 网格吸附与拍线
 
-开启纵向网格吸附与拍线的前提是正确配置 Timing Point ，详看 [校时](/guide/timing) 页面。
+开启纵向网格吸附与拍线的前提是正确配置 Timing Point ，详看 [Timing](/guide/timing) 页面。
 
 ### 节拍线
 
 :::tip 提示
-若不存在 Timing Point 或拍线在第一个 Timing Point 之前，则拍线不会被显示。
+若不存在任何 Timing Point ，则拍线不会被显示。
 :::
 使用 <kbd>↓</kbd> / <kbd>←</kbd> / <kbd>→</kbd> 来调整对应编辑侧的节拍线透明度。共三档：0% / 50% / 100% 。
 
