@@ -352,6 +352,6 @@ ffmpeg -i input -c:v libx264 -crf 20 -preset fast -an -sn -map_metadata -1 -map_
 
 使用 <kbd>Ctrl+T</kbd> 来更改谱面标题。
 
-:::hint 想要使用 Scribble 的格式标签？
+:::tip 想要使用 Scribble 的格式标签？
 在标题的任意位置处加入 `[_scribble]` 来使用 Scribble 的格式标签，此时标题将会以 Scribble 字符串格式进行解析。
 :::
