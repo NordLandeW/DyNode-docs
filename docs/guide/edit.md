@@ -325,6 +325,8 @@ ffmpeg -i input -c:v libx264 -crf 20 -preset fast -an -sn -map_metadata -1 -map_
 :::info 提示
 该延迟将与 MP3 固有的延迟 `FMOD_MP3_DELAY` 进行叠加，并且会作为配置保存在 DyNode 中。
 
+该配置仅影响 DyNode 本身播放音乐时添加的延迟，**不会对导出的谱面结果产生任何影响**。
+
 你可以在 [Timing](timing#mp3-与-wav-格式的延迟) 与 [配置](configuration) 中看到更详细的说明。
 :::
 
