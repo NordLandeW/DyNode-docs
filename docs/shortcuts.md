@@ -26,7 +26,7 @@ sidebar: false
 |           <kbd>Z</kbd>            |               切换纵向（时间）网格吸附                |
 |           <kbd>X</kbd>            |               切换横向（位置）网格吸附                |
 |   <kbd>UP / 鼠标右键拖拽</kbd>    |            切换编辑侧：DOWN / LEFT / RIGHT            |
-|  <kbd>DOWN / LEFT / RIGHT</kbd>   |     调整三面面节拍细分线不透明度：0% / 50% / 100%     |
+|  <kbd>DOWN / LEFT / RIGHT</kbd>   |      调整三面节拍细分线不透明度：0% / 50% / 100%      |
 |           <kbd>F</kbd>            |                  透明化非编辑侧音符                   |
 |           <kbd>H</kbd>            |              切换三面时间对齐高亮线显示               |
 |        <kbd>Ctrl+1/2</kbd>        |    批量设置音符（不包含 Hold）类型为：Note / Chain    |
