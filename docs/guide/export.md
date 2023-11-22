@@ -14,15 +14,6 @@
 
 .xml 谱面具体的包含内容详见 [文件格式](/guide/file-formats.html#xml) 。
 
-### 导出为 Dynamaker-modified 谱面格式
-
-该谱面格式**仅用于** Dynamaker-modified 与 DyNode 谱面编辑器的读取。以该谱面格式导出的谱面将由 DyNode 强制进行 Bar 相关的配置。这是正常的配置过程，只是这会永久覆盖你之前对 Bar 的所有手动配置。
-
-通过该谱面格式导出的谱面将包含完整的可被 Dynamaker-modified 读取的 Timing 信息。
-
-:::warning
-**以该格式导出的谱面无法用于 Dynamite 等实机调试与发布场景**，并可能存在一定的精度损失。
-:::
 ### 误差修正
 
 如果你打算将导出的谱面进行实机测试或发布，则可以在导出时使用误差修正功能。
@@ -37,12 +28,22 @@
 请确认以该功能导出的谱面不会被再次导入编辑，例如审核或修改。
 :::
 
-
 ### 在 Dynamite 上游玩
 
 .xml 谱面可以直接导入 Dynamite 进行游玩。阅读 [此处](https://www.bilibili.com/read/cv17021429) 以了解如何导入谱面。
 
-### 对校时的默认处理
+## 导出适用于 Dynamaker-modified 的谱面格式
+
+使用 <kbd>Ctrl+F5</kbd> 导出适用于 Dynamaker-modified 的谱面。
+
+通过该谱面格式导出的谱面将包含完整的可被 Dynamaker-modified 读取的 Timing 信息。
+
+:::warning
+该谱面格式**仅用于** Dynamaker-modified 谱面编辑器的读取。
+**以该格式导出的谱面无法用于 Dynamite 等实机调试与发布场景**，并可能存在一定的精度损失。
+:::
+
+## 对校时的默认处理
 
 若你的谱面不是从 Dynamaker 导入且没有设置全局 Bar 信息（这意味着你也没有设置默认 Bar 配置），则导出的 .xml 谱面中将会设置以下默认值：
 
