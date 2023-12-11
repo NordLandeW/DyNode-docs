@@ -1,8 +1,10 @@
 import { defineUserConfig } from "vuepress";
-import { hopeTheme } from "vuepress-theme-hope";
+import { hopeTheme, pwa } from "vuepress-theme-hope";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 export default defineUserConfig({
+  shouldPrefetch: false,
   locales: {
     "/": {
       lang: "zh-CN",
@@ -15,6 +17,10 @@ export default defineUserConfig({
   plugins: [
     googleAnalyticsPlugin({
       id: "	G-GHC453BDJN",
+    }),
+    searchProPlugin({
+      // 索引全部内容
+      indexContent: false,
     }),
   ],
   head: [
@@ -68,6 +74,12 @@ export default defineUserConfig({
         align: true,
         container: true,
       },
+      pwa: {
+        maxSize: 1024768,
+        maxPicSize: 1024768,
+        cachePic: true,
+        update: "hint"
+      }
     },
     hostname: "https://dyn.iorinn.moe",
 
