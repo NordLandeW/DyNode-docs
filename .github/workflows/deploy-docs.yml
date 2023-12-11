@@ -25,17 +25,14 @@ jobs:
           version: 7
           run_install: false
       
-      - name: 安装依赖
-        run: pnpm install --no-frozen-lockfile
-
       - name: 设置 Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16
           cache: pnpm
-
+      
       - name: 安装依赖
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: 构建文档
         env:
