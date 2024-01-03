@@ -2,6 +2,17 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.1.12.5](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.12.5) (2023-01-03)
+
+该版本包含一些问题修复。
+
+* 修复了 Chain 类型音符材质缺少像素的问题。
+* 现在各帧率下过渡动画的表现将保持一致。
+  * 不包含粒子动画。
+* 修复了潜在的视频无法正常播放的问题。
+* Gamemaker Runtime 更改至 v2023.11.1.160 。
+  * 此更新能够带来一些问题修复与效率改进。
+
 ## [v0.1.12.4](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.12.4) (2023-11-24)
 
 该版本包含一些问题修复与特性改动。
