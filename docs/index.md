@@ -2,7 +2,8 @@
 home: true
 title: 主页
 heroText: DyNode
-bgImage: /sun-tornado.svg
+bgImage: /low-poly-grid-haikei.svg
+bgImageDark: /layered-waves-haikei.svg
 bgImageStyle:
   background-attachment: fixed
 tagline: "> 另一个 Dynamix 制谱工具。"
@@ -17,6 +18,7 @@ actions:
     link: https://pan.baidu.com/s/1RyZdpPNNMWxifeuhUdRcow?pwd=6gwt
     type: secondary
 heroImage: /Icon.png
+heroFullScreen: true
 features:
   - title: 直观的操作逻辑
     icon: emoji
