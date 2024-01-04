@@ -1,7 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import { hopeTheme, pwa } from "vuepress-theme-hope";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
-import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 export default defineUserConfig({
   shouldPrefetch: false,
@@ -17,10 +16,6 @@ export default defineUserConfig({
   plugins: [
     googleAnalyticsPlugin({
       id: "	G-GHC453BDJN",
-    }),
-    searchProPlugin({
-      // 索引全部内容
-      indexContent: false,
     }),
   ],
   head: [
@@ -68,6 +63,9 @@ export default defineUserConfig({
   theme: hopeTheme({
     logo: "/Icon.png",
     plugins: {
+      searchPro: {
+        indexContent: false,
+      },
       mdEnhance: {
         imgSize: true,
         katex: true,
