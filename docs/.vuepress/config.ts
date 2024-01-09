@@ -63,8 +63,10 @@ export default defineUserConfig({
   theme: hopeTheme({
     logo: "/Icon.png",
     plugins: {
-      searchPro: {
-        indexContent: false,
+      docsearch: {
+        appId: "PX9VNWSCXQ",
+        apiKey: "efdef4a898675ea367912de9d00bc6f2",
+        indexName: "dyn-iorinn",
       },
       mdEnhance: {
         imgSize: true,
