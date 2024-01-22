@@ -17,7 +17,8 @@ sidebar: false
 |   <kbd>Q / Ctrl+滑轮下滚</kbd>    |                   减小音符下落速度                    |
 |   <kbd>E / Ctrl+滑轮上滚</kbd>    |                   增加音符下落速度                    |
 | <kbd>Ctrl+滑轮上滚/滑轮下滚</kbd> |            批量调整音符宽度（选择音符时）             |
-|          <kbd>Ctrl</kbd>          |              微调音符宽度（放置音符时）               |
+|          <kbd>Ctrl</kbd>          |         微调音符宽度（放置音符时）/ 多选音符          |
+|         <kbd>Ctrl+A</kbd>         |                       全选音符                        |
 |         <kbd>C / V</kbd>          |                     调整节拍细分                      |
 |           <kbd>G</kbd>            |                   调整节拍细分分组                    |
 |           <kbd>J</kbd>            |                     调整拍线样式                      |
@@ -47,6 +48,8 @@ sidebar: false
 |         <kbd>Ctrl+T</kbd>         |                     设置谱面标题                      |
 |           <kbd>N</kbd>            |                     切换简化模式                      |
 |          <kbd>Tab</kbd>           |                    切换工具栏显示                     |
+|          <kbd>Alt</kbd>           |                   显示全部音符信息                    |
+
 
 ## 高级编辑
 
@@ -87,21 +90,21 @@ sidebar: false
 
 ## 功能键 & 导入导出
 
-|       快捷键        |                 作用                  |
-| :-----------------: | :-----------------------------------: |
-|  <kbd>Ctrl+N</kbd>  |               新建项目                |
-|  <kbd>Ctrl+S</kbd>  |               保存项目                |
-|    <kbd>F1</kbd>    |               打开项目                |
-|    <kbd>F2</kbd>    |             导入谱面文件              |
-|    <kbd>F3</kbd>    |             导入音乐文件              |
-|    <kbd>F4</kbd>    |             导入背景文件              |
-| <kbd>Ctrl+F4</kbd>  |             重设所有背景              |
-|    <kbd>F5</kbd>    |           导出 XML 谱面文件           |
-| <kbd>Ctrl+F5</kbd>  |    导出 Dym-modified XML 谱面文件     |
-|    <kbd>F7</kbd>    |                 全屏                  |
-|    <kbd>F8</kbd>    |         启用/关闭自动保存功能         |
-|    <kbd>F9</kbd>    |               切换主题                |
-|   <kbd>F10</kbd>    |               重载配置                |
-|   <kbd>F11</kbd>    |             打开调试信息              |
-|   <kbd>F12</kbd>    |          快速打开快捷键列表           |
-| <kbd>Ctrl+F12</kbd> |                 截图                  |
+|       快捷键        |              作用              |
+| :-----------------: | :----------------------------: |
+|  <kbd>Ctrl+N</kbd>  |            新建项目            |
+|  <kbd>Ctrl+S</kbd>  |            保存项目            |
+|    <kbd>F1</kbd>    |            打开项目            |
+|    <kbd>F2</kbd>    |          导入谱面文件          |
+|    <kbd>F3</kbd>    |          导入音乐文件          |
+|    <kbd>F4</kbd>    |          导入背景文件          |
+| <kbd>Ctrl+F4</kbd>  |          重设所有背景          |
+|    <kbd>F5</kbd>    |       导出 XML 谱面文件        |
+| <kbd>Ctrl+F5</kbd>  | 导出 Dym-modified XML 谱面文件 |
+|    <kbd>F7</kbd>    |              全屏              |
+|    <kbd>F8</kbd>    |     启用/关闭自动保存功能      |
+|    <kbd>F9</kbd>    |            切换主题            |
+|   <kbd>F10</kbd>    |            重载配置            |
+|   <kbd>F11</kbd>    |          打开调试信息          |
+|   <kbd>F12</kbd>    |       快速打开快捷键列表       |
+| <kbd>Ctrl+F12</kbd> |              截图              |
