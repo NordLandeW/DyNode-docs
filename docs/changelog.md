@@ -2,6 +2,37 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.1.13](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.13)
+
+该版本包含新特性、问题修复与优化。
+
+### 特性与改进
+
+* 增加了 Timing 修改与修正的功能。详见 [Timing/修改 Timing Point](/guide/timing.html#修改-timing-point) 与 [Timing/Timing 修正](/guide/timing.html#timing-修正)。
+* 支持了 .dy 谱面格式的导入。
+* 现在切换小节数/时间显示将显示准确的小节数。详见 [Timing/时间与小节数](/guide/timing.html#时间与小节数)。
+* 现在对粒子效果的设置将被保存在项目中。
+* 现在 <kbd>Shift+A/D</kbd> 能加速谱面的浏览。
+* 一些其它的改进。
+
+### 本地化
+
+* 补充/改进了英语翻译。
+
+### 错误修复
+
+* 添加了针对早期版本 Dynamaker 谱面格式的导入警告并修复了相关的崩溃问题。
+
+### 功能移除
+
+* 移除了手动修改 Bar 设置的选项。
+  * 移除了全局 Bar 设置。
+
+### 文档
+
+* 现在文档将会在本地自动缓存，离线的状况下也可以进行访问。
+* 文档新增了搜索的功能。
+
 ## [v0.1.12.5](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.12.5) (2024-01-03)
 
 该版本包含一些问题修复。

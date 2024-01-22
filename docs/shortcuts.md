@@ -97,7 +97,6 @@ sidebar: false
 | <kbd>Ctrl+F4</kbd>  |             重设所有背景              |
 |    <kbd>F5</kbd>    |           导出 XML 谱面文件           |
 | <kbd>Ctrl+F5</kbd>  |    导出 Dym-modified XML 谱面文件     |
-|    <kbd>F6</kbd>    | 设置全局 Bar Per Minute 与 Bar Offset |
 |    <kbd>F7</kbd>    |                 全屏                  |
 |    <kbd>F8</kbd>    |         启用/关闭自动保存功能         |
 |    <kbd>F9</kbd>    |               切换主题                |

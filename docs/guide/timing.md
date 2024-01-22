@@ -48,6 +48,28 @@ DyNode 中添加 Timing Point 的方式共有三种。
 在使用 <kbd>Y</kbd> 来添加 Timing Point 时，你可以先选中**单个** Note ，再使用 <kbd>Y</kbd> 键，则可以直接使用选中的 Note 的时间作为 offset 。
 :::
 
+### 修改 Timing Point
+
+在想要修改 Timing Point 的时间点上放置一个 Note 并选中，按下 <kbd>Y</kbd> 即可修改该 Timing Point 的信息。按照提示输入对应格式的字符串以修改 Timing Point 的 offset，BPM 与节拍。
+
+### Timing 修正
+
+修改 Timing Point 的 offset 或 BPM 后，已经放置在该 Timing 区域下的音符很可能将无法对齐到节拍线上，且音符与音乐节奏不符的问题仍旧没有得到解决。如果遇到了此问题，你可以使用 Timing 修正功能尝试解决问题。
+
+该功能将在你修改 Timing Point 的 offset 或 BPM 后自动询问你是否执行 Timing 修正（在有音符可以修正的情况下）。
+
+该功能可以修正的错误范围存在极限。如果修正的结果有误，你随时可以撤销修改结果。
+
+:::tip Timing 修正的额外说明
+此功能将计算 Timing 区域内（Timing 的区域即为该 Timing Point 的 offset 至下一 Timing Point 的 offset 区间）音符相对于原本 Timing 的[小节数](#时间与小节数)，在修改 Timing 的 BPM 后根据原本的小节数计算得到新的绝对时间。
+
+如果 offset 也有更改，音符随后将会增加 offset 的变化量。
+
+在修正的过程中可能会出现音符修改后进入了其它未修改的 Timing 区域并弹出警告信息的情况，这意味着修正的结果可能并不正确，并需要你进行仔细检查。这个警告通常在以下两种情况下出现：
+* BPM 减小幅度过大，导致音符进入了更后面的 Timing 区域。
+* offset 减小幅度过大，导致当前 Timing 与上一 Timing 的区域互换，或者出现了其它更复杂的情况。
+:::
+
 ### 删除 Timing Point
 
 在你想要删除 Timing Point 的时间点上放置一个 Note 并选中，按下 <kbd>Ctrl+Delete</kbd> 即可删除在该时间点上的一个 Timing Point 。
@@ -72,7 +94,7 @@ DyNode 中添加 Timing Point 的方式共有三种。
 
 ### 撤销/还原
 
-使用 <kbd>Ctrl + Z/Y</kbd> 来进行撤销与还原。
+使用 <kbd>Ctrl + Z/Y</kbd> 来进行撤销与还原你对 Timing 做出的改动。
 
 ## 导入 Timing
 
@@ -84,11 +106,31 @@ DyNode 支持从 [osu file format v14](https://osu.ppy.sh/wiki/zh/Client/File_fo
 
 你可以选择从 Dynamaker 或 Dynamaker-modified 中导入完整的 BPM 信息，而无需再作额外的校正工作。
 
-## DyNode 与 Bar
+## 时间与小节数
 
-Dynamaker 中引入 Bar 的概念便于在 Dynamaker 中以固定的节拍线格式或文本方式进行直接编辑，而实际上谱面的播放仍旧基于时间逻辑。DyNode 提供了更加灵活的节拍线与可变 BPM 设置，因此弃用了 Bar 相关的概念，将所有编辑与播放过程全部基于时间与 BPM (Beats Per Minute) 逻辑。
+类似 Dynamaker 的 Bar，DyNode 也可以通过各种方式查看音符的小节数。在 DyNode 中，小节数代表时间所在的准确小节，这与所在 Timing 的 BPM 与 节拍 (Meter) 都存在关系。举例而言，若当前 Timing 的节拍为 $3/4$ 拍，则节拍数 $13+\frac{1}{3}=13.333\dots$ 所在的时间为第 $13$ 小节之后的一个四分音符，因为这个小节被三个四分音符等分。
 
-DyNode 同时提供了对 Bar 导入/导出功能的完整支持。
+在正面节拍线的右侧，形如 `X --- Y/4` 的数字描述了当前时间所在的小节数为第 $X$ 小节之后的第 $Y$ 个四分音符处。
+
+在音符信息的右上角，形如 `X + Y/Z (D)` 的数字描述了当前音符在上一次网格吸附后的所在小节数为第 $X + \frac{Y}{Z}$ 小节，$D$ 描述了这个音符为 $D$ 分音符。这个信息只在特定的情况下能够准确显示。
+
+:::tip 关于 Z 、D 参数与小节数
+在一些情况下 $Z\neq D$ 的原因在于一个小节并不一定为四个四分音符的长度（四拍子），它的长度也可能是三个四分音符（三拍子）。若当前所在的 Timing 为三拍子（三个四分音符为一拍），此时假若你想放置 16 分音符（节拍细分为 $1/4$，$D=16$），则 12 个 16 分音符的长度与一个小节的长度相等（$Z=12$）。$Z$ 这一参数表明了一个小节中包含了多少个 $D$ 分音符。
+:::
+
+在 DyNode 中，一个 Timing Point 的起点一定会是一个新的小节，即使上一个小节没有完全结束。
+
+你可以使用 [切换小节数/时间显示](/guide/edit.html#切换小节数-时间显示) 将音符信息左上角的时间更改为实数形式的准确小节数 $X + \frac{Y}{Z}$。
+
+## Dynamaker 与 Bar
+
+Dynamaker 中所使用的 Bar 概念便于在 Dynamaker 中以节拍数方式进行直接编辑。
+
+类似 osu! ，DyNode 的大部分逻辑皆基于绝对时间进行处理，例如谱面的播放、谱面的读取与导出。以此种方式，DyNode 能够提供灵活的编辑方式与编辑工具。
+
+在谱面导入或导出时，DyNode 对时间到 Bar 的转换皆进行了完整的处理，因此无需担心谱面的兼容性问题。
+
+DyNode 中仍旧会显示小节与小节数，但他们与 Dynamaker 所使用的 Bar 概念可能有所不同。
 
 ## MP3 与 WAV 格式的延迟
 

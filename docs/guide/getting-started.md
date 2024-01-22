@@ -65,7 +65,7 @@ DyNode 提供从 Dynamaker 直接导入谱面的方式。
 
 在开始界面时，你应当选择“创建项目”而非“打开已有项目”。项目在 DyNode 中是一个独立的概念，所有项目的信息将以 JSON 形式被储存在以 ".dyn" 为后缀结尾的文件中。详见 [项目](/guide/project.md) 。
 
-![创建项目](https://user-images.githubusercontent.com/31349569/183947720-5340d57b-922e-4676-a555-dd9410b1e3cc.png)
+![创建项目](project_create.png)
 
 如果你已经在 Dynamaker 有正在编辑的谱面，则你可以在此创建项目页面中直接导入 Dynamaker 中的谱面。
 
@@ -101,7 +101,7 @@ DyNode 提供从 Dynamaker 直接导入谱面的方式。
 
 以某谱面为例，正常的编辑界面应当如下（此时节拍细分默认为 1/4）：
 
-![](https://user-images.githubusercontent.com/31349569/183874896-c247e938-b8db-4afa-b95c-453a6d9027a4.png)
+![](bad-chart.png)
 
 ### 在这之后...
 
