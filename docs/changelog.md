@@ -6,13 +6,14 @@
 
 该版本包含新特性、问题修复与优化。
 
-### 特性与改进
+### 新特性
 
-* 增加了 Timing 修改与修正的功能。详见 [Timing/修改 Timing Point](/guide/timing.html#修改-timing-point) 与 [Timing/Timing 修正](/guide/timing.html#timing-修正)。
-* 支持了 .dy 谱面格式的导入。
+* 添加了 Timing 修改与修正的功能。详见 [Timing/修改 Timing Point](/guide/timing.html#修改-timing-point) 与 [Timing/Timing 修正](/guide/timing.html#timing-修正)。
+* 现在支持多选不同侧面的音符并对其进行批量操作。详见 [谱面编辑/异侧多选](/guide/edit.html#异侧多选)。
 * 现在切换小节数/时间显示将显示准确的小节数。详见 [Timing/时间与小节数](/guide/timing.html#时间与小节数)。
+* 支持了 .dy 谱面格式的导入。
 * 现在对粒子效果的设置将被保存在项目中。
-* 现在 <kbd>Shift+A/D</kbd> 能加速谱面的浏览。
+* 现在按住 <kbd>Shift</kbd> 能加速 <kbd>A/D</kbd> 的调整速度。
 * 一些其它的改进。
 
 ### 本地化
