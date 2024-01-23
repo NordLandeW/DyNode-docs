@@ -2,7 +2,7 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
-## [v0.1.13](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.13)
+## [v0.1.13](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.13) (2024-01-23)
 
 该版本包含新特性与问题修复。
 
@@ -10,6 +10,7 @@
 
 * 添加了 Timing 修改与修正的功能。详见 [Timing/修改 Timing Point](/guide/timing.html#修改-timing-point) 与 [Timing/Timing 修正](/guide/timing.html#timing-修正)。
 * 现在支持多选不同侧面的音符并对其进行批量操作。详见 [谱面编辑/异侧多选](/guide/edit.html#异侧多选)。
+* 现在支持同时对左右两侧的音符进行编辑操作。详见 [谱面编辑/双侧编辑](/guide/edit.html#双侧编辑)。
 * 现在切换小节数/时间显示将显示准确的小节数。详见 [Timing/时间与小节数](/guide/timing.html#时间与小节数)。
 * 现在在视觉一致的默认宽度模式下，粘贴/吸附的音符也会自动调整宽度。
 * 支持了 .dy 谱面格式的导入。
@@ -32,6 +33,7 @@
 * 对多处过渡动画进行了修正与改进。
   * 避免了不必要的过渡。
   * 修正了部分不自然的闪烁。
+* 修复了一些多语言的错误。
 * 一些其它的改进。
 
 ### 功能移除
