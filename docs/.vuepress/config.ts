@@ -10,9 +10,14 @@ export default defineUserConfig({
       title: "DyNode",
       description: "另一个 Dynamix 谱面编辑器",
     },
+    "/en/": {
+      lang: "en-US",
+      title: "DyNode",
+      description: "Yet another Dynamix charting tool",
+    },
   },
   title: "DyNode",
-  description: "Yet another dynamix charting tool.",
+  description: "Yet another Dynamix charting tool.",
   plugins: [
     googleAnalyticsPlugin({
       id: "	G-GHC453BDJN",
@@ -72,43 +77,75 @@ export default defineUserConfig({
         imgSize: true,
         katex: true,
         align: true,
-        container: true,
+        hint: true,
       },
       pwa: {
         maxSize: 1024768,
         maxPicSize: 1024768,
         cachePic: true,
-        update: "hint"
-      }
+        update: "hint",
+      },
     },
     hostname: "https://dyn.iorinn.moe",
+    locales: {
+      "/": {
+        navbar: [
+          {
+            text: "主页",
+            link: "/",
+          },
+          {
+            text: "指南",
+            link: "/guide/",
+          },
+          {
+            text: "快捷键",
+            link: "/shortcuts",
+          },
+          {
+            text: "常见问题",
+            link: "/FAQ",
+          },
+          {
+            text: "更新日志",
+            link: "/changelog",
+          },
+          {
+            text: "关于",
+            link: "/about",
+          },
+        ],
+      },
 
-    navbar: [
-      {
-        text: "主页",
-        link: "/",
+      "/en/": {
+        navbar: [
+          {
+            text: "Home",
+            link: "/en/",
+          },
+          {
+            text: "Guide",
+            link: "/en/guide/",
+          },
+          {
+            text: "Shortcuts",
+            link: "/en/shortcuts",
+          },
+          {
+            text: "FAQ",
+            link: "/en/FAQ",
+          },
+          {
+            text: "Changelog",
+            link: "/en/changelog",
+          },
+          {
+            text: "About",
+            link: "/en/about",
+          },
+        ],
       },
-      {
-        text: "指南",
-        link: "/guide/",
-      },
-      {
-        text: "快捷键",
-        link: "/shortcuts",
-      },
-      {
-        text: "常见问题",
-        link: "/FAQ",
-      },
-      {
-        text: "更新日志",
-        link: "/changelog",
-      },
-      {
-        text: "关于",
-        link: "/about",
-      },
-    ],
+    },
 
     repo: "NagaseIori/DyNode",
 
@@ -124,6 +161,18 @@ export default defineUserConfig({
         "/guide/advanced-edit.md",
         "/guide/configuration.md",
         "/guide/file-formats.md",
+      ],
+      "/en/guide": [
+        "/en/guide/index.md",
+        "/en/guide/getting-started.md",
+        "/en/guide/project.md",
+        "/en/guide/timing.md",
+        "/en/guide/edit.md",
+        "/en/guide/import.md",
+        "/en/guide/export.md",
+        "/en/guide/advanced-edit.md",
+        "/en/guide/configuration.md",
+        "/en/guide/file-formats.md",
       ],
     },
 
