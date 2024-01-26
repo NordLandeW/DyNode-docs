@@ -9,7 +9,7 @@ bgImageStyle:
 tagline: "> Yet Another Dynamix Charting Tool."
 actions:
   - text: Get Started
-    link: /guide/getting-started.html
+    link: /en/guide/getting-started.html
     type: primary
   - text: Github Releases
     link: https://github.com/NagaseIori/DyNode/releases/latest
