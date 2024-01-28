@@ -2,6 +2,12 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.1.13.1](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.13.1) (2024-01-28)
+
+该版本包含一个问题修复。
+
+* 修复了拖动 Hold 音符尾部导致游戏崩溃的问题。
+
 ## [v0.1.13](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.13) (2024-01-23)
 
 该版本包含新特性与问题修复。

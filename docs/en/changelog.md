@@ -2,6 +2,12 @@
 
 This page contains detailed explanations and guidelines for version updates of DyNode.
 
+## [v0.1.13.1](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.13.1) (2024-01-28)
+
+This release contains a bug fix.
+
+* Fixed an issue where dragging the tail of a Hold note caused the game to crash.
+
 ## [v0.1.13](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.13) (2024-01-23)
 
 This version includes new features and bug fixes.
