@@ -99,18 +99,19 @@ DyNode 的显示主题。
 
 放置音符拖动调整音符宽度的触发阈值，以音符宽度为单位。
 
+### FMOD_MP3_DELAY
+
+* 类型：`number`
+* 默认值：`0`
+
+FMOD 播放 .mp3 格式文件时的延迟时间（以毫秒计）。详见 [校时](/guide/timing.html#mp3-与-wav-格式的延迟处理) 。
+
 ## 进阶配置
 
 :::warning
 除非必要，否则建议保持这些项目为默认值。
 :::
 
-### FMOD_MP3_DELAY
-
-* 类型：`number`
-* 默认值：`60.0`
-
-FMOD 播放 .mp3 格式文件时的延迟时间（以毫秒计）。详见 [校时](/guide/timing.html#mp3-与-wav-格式的延迟处理) 。
 
 ### ANNOUNCEMENT_MAX_LIMIT
 
