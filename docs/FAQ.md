@@ -20,34 +20,21 @@ toc: false
 **A:** 你可能没有正确或没有配置 Timing Point 。或者你可能并非处在编辑模式。
 
 -----------
-**Q:** 为什么不支持 Windows 32 位版本？
-
-**A:** YoYoGames 在他们 Gamemaker 的 Runtime 2022.8 版本中取消了对 Windows x86 的支持，同时 DyNode 使用了 Gamemaker 最新版本的新特性与性能改进、问题修复，因此在之后很可能不会再提供 Windows 32-bit 的支持。
-
-
------------
 **Q:** 我的屏幕刷新率是 144+，为什么 DyNode 运行在 60 帧？
 
-**A:** 你可能开了 G-SYNC 等 VRR 技术。你可以在运行一次 DyNode 后，编辑程序目录下的 config.json，将其中 FPS 一项改为你想要的限制帧率。详见 [配置](/guide/configuration.html#fps) 。
+**A:** 如果 DyNode 没有自动按你想要运行的帧率运行，你可以编辑程序目录下的 config.json，将其中 FPS 一项改为你想要的限制帧率。详见 [配置](/guide/configuration.html#fps) 。
 
 -----------
 **Q:** 我想关闭自动更新提示。
 
-**A:** 编辑程序目录下的 config.json，将其中 autoupdate 一项改为 0，只是并不建议这么做——处于测试阶段的 DyNode 所具有的许多问题可能因此无法得到及时修复😔。
+**A:** 编辑程序目录下的 config.json，将其中 autoupdate 一项改为 0，只是并不建议这么做——DyNode 所具有的许多问题可能因此无法得到及时修复😔。
 
 -----------
-**Q:** 这是用什么东西/软件/引擎做的？
+**Q:** DyNode 使用的引擎是？
 
-**A:** Gamemaker.
+**A:** Gamemaker。
 
 -----------
-**Q:** icon 为什么是...
+**Q:** icon 是？
 
 **A:** Sapphire 可爱！以及十分欢迎您为 DyNode 提供更好的 icon 方案 。
-
------------
-**Q:** 为什么要制作 DyNode ？
-
-**A:**
-![0](https://user-images.githubusercontent.com/31349569/184602740-20c4f7f8-9d25-486f-94d8-422cbc625890.png)
- 

@@ -2,6 +2,15 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.1.13.4](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.13.4) (2024-05-12)
+
+该版本包含一些小的问题修复。
+
+* 修复了稀少情况下的精度损失可能导致左右侧的同一时间的音符放置不对齐的问题。
+* 修复了误差修正功能可能忽略谱面结尾音符的问题。
+* 新增了对误差修正功能的配置`offsetCorrection`，你可以使用此配置调整该功能的修正范围。
+* Gamemaker Runtime 版本更改至 2024.4 。
+
 ## [v0.1.13.3](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.13.3) (2024-04-12)
 
 该版本包含一些问题修复。
