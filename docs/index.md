@@ -56,8 +56,8 @@ footer: MIT Licensed | Copyright © 2023 NagaseIori
 * 内存：4GB RAM
 :::
 
-:::warning Beta 注意
-DyNode 仍处于较不稳定的测试阶段... 因此我们强烈建议你不要使用过于老旧的 DyNode 版本！
+:::tip 对旧版本的提示
+我们建议避免使用过于老旧的 DyNode 版本。
 
 如果你使用旧版本遇到了很多奇怪的 bug，它们很可能在新版本里面已经被修复。DyNode 是一个目前仍在积极维护的项目，因此如果你在新版本里仍旧遇到了奇怪的 bug，我们十分欢迎你通过下面介绍的各种方式向开发者进行反馈 ❤
 :::
@@ -81,6 +81,6 @@ QQ 交流/反馈群：347048298
 
 如果你在使用 DyNode 的过程中遇到了任何问题，可以 [提交 Issue](https://github.com/NagaseIori/DyNode/issues/new) 来反馈，或是前往 [Discussions](https://github.com/NagaseIori/DyNode/discussions) 进行求助。
 
-如果不出意外，我们会很快速地回答你的疑问与反馈喵。
+如果不出意外，Iori 会很快速地回答你的疑问与反馈喵。
 
 *当然也没必要期待以光速回复。*
