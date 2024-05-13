@@ -34,7 +34,7 @@ features:
     link: /guide/project
   - title: 从 Dynamaker 开始
     icon: light
-    details: 使用来自 Dynamaker 的经验与记忆快上手 DyNode。
+    details: 使用来自 Dynamaker 的经验与记忆上手 DyNode。
     link: /guide/getting-started.html#从-dynamaker-开始
   - title: 轻量而高效
     icon: launch
