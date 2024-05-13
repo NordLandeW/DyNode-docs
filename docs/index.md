@@ -32,9 +32,9 @@ features:
     icon: folder
     details: 用一个文件来集中保存谱面的所有信息。
     link: /guide/project
-  - title: 从 Dynamaker 快速开始
+  - title: 从 Dynamaker 开始
     icon: light
-    details: 使用来自 Dynamaker 的经验与记忆快速上手 DyNode。
+    details: 使用来自 Dynamaker 的经验与记忆快上手 DyNode。
     link: /guide/getting-started.html#从-dynamaker-开始
   - title: 轻量而高效
     icon: launch
@@ -46,14 +46,15 @@ features:
     icon: update
     details: DyNode 仍在持续不断地改进与开发中：新功能，更少的错误，更快的性能。
 
-footer: MIT Licensed | Copyright © 2023 NagaseIori
+footer: MIT Licensed | Copyright © 2024 NagaseIori
 ---
 
 
 ## 🚀 安装与使用
-:::info 最低系统要求
-* 操作系统：Windows 7/10/11 64位 （32位 仅 0.1.5 以前）
-* 内存：4GB RAM
+:::info 建议系统要求
+* 操作系统：Windows 10/11 64位
+* 内存：8GB RAM
+* GPU：支持 DirectX 11 / 建议使用独立显卡
 :::
 
 :::tip 对旧版本的提示
@@ -81,6 +82,6 @@ QQ 交流/反馈群：347048298
 
 如果你在使用 DyNode 的过程中遇到了任何问题，可以 [提交 Issue](https://github.com/NagaseIori/DyNode/issues/new) 来反馈，或是前往 [Discussions](https://github.com/NagaseIori/DyNode/discussions) 进行求助。
 
-如果不出意外，Iori 会很快速地回答你的疑问与反馈喵。
+如果不出意外，$\text{Iori}$ 会很快速地回答你的疑问与反馈喵。
 
 *当然也没必要期待以光速回复。*
