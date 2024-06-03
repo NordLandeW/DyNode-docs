@@ -38,7 +38,7 @@
 
 ## 导出适用于 Dynamaker-modified 的 XML 谱面格式
 
-使用 <kbd>Ctrl+F5</kbd> 导出适用于 Dynamaker-modified 的 XML 谱面。
+使用 <kbd>F6</kbd> 导出适用于 Dynamaker-modified 的 XML 谱面。
 
 通过该谱面格式导出的谱面将包含完整的可被 Dynamaker-modified 读取的 Timing 信息。
 
