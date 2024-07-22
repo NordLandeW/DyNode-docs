@@ -389,6 +389,14 @@ DyNode 将为谱面内的所有音符与Timing Points所在的时间**加上**�
 
 ## 其它
 
+### 自动保存项目
+
+使用 <kbd>F8</kbd> 来启用自动保存项目。
+
+默认情况下每三分钟对项目进行一次自动保存。要使自动保存生效，你至少需要手动保存一次项目。
+
+你可以在 [配置](/guide/configuration.md#autosavetime) 中使用 `autoSaveTime` 一项修改这个间隔。
+
 ### 全屏模式
 
 使用 <kbd>F7</kbd> 来切换无边框全屏。

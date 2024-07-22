@@ -5,14 +5,14 @@
 所有 DyNode 的配置都在第一次启动并关闭后自动存储在文件 `config.json` 中。
 
 :::tip
-要使改动生效，使用 <kbd>F10</kbd> 来重载配置。
+请在关闭 DyNode 的情况下修改 `config.json` 以使你的改动生效。
 :::
 
 ## 基础配置
 
 ### fullscreen
 
-* 类型：`boolean`
+* 类型：`true | false`
 * 默认值：`false`
 
 启动时是否为全屏模式。将会记录上一次 DyNode 时关闭的全屏状态。
@@ -39,7 +39,7 @@ DyNode 运行的帧率。
 
 ### autosave
 
-* 类型：`boolean`
+* 类型：`true | false`
 * 默认值：`false`
 
 是否开启自动保存。
@@ -60,7 +60,7 @@ DyNode 的显示主题。
 
 ### autoupdate
 
-* 类型：`boolean`
+* 类型：`true | false`
 * 默认值：`true`
 
 是否开启自动检查更新。
@@ -71,7 +71,7 @@ DyNode 的显示主题。
 
 ### simplify
 
-* 类型：`boolean`
+* 类型：`true | false`
 * 默认值：`false`
 
 是否开启简化模式。
@@ -87,7 +87,7 @@ DyNode 的显示主题。
 
 #### graphics.VSync
 
-* 类型：`boolean`
+* 类型：`true | false`
 * 默认值：`true`
 
 是否开启垂直同步。
@@ -104,10 +104,17 @@ DyNode 的显示主题。
 
 * 类型：`real`
 * 默认值：`2`
+* 最小值：`0`
 
 谱面导出时误差修正功能的修正范围，将相差时间在该范围内的音符以区间内的第一个音符为准进行对齐。单位为毫秒。
 
-该配置的最小允许值为0。
+### autoSaveTime
+
+* 类型：`real`
+* 默认值：`180`
+* 最小值：`1`
+
+谱面自动保存的间隔时间。以秒为单位。
 
 ### FMOD_MP3_DELAY
 
@@ -122,13 +129,19 @@ FMOD 播放 .mp3 格式文件时的延迟时间（以毫秒计）。详见 [校�
 除非必要，否则建议保持这些项目为默认值。
 :::
 
+### VIDEO_UPDATE_FREQUENCY
+
+* 类型：`number`
+* 默认值：`60`
+
+播放视频时所使用的刷新频率。以赫兹（Hz）为单位。
 
 ### ANNOUNCEMENT_MAX_LIMIT
 
 * 类型：`number`
 * 默认值：`7`
 
-右下角提醒信息条数的最大限制值。
+右下角提醒信息条数的最大限制值。超过限制值的提醒信息将被优先移除。
 
 ## 信息
 
