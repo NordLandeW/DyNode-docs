@@ -99,8 +99,8 @@ sidebar: false
 |    <kbd>F3</kbd>    |           导入音乐文件           |
 |    <kbd>F4</kbd>    |           导入背景文件           |
 | <kbd>Ctrl+F4</kbd>  |           重设所有背景           |
-|    <kbd>F5</kbd>    |        导出 XML 谱面文件         |
-| <kbd>Ctrl+F5</kbd>  |  导出 Dym-modified XML 谱面文件  |
+|    <kbd>F5</kbd>    |      导出实机 XML 谱面文件       |
+|    <kbd>F6</kbd>    |  导出 Dym-modified XML 谱面文件  |
 | <kbd>Ctrl+F6</kbd>  | 随机化谱面（将关闭自动保存功能） |
 |    <kbd>F7</kbd>    |               全屏               |
 |    <kbd>F8</kbd>    |      启用/关闭自动保存功能       |

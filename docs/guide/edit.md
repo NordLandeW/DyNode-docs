@@ -400,3 +400,7 @@ DyNode 将为谱面内的所有音符与Timing Points所在的时间**加上**�
 :::tip 想要使用 Scribble 的格式标签？
 在标题的任意位置处加入 `[_scribble]` 来使用 Scribble 的格式标签，此时标题将会以 Scribble 字符串格式进行解析。
 :::
+
+### 更改谱面难度
+
+使用 <kbd>Ctrl+O/P</kbd> 来更改谱面难度。
