@@ -105,7 +105,6 @@ sidebar: false
 |    <kbd>F7</kbd>    |               全屏               |
 |    <kbd>F8</kbd>    |      启用/关闭自动保存功能       |
 |    <kbd>F9</kbd>    |             切换主题             |
-|   <kbd>F10</kbd>    |             重载配置             |
 |   <kbd>F11</kbd>    |           打开调试信息           |
 |   <kbd>F12</kbd>    |        快速打开快捷键列表        |
 | <kbd>Ctrl+F12</kbd> |               截图               |
