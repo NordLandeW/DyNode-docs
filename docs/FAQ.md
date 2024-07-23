@@ -25,11 +25,6 @@ toc: false
 **A:** 如果 DyNode 没有自动按你想要运行的帧率运行，你可以编辑程序目录下的 config.json，将其中 FPS 一项改为你想要的限制帧率。详见 [配置](/guide/configuration.html#fps) 。
 
 -----------
-**Q:** 我想关闭自动更新提示。
-
-**A:** 编辑程序目录下的 config.json，将其中 autoupdate 一项改为 0，只是并不建议这么做——DyNode 所具有的许多问题可能因此无法得到及时修复😔。
-
------------
 **Q:** DyNode 使用的引擎是？
 
 **A:** Gamemaker。

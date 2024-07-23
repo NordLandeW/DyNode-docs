@@ -4,7 +4,7 @@
 
 ## 下载 & 安装
 
-你可以在 [主页](/) 上选择一个选项下载 DyNode 对应平台的最新版本。
+你可以在 [主页](/) 上选择一个选项下载 DyNode 对应平台的最新版本。在运行 DyNode 前，系统上应当已经安装最新版本的 [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) 。
 
 如果国内用户访问 Github 存在困难，则可以使用网盘的方式进行下载。
 
