@@ -50,4 +50,4 @@ DyNode 的项目包含制作谱面所需的全部信息。如难度、标题、�
 
 ## 另存为项目
 
-使用 <kbd>Ctrl+Shift+S</kbd> 来使用另存为项目。
+使用 <kbd>Ctrl+Shift+S</kbd> 来另存为项目。
