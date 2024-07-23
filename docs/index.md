@@ -38,7 +38,7 @@ features:
     link: /guide/getting-started.html#从-dynamaker-开始
   - title: 轻量而高效
     icon: launch
-    details: 仅 30M 的程序包体积，高速加载、编辑、导入与导出各种格式的谱面。
+    details: 轻量的程序包体积，高速加载、编辑、导入与导出各种格式的谱面。
   - title: 流畅的画面表现
     icon: play
     details: 重新调整的过渡动画与粒子效果，流畅的编辑过程与谱面预览，支持高刷新率。
@@ -55,6 +55,8 @@ footer: MIT Licensed | Copyright © 2024 NagaseIori
 * 操作系统：Windows 10/11 64位
 * 内存：8GB RAM
 * GPU：支持 DirectX 11 / 建议使用独立显卡
+
+在运行 DyNode 前，系统上应当已经安装最新版本的 [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) 。
 :::
 
 :::tip 对旧版本的提示
