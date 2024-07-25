@@ -2,7 +2,7 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
-## [v0.1.15.1](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.15.1) (2024-07-25)
+## [v0.1.15](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.15) (2024-07-25)
 
 该版本包含新功能与一些问题修复。
 
