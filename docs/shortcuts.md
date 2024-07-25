@@ -32,6 +32,7 @@ sidebar: false
 |           <kbd>H</kbd>            |              切换三面时间对齐高亮线显示               |
 |        <kbd>Ctrl+1/2</kbd>        |    批量设置音符（不包含 Hold）类型为：Note / Chain    |
 |         <kbd>Ctrl+C</kbd>         |          复制宽度（选择单个音符） / 复制音符          |
+|         <kbd>Ctrl+D</kbd>         |             快速复制音符到下一个节拍线上              |
 |         <kbd>Ctrl+V</kbd>         | 进入粘贴模式（不选择音符） / 批量设置宽度（选择音符） |
 |    <kbd>Ctrl+Left/Right</kbd>     |                   切换粘贴中心音符                    |
 |   <kbd>Ctrl(+Alt)+方向键</kbd>    |                   微调选中音符位置                    |

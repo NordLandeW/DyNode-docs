@@ -94,6 +94,12 @@ DyNode 共有五种编辑模式，以数字键 <kbd>1</kbd> ~ <kbd>5</kbd> 来�
 ![Copy](select_note.gif =400x)
 :::
 
+使用 <kbd>Ctrl</kbd> + <kbd>D</kbd> 可以快速复制选中的音符到这些音符中的最晚音符之后的下一个节拍线上。
+
+:::center
+![Quick Duplicate](quick_duplicate.gif =600x)
+:::
+
 #### 粘贴音符
 
 在复制音符后，按下 <kbd>Ctrl</kbd> + <kbd>V</kbd> ，在适当的位置像放置普通音符那样放置复制音符即可。
@@ -406,7 +412,9 @@ DyNode 将为谱面内的所有音符与Timing Points所在的时间**加上**�
 
 使用 <kbd>F8</kbd> 来启用自动保存项目。
 
-默认情况下每三分钟对项目进行一次自动保存。要使自动保存生效，你至少需要手动保存一次项目。
+默认情况下每三分钟对项目进行一次自动保存。自动保存将会备份旧的项目文件到当前目录的子目录 `backups` 下。
+
+要使自动保存生效，你至少需要手动保存一次项目。
 
 你可以在 [配置](/guide/configuration.md#autosavetime) 中使用 `autoSaveTime` 一项修改这个间隔。
 
