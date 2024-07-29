@@ -10,6 +10,15 @@
 
 ## 基础配置
 
+### analytics
+
+* 类型：`true | false`
+* 默认值：`true`
+
+设置为 `false` 来完全关闭数据收集功能。
+
+数据收集的范围请参见 [快速上手/下载 & 安装](getting-started.md)。
+
 ### fullscreen
 
 * 类型：`true | false`

@@ -59,10 +59,16 @@ footer: MIT Licensed | Copyright © 2024 NagaseIori
 在运行 DyNode 前，系统上应当已经安装最新版本的 [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) 。
 :::
 
-:::tip 对旧版本的提示
-我们建议避免使用过于老旧的 DyNode 版本。
+:::tip Beta 提示
+DyNode 仍处于测试阶段。我们建议避免使用过于老旧的 DyNode 版本，你同时可以启用 [自动保存](guide/edit.md#自动保存项目) 功能以最大限度的保留你的项目进度。
 
 如果你使用旧版本遇到了很多奇怪的 bug，它们很可能在新版本里面已经被修复。DyNode 是一个目前仍在积极维护的项目，因此如果你在新版本里仍旧遇到了奇怪的 bug，我们十分欢迎你通过下面介绍的各种方式向开发者进行反馈 ❤
+:::
+
+:::info 数据收集
+为了改进 DyNode 项目的开发过程，安装 DyNode 时默认启用了最低限度的匿名数据收集功能。
+
+有关数据收集的详情、范围和关闭方法，请参见 [快速上手/下载 & 安装](guide/getting-started.md)。
 :::
 
 
