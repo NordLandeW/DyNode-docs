@@ -4,7 +4,11 @@
 
 ## 下载 & 安装
 
-你可以在 [主页](/) 上选择一个选项下载 DyNode 对应平台的最新版本。在运行 DyNode 前，系统上应当已经安装最新版本的 [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) 。
+在运行 DyNode 前，系统上应当已经安装最新版本的 [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) 。
+
+### 普通下载
+
+你可以在 [主页](/) 上选择一个选项下载 DyNode 对应平台的最新版本。
 
 如果国内用户访问 Github 存在困难，则可以使用网盘的方式进行下载。
 
@@ -22,6 +26,13 @@ DyNode 从 0.1.6 版本开始将不支持 32 位系统。若你对此存在需�
 
 你可以随时在 [配置](configuration.md) 中完全关闭数据收集功能。
 :::
+
+### 自行构建
+
+构建项目需要使用最新版本的 Gamemaker ，使用 `GMS2 VM`/`GMS2 YYC` 方式进行编译。若你使用 `GMS2 YYC` 方式进行编译，你还需要安装 Visual Studio 2022，并对 Gamemaker 作出[相应的设置](https://help.gamemaker.io/hc/en-us/articles/235186048-Setting-Up-For-Windows)。你可以通过访问 Gamemaker 官网或其 Steam 页面来获取 Gamemaker。对于非商业用途，使用 Gamemaker 构建项目不需要付费许可证。自行构建的项目默认不包含任何数据收集功能。
+
+项目内已经包含 DyCore 的预编译二进制文件。如果你需要自行构建 DyCore，请安装 CMake、LLVM 和 Ninja 工具链，并使用 `x64 Release` 配置进行编译与安装。
+
 ## 从 DyNode 开始
 
 :::info 提示
