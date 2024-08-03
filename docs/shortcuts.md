@@ -49,7 +49,7 @@ sidebar: false
 |         <kbd>Ctrl+T</kbd>         |                     设置谱面标题                      |
 |           <kbd>N</kbd>            |                     切换简化模式                      |
 |          <kbd>Tab</kbd>           |                    切换工具栏显示                     |
-|          <kbd>Alt</kbd>           |                   显示全部音符信息                    |
+|         <kbd>右Alt</kbd>          |                   显示全部音符信息                    |
 
 
 ## 高级编辑
