@@ -2,6 +2,14 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.1.16.1](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.1) (2024-08-09)
+
+该版本包含一个问题修复。
+
+* 修复了关于选中音符后创建 Timing Point 引发的崩溃等问题。
+  * 游戏可能因此崩溃。
+  * 可能错误地被视为修改 Timing Point 的功能。
+
 ## [v0.1.16](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16) (2024-08-03)
 
 该版本包含性能优化与问题修复。
