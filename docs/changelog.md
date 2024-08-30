@@ -2,6 +2,13 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.1.16.2](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.2) (2024-08-30)
+
+该版本包含数个问题修复。
+
+* 修复了偶发性的启动时崩溃问题。
+* 修复了IO的清空过于频繁导致功能键读入丢失的问题。
+
 ## [v0.1.16.1](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.1) (2024-08-09)
 
 该版本包含一个问题修复。
