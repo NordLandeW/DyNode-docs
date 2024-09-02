@@ -84,7 +84,7 @@ QQ 交流/反馈群：347048298
 你可以直接在此处交流/反馈/获取工具与最新消息/与开发者激情对线，也有可能通过测试版帮助直接改进DyNode！😇
 :::
 
-:::info DyNode 是什么？我其实只是想知道怎么使用 Dynamaker！
+:::info 我其实只是想知道怎么使用 Dynamaker！
 我们的文档里没有详细描写 Dynamaker 的使用方法与下载方式😢 不过你可以在 [这里](https://tlchicken.github.io/dynamaker-guide/) 找到由 TLChicken 维护的 Dynamaker 使用指南（英文），并前往由 Jmak 等人制作的 Dynamaker-modified 的 [项目页面](https://github.com/jmakxd/dynamaker-modified) 下载使用 Electron 打包分发的版本。你也可以在 [这里](https://dym.iorinn.moe/app/src) 使用 Dynamaker-modified 的网页分发版本。
 :::
 
