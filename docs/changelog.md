@@ -2,6 +2,13 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.1.16.3](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.3) (2024-09-18)
+
+该版本包含数个问题修复。
+
+* 修复了.dyn文件无法被正确导入的问题。
+* 修复了导入时谱面信息未被完全清空导致崩溃的问题。
+
 ## [v0.1.16.2](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.2) (2024-08-30)
 
 该版本包含数个问题修复。

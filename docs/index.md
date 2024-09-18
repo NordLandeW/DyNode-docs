@@ -46,7 +46,7 @@ features:
     icon: update
     details: DyNode 仍在持续不断地改进与开发中：新功能，更少的错误，更快的性能。
 
-footer: MIT Licensed | Copyright © 2024 NagaseIori
+footer: MIT Licensed | Copyright © 2024 NordLandeW
 ---
 
 
