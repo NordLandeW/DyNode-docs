@@ -2,6 +2,13 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.1.16.4](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.4) (2024-10-12)
+
+该版本包含数个问题修复。
+
+* 修复了快速复制中音符无法吸附到屏幕外的节拍线的问题。
+* 修复了在一些情况下输入状态未被正确清空的问题。
+
 ## [v0.1.16.3](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.3) (2024-09-18)
 
 该版本包含数个问题修复。
