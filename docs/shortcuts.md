@@ -42,6 +42,7 @@ sidebar: false
 |         <kbd>Ctrl+R</kbd>         |                 侧面对称复制选中音符                  |
 |          <kbd>Esc</kbd>           |                     退出粘贴模式                      |
 |   <kbd>Delete / Backspace</kbd>   |                       删除音符                        |
+|   <kbd>Delete + Backspace</kbd>   |                     删除全部音符                      |
 |         <kbd>Enter</kbd>          |                       回放谱面                        |
 |         <kbd>Ctrl+Z</kbd>         |                       撤销操作                        |
 |         <kbd>Ctrl+Y</kbd>         |                       还原操作                        |

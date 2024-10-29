@@ -2,6 +2,14 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.1.16.5](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.5) (2024-10-29)
+
+该版本包含一些问题修复及功能调整。
+
+* 添加了使用<kbd>Backspace + Delete</kbd>组合键删除全部音符的功能。
+* 修复了导入.dy文件报错的问题。
+* 移除了KPS的过渡动画。
+
 ## [v0.1.16.4](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.4) (2024-10-12)
 
 该版本包含数个问题修复。
