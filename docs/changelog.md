@@ -2,12 +2,12 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
-## [v0.1.16.6](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.6) (2024-11-10)
+## [v0.1.16.7](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.7) (2024-11-10)
 
-该版本包含一些问题修复及功能调整。
+该版本包含一些问题修复。
 
 * 修复了放置音符时调整谱面音符长度的异常表现。
-* 一些其他调整。
+* 修复了在特定情况下音乐在结束之后可能会被重复播放的问题。
 
 ## [v0.1.16.5](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.5) (2024-10-29)
 
