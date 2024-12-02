@@ -19,6 +19,32 @@ actions:
     type: secondary
 heroImage: /Icon.png
 heroFullScreen: true
+features:
+  - title: 直观的操作逻辑
+    icon: emoji
+    details: 使用拖拽、多选、镜像与复制等操作来简化谱面制作过程。 
+    link: /guide/edit
+  - title: 简化的校时过程
+    icon: time
+    details: 用便捷的方式并借助外部工具来高效制作变速谱面。
+    link: /guide/timing
+  - title: 集中的项目管理
+    icon: folder
+    details: 用一个文件来集中保存谱面的所有信息。
+    link: /guide/project
+  - title: 从 Dynamaker 开始
+    icon: light
+    details: 使用来自 Dynamaker 的经验与记忆上手 DyNode。
+    link: /guide/getting-started.html#从-dynamaker-开始
+  - title: 轻量而高效
+    icon: launch
+    details: 轻量的程序包体积，高速加载、编辑、导入与导出各种格式的谱面。
+  - title: 流畅的画面表现
+    icon: play
+    details: 重新调整的过渡动画与粒子效果，流畅的编辑过程与谱面预览，支持高刷新率。
+  - title: Sapphire 升级中...
+    icon: update
+    details: DyNode 仍在持续不断地改进与开发中：新功能，更少的错误，更快的性能。
 
 footer: MIT Licensed | Copyright © 2024 NordLandeW
 ---
