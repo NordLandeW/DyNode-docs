@@ -33,7 +33,7 @@ The width of the last manually placed single note will be the _default width_ fo
 :::center
 ![Drop a note](drop-a-note.gif =400x)
 
-![Drop_a_hold](drop-a-hold.gif =400x)
+![Drop a hold](drop-a-hold.gif =400x)
 :::
 
 ### Moving Notes
@@ -53,7 +53,7 @@ Drag to select.
 You can hold <kbd>Ctrl</kbd> to multi-select or deselect notes.
 
 :::center
-![Multiselect](select_note_2.gif =400x)
+![Multiselection](select_note_2.gif =400x)
 :::
 
 ### Snapping Notes
@@ -65,7 +65,7 @@ When snapping multiple selected notes, the double-clicked note becomes the cente
 Click again to place the snapped notes.
 
 :::center
-![Attach](double_click.gif =400x)
+![](double_click.gif =400x)
 :::
 
 ### Bulk Operations

@@ -1,8 +1,13 @@
 import { defineUserConfig } from "vuepress";
 import { hopeTheme, pwa } from "vuepress-theme-hope";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+import { viteBundler } from "@vuepress/bundler-vite";
 
 export default defineUserConfig({
+  bundler: viteBundler({
+    viteOptions: {},
+    vuePluginOptions: {},
+  }),
   shouldPrefetch: false,
   locales: {
     "/": {
@@ -74,16 +79,24 @@ export default defineUserConfig({
         indexName: "dyn-iorinn",
       },
       mdEnhance: {
-        imgSize: true,
-        katex: true,
         align: true,
-        hint: true,
       },
       pwa: {
         maxSize: 1024768,
-        maxPicSize: 1024768,
-        cachePic: true,
+        maxImageSize: 1024768,
+        cacheImage: true,
         update: "hint",
+      },
+      markdownMath: true,
+      markdownImage: {
+        // 启用 figure
+        figure: true,
+        // 启用图片懒加载
+        lazyload: true,
+        // 启用图片标记
+        mark: true,
+        // 启用图片大小
+        size: true,
       },
     },
     hostname: "https://dyn.iorinn.moe",
@@ -178,6 +191,6 @@ export default defineUserConfig({
 
     docsRepo: "NagaseIori/DyNode-docs",
     docsDir: "docs/",
-    iconAssets: "iconfont",
+    iconAssets: "fontawesome",
   }),
 });

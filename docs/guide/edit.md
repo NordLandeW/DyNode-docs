@@ -31,9 +31,9 @@ DyNode 共有五种编辑模式，以数字键 <kbd>1</kbd> ~ <kbd>5</kbd> 来�
 最后一次手动放置单个音符的宽度将作为下一次放置音符的 _默认宽度_ 。
 
 :::center
-![Drop a note](drop-a-note.gif =400x)
+![放置 Note](drop-a-note.gif =400x)
 
-![Drop_a_hold](drop-a-hold.gif =400x)
+![放置 Hold](drop-a-hold.gif =400x)
 :::
 
 ### 移动音符
@@ -43,7 +43,7 @@ DyNode 共有五种编辑模式，以数字键 <kbd>1</kbd> ~ <kbd>5</kbd> 来�
 若想整体拖拽 Hold ，则在单个 Hold 被选中的情况下按住 <kbd>Ctrl</kbd> 拖动头部即可。在多选的情况下 Hold 将默认被整体拖拽。
 
 :::center
-![Drag a note](drag_note.gif =400x)
+![拖拽音符](drag_note.gif =400x)
 :::
 
 ### 选中音符
@@ -53,7 +53,7 @@ DyNode 共有五种编辑模式，以数字键 <kbd>1</kbd> ~ <kbd>5</kbd> 来�
 你可以按住 <kbd>Ctrl</kbd> 键来多选音符或反选音符。
 
 :::center
-![Multiselect](select_note_2.gif =400x)
+![多选音符](select_note_2.gif =400x)
 :::
 
 ### 吸附音符
@@ -65,7 +65,7 @@ DyNode 共有五种编辑模式，以数字键 <kbd>1</kbd> ~ <kbd>5</kbd> 来�
 再次单击鼠标将被吸附的音符放置。
 
 :::center
-![Attach](double_click.gif =400x)
+![吸附音符](double_click.gif =400x)
 :::
 
 ### 批量操作
@@ -91,13 +91,13 @@ DyNode 共有五种编辑模式，以数字键 <kbd>1</kbd> ~ <kbd>5</kbd> 来�
 在选中音符后，按下 <kbd>Ctrl</kbd> + <kbd>C</kbd> ，右下角即会提示复制音符数量。
 
 :::center
-![Copy](select_note.gif =400x)
+![复制音符](select_note.gif =400x)
 :::
 
 使用 <kbd>Ctrl</kbd> + <kbd>D</kbd> 可以快速复制选中的音符到这些音符中的最晚音符之后的下一个节拍线上。
 
 :::center
-![Quick Duplicate](quick_duplicate.gif =600x)
+![快速复制音符](quick_duplicate.gif =600x)
 :::
 
 #### 粘贴音符
@@ -113,7 +113,7 @@ DyNode 共有五种编辑模式，以数字键 <kbd>1</kbd> ~ <kbd>5</kbd> 来�
 可以用 <kbd>Ctrl</kbd> + <kbd>1</kbd>/<kbd>2</kbd> 来批量转换你想粘贴的音符。
 
 :::center
-![Paste](paste_note.gif =400x)
+![粘贴音符](paste_note.gif =400x)
 :::
 
 ### 异侧多选
@@ -123,7 +123,7 @@ DyNode 共有五种编辑模式，以数字键 <kbd>1</kbd> ~ <kbd>5</kbd> 来�
 音符仍旧可以进行批量操作，如复制、粘贴、吸附、拖拽移动、修改宽度等。但在异侧多选的情况下，对其进行编辑的行为与逻辑可能会有所变化。
 
 :::center
-![](multiside-select.gif =400x)
+![异侧多选](multiside-select.gif =400x)
 :::
 
 #### 异侧多选属性绑定
@@ -215,7 +215,7 @@ DyNode 提供四种设置默认宽度的模式，因为在 Dynamix 中，正侧�
 - [双侧](#双侧编辑)
 
 :::center
-![Switch side](switch_side.gif =400x)
+![右键切换编辑侧](switch_side.gif =400x)
 :::
 
 ### 双侧编辑
@@ -229,7 +229,7 @@ DyNode 提供四种设置默认宽度的模式，因为在 Dynamix 中，正侧�
 按下 <kbd>F</kbd> 即可隐去非编辑侧音符。
 
 :::center
-![Fade side](side_faded.gif =400x)
+![](side_faded.gif =400x)
 :::
 
 ### 切换侧面下落类型
