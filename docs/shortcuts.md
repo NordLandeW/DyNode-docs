@@ -92,21 +92,22 @@ sidebar: false
 
 ## 功能键 & 导入导出
 
-|       快捷键        |                 作用                 |
-| :-----------------: | :----------------------------------: |
-|  <kbd>Ctrl+N</kbd>  |               新建项目               |
-|  <kbd>Ctrl+S</kbd>  |               保存项目               |
-|    <kbd>F1</kbd>    |               打开项目               |
-|    <kbd>F2</kbd>    |             导入谱面文件             |
-|    <kbd>F3</kbd>    |             导入音乐文件             |
-|    <kbd>F4</kbd>    |             导入背景文件             |
-| <kbd>Ctrl+F4</kbd>  |             重设所有背景             |
-|    <kbd>F5</kbd>    |        导出实机 XML 谱面文件         |
-|    <kbd>F6</kbd>    | 导出专用于 Dynamaker 的 XML 谱面文件 |
-| <kbd>Ctrl+F6</kbd>  |   随机化谱面（将关闭自动保存功能）   |
-|    <kbd>F7</kbd>    |                 全屏                 |
-|    <kbd>F8</kbd>    |        启用/关闭自动保存功能         |
-|    <kbd>F9</kbd>    |               切换主题               |
-|   <kbd>F11</kbd>    |             打开调试信息             |
-|   <kbd>F12</kbd>    |          快速打开快捷键列表          |
-| <kbd>Ctrl+F12</kbd> |                 截图                 |
+|         快捷键          |                 作用                 |
+| :---------------------: | :----------------------------------: |
+|    <kbd>Ctrl+N</kbd>    |               新建项目               |
+|    <kbd>Ctrl+S</kbd>    |               保存项目               |
+| <kbd>Ctrl+Shift+S</kbd> |              项目另存为              |
+|      <kbd>F1</kbd>      |               打开项目               |
+|      <kbd>F2</kbd>      |             导入谱面文件             |
+|      <kbd>F3</kbd>      |             导入音乐文件             |
+|      <kbd>F4</kbd>      |             导入背景文件             |
+|   <kbd>Ctrl+F4</kbd>    |             重设所有背景             |
+|      <kbd>F5</kbd>      |        导出实机 XML 谱面文件         |
+|      <kbd>F6</kbd>      | 导出专用于 Dynamaker 的 XML 谱面文件 |
+|   <kbd>Ctrl+F6</kbd>    |   随机化谱面（将关闭自动保存功能）   |
+|      <kbd>F7</kbd>      |                 全屏                 |
+|      <kbd>F8</kbd>      |        启用/关闭自动保存功能         |
+|      <kbd>F9</kbd>      |               切换主题               |
+|     <kbd>F11</kbd>      |             打开调试信息             |
+|     <kbd>F12</kbd>      |          快速打开快捷键列表          |
+|   <kbd>Ctrl+F12</kbd>   |                 截图                 |
