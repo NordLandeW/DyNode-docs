@@ -1,21 +1,30 @@
 # Configuration
 
-This page contains the configuration instructions for DyNode.
+This page explains the configuration options for DyNode.
 
-All configurations of DyNode are automatically stored in the file `config.json` after the first launch and closure.
+All DyNode configurations are automatically saved in the file `config.json` after the first run and exit.
 
 :::tip
-To apply changes, use <kbd>F10</kbd> to reload the configuration.
+Please exit DyNode before modifying `config.json` to ensure your changes take effect.
 :::
 
 ## Basic Configuration
 
+### analytics
+
+* Type: `true | false`
+* Default: `true`
+
+Set to `false` to completely disable data collection.
+
+The scope of data collection is described in [Getting Started/Download & Installation](getting-started.md#download-installation).
+
 ### fullscreen
 
-* Type: `boolean`
+* Type: `true | false`
 * Default: `false`
 
-Whether to start in fullscreen mode. It will record the fullscreen status when DyNode was last closed.
+Whether to start in fullscreen mode. The last fullscreen state when DyNode was closed is remembered.
 
 ### resolutionW / resolutionH
 
@@ -25,53 +34,53 @@ Whether to start in fullscreen mode. It will record the fullscreen status when D
 The rendering resolution of DyNode.
 
 :::warning
-DyNode currently does not support other resolutions well.
+DyNode currently does not support other resolutions very well.
 
-Adjusting the resolution may cause unpredictable display issues.
+Changing the resolution may cause unpredictable display issues.
 :::
 
 ### FPS
 
 * Type: `number`
-* Default: Screen Refresh Rate
+* Default: (screen refresh rate)
 
 The frame rate at which DyNode runs.
 
 ### autosave
 
-* Type: `boolean`
+* Type: `true | false`
 * Default: `false`
 
-Whether to enable autosave.
+Whether to enable auto‐saving.
 
 ### language
 
 * Type: `string`
 * Default: `'zh-cn'`
 
-The display language of DyNode.
+The display language for DyNode.
 
 ### theme
 
 * Type: `number`
 * Default: `false`
 
-The display theme of DyNode.
+The display theme for DyNode.
 
 ### autoupdate
 
-* Type: `boolean`
+* Type: `true | false`
 * Default: `true`
 
 Whether to enable automatic update checks.
 
 :::tip
-The latest version will bring new features, bug fixes, and performance improvements, and DyNode is still not stable enough. We do not recommend disabling this option.
+New versions bring new features, bug fixes, and performance improvements, and DyNode is still not fully stable. We do not recommend disabling this option.
 :::
 
 ### simplify
 
-* Type: `boolean`
+* Type: `true | false`
 * Default: `false`
 
 Whether to enable simplified mode.
@@ -83,43 +92,84 @@ Whether to enable simplified mode.
 * Type: `0 | 2 | 4 | 8`
 * Default: `4`
 
-Anti-aliasing multiplier (2x/4x/8x). If `0`, then anti-aliasing is disabled.
+The level of anti-aliasing (2x/4x/8x). Set to `0` to disable anti-aliasing.
 
 #### graphics.VSync
 
-* Type: `boolean`
+* Type: `true | false`
 * Default: `true`
 
 Whether to enable vertical synchronization.
 
-## Advanced Configuration
+### dropAdjustError
 
-:::warning
-Unless necessary, it is recommended to keep these items at their default values.
-:::
+* Type: `real`
+* Default: `0.12`
+
+The threshold (in note-width units) for triggering width adjustment when dragging to place a note.
+
+### offsetCorrection
+
+* Type: `real`
+* Default: `2`
+* Minimum: `0`
+
+The correction range (in milliseconds) used by the error correction function when exporting charts. Notes with time differences within this range will be aligned to the first note in that group.
+
+### autoSaveTime
+
+* Type: `real`
+* Default: `180`
+* Minimum: `1`
+
+The interval (in seconds) for auto‐saving the chart.
 
 ### FMOD_MP3_DELAY
 
 * Type: `number`
-* Default: `60.0`
+* Default: `0`
 
-The delay time (in milliseconds) for FMOD to play .mp3 format files. See [Timing](/guide/timing.html#mp3-与-wav-格式的延迟处理) for details.
+The delay (in milliseconds) applied when FMOD plays .mp3 files. See [Timing](guide/timing.html#mp3-and-wav-delay-handling) for details.
+
+## Advanced Configuration
+
+:::warning
+Unless necessary, it is recommended to keep these options at their default values.
+:::
+
+### PROJECT_COMPRESSION_LEVEL
+
+* Type: `number`
+* Default: `11`
+* Minimum: `0`
+* Maximum: `22`
+
+The compression level used by the ZSTD algorithm for project files. Higher levels result in smaller project files but longer saving times. In most cases, settings above `11` will not make a significant difference.
+
+Setting this value to `0` will save the project in plain text (uncompressed).
+
+### VIDEO_UPDATE_FREQUENCY
+
+* Type: `number`
+* Default: `60`
+
+The refresh rate (in Hz) used when playing videos.
 
 ### ANNOUNCEMENT_MAX_LIMIT
 
 * Type: `number`
 * Default: `7`
 
-The maximum limit for the number of reminder messages in the bottom-right corner.
+The maximum number of notification messages in the lower-right corner. Notifications exceeding this limit will be removed first.
 
 ## Information
 
 :::danger
-These configuration items are auto-generated, and under no circumstances should you modify them.
+The following configurations are auto-generated. Under no circumstances should you modify these options manually.
 :::
 
 ### version
 
 * Type: `String`
 
-Automatically generated, representing the version of DyNode corresponding to the configuration file.
+Automatically generated; represents the DyNode version corresponding to this configuration file.

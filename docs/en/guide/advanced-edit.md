@@ -5,83 +5,83 @@ This page explains the advanced editing features included in DyNode.
 ## Expressions
 
 :::warning
-This is a very early **experimental** feature, which may **frequently change** in the next few versions, and it is recommended to **backup** your project before using it.
+This is a very early **experimental** feature and may change frequently in upcoming versions. It is recommended to back up your project before using it.
 :::
 
-Use <kbd>0</kbd> to enter expressions.
+Press <kbd>0</kbd> to input an expression.
 
-A valid expression is a meaningful sequence of operators, numbers, and variables, such as `a=10+b*c`, `100>90`, etc.
+A valid expression is a meaningful statement composed of a series of operators, numbers, and variables, for example: `a=10+b*c`, `100>90`, etc.
 
-Expressions support basic arithmetic operators `+,-,*,/,%`, bitwise operators `<<,>>,|,&`, logical operators `&&,||,!`, relational operators `>,<,>=,<=,==,!=`, assignment `=`, etc.
+Expressions support the basic arithmetic operators `+,-,*,/,%`, bitwise operators `<<,>>,|,&`, logical operators `&&,||,!`, relational operators `>,<,>=,<=,==,!=`, and the assignment operator `=`.
 
-You can intuitively write expressions in a syntax similar to C language. Here are some examples of valid expressions:
+You can write expressions in a C-like syntax. Some valid expression examples are as follows:
 
 ```cpp
-a=(10+20)*30     // a=900
-b=a              // b=900
-b=a=20           // b=(a=20), right associative
-c=10*20/20       // c=(10*20)/20, left associative
+a=(10+20)*30     // a becomes 900
+b=a              // b becomes 900
+b=a=20           // b is assigned (a=20), right-associative
+c=10*20/20       // c becomes (10*20)/20, left-associative
 ```
 
-Expressions can be used to batch modify properties of all/selected notes.
+You can use expressions to batch modify the properties of all notes or selected notes.
 
-The current supported property variables are as follows:
+The currently supported note property variables are listed in the table below:
 
-| Property |        Function       | Unit | Note Limit |
-| :------: | :-------------------: | :--: | :--------: |
-|  time    | Time of the note      |  ms  |            |
-|  pos     | Position of the note  |      |            |
-|  wid     | Width of the note     |      |            |
-|  len     | Duration of the note  |  ms  |   HOLD     |
-| htime    | Time of note's head   |  ms  |   HOLD     |
-| etime    | Time of note's tail   |  ms  |   HOLD     |
+| Property |         Function         | Unit | Note Type Restriction |
+| :------: | :----------------------: | :--: | :---------------------: |
+| time     |   The time the note occurs   | ms   |                         |
+| pos      |   The position of the note   |      |                         |
+| wid      |     The width of the note    |      |                         |
+| len      |   The duration of the note   | ms   |   HOLD                  |
+| htime    | The head time of the note (for Hold) | ms   |   HOLD                  |
+| etime    | The tail time of the note (for Hold) | ms   |   HOLD                  |
 
-The calculation of expressions for each note is independent. The process of expression calculation can be summarized as follows:
-* Initialize the variables of the expression based on the properties of the note.
-* Calculate the expression, changing the variables in the process.
-* Read the variables of the expression and modify the properties of the note based on the changes.
+The expression is computed independently on each note. The computation process is as follows:
+* The expression’s variables are initialized based on the note’s properties.
+* The expression is evaluated, and the variables may change during computation.
+* The final values of the variables are used to update the note’s properties.
 
-In DyNode, input expressions are separated by `;` and are executed in order. The storage type for variables is double-precision floating-point numbers.
+In DyNode, multiple expressions are separated by `;` and are executed sequentially. All variables are stored as double‐precision floating-point numbers.
 
-Specifically, some variables have note limits, meaning they only take effect on certain types of notes. All calculations of expressions ignore SUB-type notes (HOLD tail notes), see [Modification of HOLD Properties](#modification-of-hold-properties).
+Note that some variables are restricted to certain note types; that is, they only affect specific types of notes. All computations will ignore SUB type notes (the tail notes of HOLD notes). See [Modifying HOLD Properties](#modifying-hold-properties) for details.
 
-Here are some valid examples of expressions, where one line represents an example:
+Below are some valid examples of expressions, each on a separate line:
 
 ```cpp
-wid=wid*2                   // Double the width of the note
-pos=2.5                     // Set the position of all notes to 2.5
-time=time+10                // Add 10ms to the time of notes (add note delay)
+wid = wid * 2                   // Double the width of the note
+pos = 2.5                       // Set the note position to 2.5
+ time = time + 10               // Increase the note time by 10ms (adding delay)
 
-pos=2*2.5-pos               // Symmetry of notes across the centerline of the screen (screen centerline position is 2.5)
-time=time/1.5;len=len/1.5   // 1.5x speed for the chart (divide all note times by 1.5, all HOLD durations by 1.5)
-a=20;time=a                 // Define variable a, and assign a to time
+pos = 2 * 2.5 - pos              // Mirror the note across the center at position 2.5
+ time = time / 1.5; len = len / 1.5   // Speed up the chart by a factor of 1.5 (divide note times and HOLD durations by 1.5)
+a = 20; time = a                // Define variable a and assign it to time
 ```
 
-### Modification of HOLD Properties
+### Modifying HOLD Properties
 
-All calculations of expressions ignore SUB-type notes. Instead, there are some special property variables for HOLD-type notes.
+All expression evaluations ignore SUB type notes. Instead, for HOLD type notes there are special property variables available:
 
-| Property |        Function       | Unit |
-| :------: | :-------------------: | :--: |
-|  len     | Duration of the note  |  ms  |
-| htime    | Time of note's head   |  ms  |
-| etime    | Time of note's tail   |  ms  |
+| Property |         Function         | Unit |
+| :------: | :----------------------: | :--: |
+| len      |   The duration of the note   | ms   |
+| htime    | The head time of the note   | ms   |
+| etime    | The tail time of the note   | ms   |
 
-This means that when you modify the `time` property of a HOLD, it actually does not change the duration of the HOLD. In other words, modifying `time` means moving the HOLD as a whole rather than modifying the head and tail separately.
+This means that modifying the `time` property of a HOLD note will not affect its duration; changing `time` effectively moves the entire HOLD note rather than adjusting its head and tail separately.
 
-If you want to modify the head and tail separately, you need to modify the `htime` and `etime` properties, not the `time` property.
+If you want to modify the head and tail separately, you need to change the `htime` and `etime` properties instead of `time`.
 
-You may notice that these three properties can conflict. For example, if you modify `htime` and `etime`, then `len` should theoretically change as well, but variables are not bound during expression calculation.
+You may notice that these three properties can conflict; that is, if you modify `htime` and `etime`, then `len` would theoretically change. However, during expression evaluation, variables are not bound to each other – a change in one does not automatically update another.
 
-In practice, we do not recommend having two variables related to HOLD properties in the same expression. DyNode handles conflicts of HOLD property-related variables as follows:
-* If `time` and `htime` properties are modified simultaneously, the modification of `htime` will override the modification of `time`.
-* If `len` and `etime` properties are modified simultaneously, the modification of `len` will override the modification of `etime`.
+In practice, we do not recommend including two HOLD-related variables in the same expression. The conflict resolution is as follows:
+* If both `time` and `htime` are modified, the modification to `htime` takes precedence.
+* If both `len` and `etime` are modified, the modification to `len` takes precedence.
 
-Here are some valid examples of expressions for modifying HOLD properties:
+Here are some valid examples of modifying HOLD properties:
 
 ```cpp
-htime=htime+10;etime=etime-10       // Add 10ms to the head and subtract 10ms from the tail of all HOLD notes
-len=len/2                           // Halve the duration of all HOLDs
-htime=100                           // Modify the head time of all HOLD notes to 100
-htime=100;len=100                   // Equivalent to time=100;len=100
+htime = htime + 10; etime = etime - 10       // Increase the head time by 10ms and decrease the tail time by 10ms for all HOLD notes
+len = len / 2                                // Halve the duration of all HOLD notes
+htime = 100                                  // Set the head time of all HOLD notes to 100ms
+htime = 100; len = 100                        // Equivalent to setting time and duration to 100ms
 ```

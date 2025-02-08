@@ -1,11 +1,11 @@
 # File Formats
 
-This page provides detailed explanations of the various data file formats used by DyNode to store chart information.
+This page provides detailed explanations of the data file formats used by DyNode to store charts.
 
-## .dyn 
+## .dyn
 
-TODO 0v0
+> Sapphire is praying...
 
 ## .xml
 
-TODO =w=
+> Sapphire is praying...

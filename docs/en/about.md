@@ -10,7 +10,7 @@ contributors: false
 
 :::center
 
-![](/Icon.png)
+![](Icon.png)
 
 # DyNode
 
@@ -18,13 +18,17 @@ $\text{Yet another Dynamix charting tool.}$
 
 ------------
 
-Made by NagaseIori x NordLandeW
+Created by NagaseIori x NordLandeW
 
 :::
 
-## License & Copyrights
+## License and Copyright
 
 Most of the art assets used by DyNode are from the game Dynamix, produced by C4Cat Entertainment Limited.
+
+DyNode is licensed under the MIT License.
+
+Most of the art assets used by DyNode come from the game Dynamix, produced by C4Cat Entertainment Limited.
 
 DyNode is licensed under the MIT License.
 
@@ -43,6 +47,8 @@ SNAP (under MIT License) Copyright (c) 2020 Juju Adams
 [delaunator-cpp](https://github.com/abellgithub/delaunator-cpp/blob/master/LICENSE) (under MIT License) Copyright (c) 2018 Volodymyr Bilonenko
 
 FMODGMS (under [BSD 2-Clause "Simplified" License](https://github.com/mstop4/FMODGMS/blob/master/LICENSE)) Copyright (c) 2016-2017, M.S.T.O.P.
+
+Zstandard (under BSD License) Copyright (c) Meta Platforms, Inc. and affiliates
 
 -------------------
 
