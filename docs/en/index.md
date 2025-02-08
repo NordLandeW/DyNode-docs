@@ -11,7 +11,7 @@ actions:
   - text: Getting Started
     link: guide/getting-started.html
     type: primary
-  - text: Download – Github
+  - text: Github Releases
     link: https://github.com/NagaseIori/DyNode/releases/latest
     type: secondary
 heroImage: Icon.png
@@ -80,7 +80,3 @@ Our documentation does not include detailed instructions on using or downloading
 :::
 
 If you encounter any issues while using DyNode, please [submit an Issue](https://github.com/NagaseIori/DyNode/issues/new) or visit [Discussions](https://github.com/NagaseIori/DyNode/discussions) for help.
-
-If all goes well, $\text{Iori}$ will respond to your queries and feedback quickly.
-
-*But don’t expect an ultrafast reply.*
