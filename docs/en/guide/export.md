@@ -1,44 +1,49 @@
 # Chart Export
 
-This page contains instructions related to chart export.
+This page explains how to export charts.
 
-## Exporting .xml Charts
+:::tip
+This feature is generally used when you need to publish or import a chart for real‐device use after completing or testing it, or when switching to another chart editor.
 
-Use <kbd>F5</kbd> to export charts in .xml format.
+If you only want to save your progress, please see [Saving Projects](project.md#saving-a-project).
+:::
 
-Exported charts can be edited, debugged, or played on the following platforms:
+## Exporting .xml Charts for Real Devices
 
-* Dynamite
-* Dynamaker
-* Dynamaker-modified
+Press <kbd>F5</kbd> to export a chart in .xml format.
 
-For specific contents included in the .xml chart, see [File Formats](file-formats.html#xml).
+The exported chart can be played on the Dynamite platform; see [Import to Dynamite Platform](#import-to-dynamite-platform) for details.
+
+For details on the contents of the .xml chart, see [File Formats](file-formats.md#xml).
+
+:::important
+**Charts exported using this function are not recommended for re-importing into DyNode, Dynamaker, or other chart editors. If you wish to edit an exported chart in Dynamaker, please see [Export XML Chart for Dynamaker-modified](#export-xml-chart-for-dynamaker-modified).**
+
+Make sure that charts exported using this function will not be re-imported for editing, for example, for review or modification.
+:::
 
 ### Error Correction
 
-If you plan to test or release the exported chart on actual devices, you can use the error correction feature during export.
+You can choose to use the error correction function when exporting.
 
-By default, this feature aligns continuous notes with time differences within 2ms to the earliest position within the continuous notes, correcting timing errors of notes within 2ms.
+By default, this function aligns consecutive notes with a time difference within 2ms to the earliest note in that group, correcting timing errors within 2ms.
 
-Using this feature does not affect the chart being edited; only the exported chart will be corrected.
+You can adjust this value in the `offsetCorrection` option in the configuration (see [Configuration](configuration.md#offsetCorrection)).
 
-:::important
-**Charts exported with this feature cannot be normally edited with chart editors like Dynamaker.**
+This function does not affect the chart in editing; only the exported chart is corrected.
 
-Please ensure that charts exported using this feature are not re-imported for editing, such as for review or modification.
-:::
+### Import to Dynamite Platform
 
-### Playing on Dynamite
+An .xml chart can be directly imported into Dynamite for play. Read [this article](https://www.bilibili.com/read/cv17021429) for details on how to import a chart.
 
-.xml charts can be directly imported into Dynamite for play. Read [here](https://www.bilibili.com/read/cv17021429) to learn how to import charts.
+## Export XML Chart for Dynamaker-modified
 
-## Exporting XML Chart Format for Dynamaker-modified
+Press <kbd>F6</kbd> to export a chart in the XML format tailored for Dynamaker-modified.
 
-Use <kbd>Ctrl+F5</kbd> to export XML charts suitable for Dynamaker-modified.
-
-Charts exported in this format will include complete Timing information readable by Dynamaker-modified.
+Charts exported in this format will include complete Timing information that can be read by Dynamaker-modified.
 
 :::important
-This chart format is **only for use** with the Dynamaker-modified chart editor.
-**Charts exported in this format cannot be used for real device testing and release scenarios** in Dynamite and may suffer some precision loss.
+This chart format is **only for** reading by the Dynamaker-modified chart editor.
+
+Charts exported in this format cannot be used for real‐device debugging or publishing (e.g., on Dynamite) and may suffer from a certain loss of precision.
 :::

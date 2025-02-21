@@ -2,14 +2,14 @@
 
 Welcome to DyNode!
 
-DyNode is a charting tool for a music game called Dynamix.
+DyNode is a chart editor for the music game Dynamix.
 
-DyNode aims to enhance, improve, and renovate the current charting tools for Dynamix in terms of visuals and logic.
+DyNode is designed to enhance, improve, and modernize the visuals and logic of the current Dynamix chart editors.
 
-These guides will contain specific usage instructions for DyNode.
+These guides provide detailed instructions on how to use various features of DyNode.
 
 :::info Document Version
-The features described in this document may include functionalities not yet released in the latest Release version.
+The features described in this documentation may include functions not yet released in the latest version.
 
-All features described in this document are based on the latest version that includes pre-release versions on Github Release.
+All features are subject to the latest pre-release versions available on GitHub Releases.
 :::
