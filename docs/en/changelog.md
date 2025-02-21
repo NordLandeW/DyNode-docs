@@ -2,6 +2,19 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.1.17](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.17) (2025-2-22)
+
+This release includes feature adjustments and bug fixes.
+
+- You can now invert the selection for individual notes.
+- Added a setting to configure the project’s compression level.
+- The toggle for enabling or disabling particle effects has been moved to the global settings.
+- Fixed an issue where particle effects would be out of sync at different frame rates.
+- Improved error handling and stability when saving projects.
+- Fixed a formatting issue in the English language interface.
+- Fixed an issue where file corruption during updates would halt the update process.
+- Refactored the XML chart import process to enhance efficiency.
+
 ## [v0.1.16.10](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.10) (2024-12-29)
 
 This version includes several bug fixes and feature adjustments.
