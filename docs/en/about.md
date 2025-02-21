@@ -10,7 +10,7 @@ contributors: false
 
 :::center
 
-![](Icon.png)
+![](/Icon.png)
 
 # DyNode
 
