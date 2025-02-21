@@ -6,7 +6,7 @@ bgImage: low-poly-grid-haikei.svg
 bgImageDark: layered-waves-haikei.svg
 bgImageStyle:
   background-attachment: fixed
-tagline: "> Another Dynamix charting tool."
+tagline: "> Yet another Dynamix charting tool."
 actions:
   - text: Getting Started
     link: guide/getting-started.html
