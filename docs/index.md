@@ -12,7 +12,7 @@ actions:
     link: /guide/getting-started.html
     type: primary
   - text: 下载 - Github
-    link: https://github.com/NagaseIori/DyNode/releases/latest
+    link: https://github.com/NordLandeW/DyNode/releases/latest
     type: secondary
   - text: 下载 - 网盘
     link: https://pan.baidu.com/s/1RyZdpPNNMWxifeuhUdRcow?pwd=6gwt
@@ -84,7 +84,7 @@ QQ 交流/反馈群：347048298
 我们的文档里没有详细描写 Dynamaker 的使用方法与下载方式😢 不过你可以在 [这里](https://tlchicken.github.io/dynamaker-guide/) 找到由 TLChicken 维护的 Dynamaker 使用指南（英文），并前往由 Jmak 等人制作的 Dynamaker-modified 的 [项目页面](https://github.com/jmakxd/dynamaker-modified) 下载使用 Electron 打包分发的版本。你也可以在 [这里](https://dym.iorinn.moe/app/src) 使用 Dynamaker-modified 的网页分发版本。
 :::
 
-如果你在使用 DyNode 的过程中遇到了任何问题，可以 [提交 Issue](https://github.com/NagaseIori/DyNode/issues/new) 来反馈，或是前往 [Discussions](https://github.com/NagaseIori/DyNode/discussions) 进行求助。
+如果你在使用 DyNode 的过程中遇到了任何问题，可以 [提交 Issue](https://github.com/NordLandeW/DyNode/issues/new) 来反馈，或是前往 [Discussions](https://github.com/NordLandeW/DyNode/discussions) 进行求助。
 
 如果不出意外，$\text{Iori}$ 会很快速地回答你的疑问与反馈喵。
 

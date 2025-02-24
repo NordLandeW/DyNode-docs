@@ -2,7 +2,7 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
-## [v0.1.17](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.17) (2025-2-22)
+## [v0.1.17](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17) (2025-2-22)
 
 This release includes feature adjustments and bug fixes.
 
@@ -15,7 +15,7 @@ This release includes feature adjustments and bug fixes.
 - Fixed an issue where file corruption during updates would halt the update process.
 - Refactored the XML chart import process to enhance efficiency.
 
-## [v0.1.16.10](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.10) (2024-12-29)
+## [v0.1.16.10](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16.10) (2024-12-29)
 
 This version includes several bug fixes and feature adjustments.
 
@@ -25,7 +25,7 @@ This version includes several bug fixes and feature adjustments.
   * If the project is currently in snap mode, the current auto‐save will now be skipped.
 * Fixed a potential memory leak issue.
 
-## [v0.1.16.9](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.9) (2024-12-13)
+## [v0.1.16.9](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16.9) (2024-12-13)
 
 This version includes several feature adjustments, bug fixes, and localization updates.
 
@@ -38,7 +38,7 @@ This version includes several feature adjustments, bug fixes, and localization u
 * Adjusted the movement logic of the Mixer.
 * Made the disappearance of Hold note tails visually consistent with the original.
 
-## [v0.1.16.8](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.8) (2024-11-25)
+## [v0.1.16.8](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16.8) (2024-11-25)
 
 This version includes several bug fixes.
 
@@ -47,14 +47,14 @@ This version includes several bug fixes.
 * Fixed an issue where auto‐saving occurred even when no chart was loaded.
 * Removed forced refresh rate synchronization under VSync.
 
-## [v0.1.16.7](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.7) (2024-11-10)
+## [v0.1.16.7](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16.7) (2024-11-10)
 
 This version includes several bug fixes.
 
 * Fixed abnormal behavior when adjusting note lengths while placing notes.
 * Fixed an issue where, under certain circumstances, music might be played repeatedly after the end.
 
-## [v0.1.16.5](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.5) (2024-10-29)
+## [v0.1.16.5](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16.5) (2024-10-29)
 
 This version includes some bug fixes and feature adjustments.
 
@@ -62,28 +62,28 @@ This version includes some bug fixes and feature adjustments.
 * Fixed an error when importing .dy files.
 * Removed the transitional animation for KPS.
 
-## [v0.1.16.4](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.4) (2024-10-12)
+## [v0.1.16.4](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16.4) (2024-10-12)
 
 This version includes several bug fixes.
 
 * Fixed an issue where, during quick duplication, notes could not snap to off‐screen beat lines.
 * Fixed an issue where input state was not properly cleared in some cases.
 
-## [v0.1.16.3](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.3) (2024-09-18)
+## [v0.1.16.3](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16.3) (2024-09-18)
 
 This version includes several bug fixes.
 
 * Fixed an issue where .dyn files could not be imported correctly.
 * Fixed a crash caused by chart information not being completely cleared during import.
 
-## [v0.1.16.2](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.2) (2024-08-30)
+## [v0.1.16.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16.2) (2024-08-30)
 
 This version includes several bug fixes.
 
 * Fixed an occasional crash at startup.
 * Fixed an issue where frequent IO clearing caused function key inputs to be lost.
 
-## [v0.1.16.1](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.1) (2024-08-09)
+## [v0.1.16.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16.1) (2024-08-09)
 
 This version includes one bug fix.
 
@@ -91,7 +91,7 @@ This version includes one bug fix.
   * This could lead to the game crashing.
   * It might be mistakenly regarded as modifying a Timing Point.
 
-## [v0.1.16](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16) (2024-08-03)
+## [v0.1.16](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16) (2024-08-03)
 
 This version includes performance optimizations and bug fixes.
 
@@ -107,7 +107,7 @@ This version includes performance optimizations and bug fixes.
 * Added data collection functionality.
   * See [Getting Started](guide/getting-started.md) for details.
 
-## [v0.1.15](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.15) (2024-07-25)
+## [v0.1.15](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.15) (2024-07-25)
 
 This version includes new features and several bug fixes.
 
@@ -121,7 +121,7 @@ This version includes new features and several bug fixes.
 * When VSync is enabled, the maximum FPS is now locked to the screen refresh rate.
 * Several other improvements.
 
-## [v0.1.14](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.14) (2024-07-22)
+## [v0.1.14](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.14) (2024-07-22)
 
 This version includes new features, bug fixes, and performance improvements.
 
@@ -152,7 +152,7 @@ This version includes new features, bug fixes, and performance improvements.
 * Optimized performance when saving projects.
 * Removed configuration reloading functionality.
 
-## [v0.1.13.4](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.13.4) (2024-05-12)
+## [v0.1.13.4](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.13.4) (2024-05-12)
 
 This version includes a few minor bug fixes.
 
@@ -161,7 +161,7 @@ This version includes a few minor bug fixes.
 * Added the `offsetCorrection` configuration for the error correction function, allowing you to adjust the correction range.
 * Updated the Gamemaker Runtime version to 2024.4.
 
-## [v0.1.13.3](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.13.3) (2024-04-12)
+## [v0.1.13.3](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.13.3) (2024-04-12)
 
 This version includes several bug fixes.
 
@@ -175,7 +175,7 @@ This version includes several bug fixes.
 * Fixed several potential issues related to video playback.
 * Updated the Gamemaker Runtime version to 2024.2.
 
-## [v0.1.13.2](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.13.2) (2024-02-21)
+## [v0.1.13.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.13.2) (2024-02-21)
 
 This version includes some minor bug fixes and optimizations.
 
@@ -184,13 +184,13 @@ This version includes some minor bug fixes and optimizations.
 * Fixed an issue where importing older Dynamaker chart files could cause a crash.
 * Starting from this version, auto‐update prompts for each version will only appear once.
 
-## [v0.1.13.1](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.13.1) (2024-01-28)
+## [v0.1.13.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.13.1) (2024-01-28)
 
 This version includes one bug fix.
 
 * Fixed an issue where dragging the tail of a Hold note caused the game to crash.
 
-## [v0.1.13](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.13) (2024-01-23)
+## [v0.1.13](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.13) (2024-01-23)
 
 This version includes new features and bug fixes.
 
@@ -236,7 +236,7 @@ This version includes new features and bug fixes.
 * You can now perform online searches within the documentation from the upper right corner.
 * Multiple entries have been updated and corrected.
 
-## [v0.1.12.5](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.12.5) (2024-01-03)
+## [v0.1.12.5](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.12.5) (2024-01-03)
 
 This version includes some bug fixes.
 
@@ -247,7 +247,7 @@ This version includes some bug fixes.
 * Updated the Gamemaker Runtime to v2023.11.1.160.
   * This update brings some bug fixes and efficiency improvements.
 
-## [v0.1.12.4](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.12.4) (2023-11-24)
+## [v0.1.12.4](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.12.4) (2023-11-24)
 
 This version includes some bug fixes and feature changes.
 
@@ -270,7 +270,7 @@ This version includes some bug fixes and feature changes.
 * Fixed an issue with the priority selection of the drag center point when multi‐selecting notes.
 * Now, the position highlight for notes on both sides will be displayed simultaneously.
 
-## [v0.1.12.3](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.12.3) (2023-09-05)
+## [v0.1.12.3](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.12.3) (2023-09-05)
 
 This version includes some bug fixes and new features.
 
@@ -307,7 +307,7 @@ This version includes some bug fixes and new features.
 
 * Updated the Gamemaker Runtime version to 2023.6.
 
-## [v0.1.12.2](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.12.2) (2023-07-05)
+## [v0.1.12.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.12.2) (2023-07-05)
 
 This version includes some bug fixes.
 
@@ -319,7 +319,7 @@ This version includes some bug fixes.
 * Fixed an issue where a "NOTE DELETE ERROR" crash caused the game to terminate.
 * Updated the Gamemaker Runtime to 2023.6.
 
-## [v0.1.12.1](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.12.1) (2023-06-17)
+## [v0.1.12.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.12.1) (2023-06-17)
 
 This version fixes a major issue from v0.1.12 which could cause exported charts to be unreadable.
 
@@ -329,7 +329,7 @@ This version fixes a major issue from v0.1.12 which could cause exported charts 
   * Removed the encoding attribute from the XML Declaration.
 * Slightly increased the brightness of Hold notes.
 
-## [v0.1.12](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.12) (2023-06-11)
+## [v0.1.12](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.12) (2023-06-11)
 
 The main changes in DyNode v0.1.12 compared to v0.1.11 are as follows.
 

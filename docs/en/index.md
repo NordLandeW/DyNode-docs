@@ -12,7 +12,7 @@ actions:
     link: guide/getting-started.html
     type: primary
   - text: Github Releases
-    link: https://github.com/NagaseIori/DyNode/releases/latest
+    link: https://github.com/NordLandeW/DyNode/releases/latest
     type: secondary
 heroImage: Icon.png
 heroFullScreen: true
@@ -79,4 +79,4 @@ You can provide feedback or ask for help via GitHub Issues or Discussions. Your 
 Our documentation does not include detailed instructions on using or downloading Dynamaker 😢 However, you can find an English guide maintained by TLChicken [here](https://tlchicken.github.io/dynamaker-guide/), and you can download the Electron‐packaged version of Dynamaker‐modified from its [project page](https://github.com/jmakxd/dynamaker-modified). You can also use the web version of Dynamaker‐modified [here](https://dym.iorinn.moe/app/src).
 :::
 
-If you encounter any issues while using DyNode, please [submit an Issue](https://github.com/NagaseIori/DyNode/issues/new) or visit [Discussions](https://github.com/NagaseIori/DyNode/discussions) for help.
+If you encounter any issues while using DyNode, please [submit an Issue](https://github.com/NordLandeW/DyNode/issues/new) or visit [Discussions](https://github.com/NordLandeW/DyNode/discussions) for help.

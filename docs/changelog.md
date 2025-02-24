@@ -2,7 +2,7 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
-## [v0.1.17](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.17) (2025-2-22)
+## [v0.1.17](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17) (2025-2-22)
 
 该版本包含功能调整与问题修复。
 
@@ -15,7 +15,7 @@
 * 修复了更新时文件损坏导致更新过程停止的问题。
 * 重构了XML谱面的导入部分以提升处理效率。
 
-## [v0.1.16.10](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.10) (2024-12-29)
+## [v0.1.16.10](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16.10) (2024-12-29)
 
 该版本包含一些问题修复与功能调整。
 
@@ -25,7 +25,7 @@
   * 若当前正处于吸附模式下，当次自动保存现在将被跳过。
 * 修复了一个潜在的内存泄漏问题。
 
-## [v0.1.16.9](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.9) (2024-12-13)
+## [v0.1.16.9](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16.9) (2024-12-13)
 
 该版本包含一些功能调整、问题修复与本地化更新。
 
@@ -38,7 +38,7 @@
 * 调整了 Mixer 的移动逻辑。
 * 使 Hold 尾部的消失在视觉上与本家保持一致。
 
-## [v0.1.16.8](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.8) (2024-11-25)
+## [v0.1.16.8](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16.8) (2024-11-25)
 
 该版本包含一些问题修复。
 
@@ -47,14 +47,14 @@
 * 修复了在没有加载谱面时仍进行自动保存的问题。
 * 移除了在VSync下的强制刷新率同步。
 
-## [v0.1.16.7](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.7) (2024-11-10)
+## [v0.1.16.7](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16.7) (2024-11-10)
 
 该版本包含一些问题修复。
 
 * 修复了放置音符时调整谱面音符长度的异常表现。
 * 修复了在特定情况下音乐在结束之后可能会被重复播放的问题。
 
-## [v0.1.16.5](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.5) (2024-10-29)
+## [v0.1.16.5](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16.5) (2024-10-29)
 
 该版本包含一些问题修复及功能调整。
 
@@ -62,28 +62,28 @@
 * 修复了导入.dy文件报错的问题。
 * 移除了KPS的过渡动画。
 
-## [v0.1.16.4](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.4) (2024-10-12)
+## [v0.1.16.4](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16.4) (2024-10-12)
 
 该版本包含数个问题修复。
 
 * 修复了快速复制中音符无法吸附到屏幕外的节拍线的问题。
 * 修复了在一些情况下输入状态未被正确清空的问题。
 
-## [v0.1.16.3](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.3) (2024-09-18)
+## [v0.1.16.3](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16.3) (2024-09-18)
 
 该版本包含数个问题修复。
 
 * 修复了.dyn文件无法被正确导入的问题。
 * 修复了导入时谱面信息未被完全清空导致崩溃的问题。
 
-## [v0.1.16.2](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.2) (2024-08-30)
+## [v0.1.16.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16.2) (2024-08-30)
 
 该版本包含数个问题修复。
 
 * 修复了偶发性的启动时崩溃问题。
 * 修复了IO的清空过于频繁导致功能键读入丢失的问题。
 
-## [v0.1.16.1](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16.1) (2024-08-09)
+## [v0.1.16.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16.1) (2024-08-09)
 
 该版本包含一个问题修复。
 
@@ -91,7 +91,7 @@
   * 游戏可能因此崩溃。
   * 可能错误地被视为修改 Timing Point 的功能。
 
-## [v0.1.16](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.16) (2024-08-03)
+## [v0.1.16](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.16) (2024-08-03)
 
 该版本包含性能优化与问题修复。
 
@@ -107,7 +107,7 @@
 * 添加了数据收集功能。
   * 详见 [快速开始](guide/getting-started.md)。
 
-## [v0.1.15](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.15) (2024-07-25)
+## [v0.1.15](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.15) (2024-07-25)
 
 该版本包含新功能与一些问题修复。
 
@@ -121,7 +121,7 @@
 * 现在当 VSync 启用时，最大 FPS 将锁定在屏幕刷新率上。
 * 一些其它的改进。
 
-## [v0.1.14](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.14) (2024-07-22)
+## [v0.1.14](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.14) (2024-07-22)
 
 该版本包含新功能、问题修复与性能改进。
 
@@ -152,7 +152,7 @@
 * 优化了项目保存时的性能。
 * 移除了配置重载功能。
 
-## [v0.1.13.4](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.13.4) (2024-05-12)
+## [v0.1.13.4](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.13.4) (2024-05-12)
 
 该版本包含一些小的问题修复。
 
@@ -161,7 +161,7 @@
 * 新增了对误差修正功能的配置`offsetCorrection`，你可以使用此配置调整该功能的修正范围。
 * Gamemaker Runtime 版本更改至 2024.4 。
 
-## [v0.1.13.3](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.13.3) (2024-04-12)
+## [v0.1.13.3](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.13.3) (2024-04-12)
 
 该版本包含一些问题修复。
 
@@ -175,7 +175,7 @@
 * 修复了潜在的多个关于视频播放的问题。
 * Gamemaker Runtime 版本更改至 2024.2 。
 
-## [v0.1.13.2](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.13.2) (2024-02-21)
+## [v0.1.13.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.13.2) (2024-02-21)
 
 该版本包含一些小的问题修复与优化。
 
@@ -184,13 +184,13 @@
 * 修复了导入较早版本的Dynamaker谱面文件可能导致崩溃的问题。
 * 从这一版本开始，对每个版本的自动更新提示只会出现一次。
 
-## [v0.1.13.1](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.13.1) (2024-01-28)
+## [v0.1.13.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.13.1) (2024-01-28)
 
 该版本包含一个问题修复。
 
 * 修复了拖动 Hold 音符尾部导致游戏崩溃的问题。
 
-## [v0.1.13](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.13) (2024-01-23)
+## [v0.1.13](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.13) (2024-01-23)
 
 该版本包含新特性与问题修复。
 
@@ -236,7 +236,7 @@
 * 现在你可以在页面的右上角对文档进行在线搜索。
 * 多个条目进行了更新与修正。
 
-## [v0.1.12.5](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.12.5) (2024-01-03)
+## [v0.1.12.5](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.12.5) (2024-01-03)
 
 该版本包含一些问题修复。
 
@@ -247,7 +247,7 @@
 * Gamemaker Runtime 更改至 v2023.11.1.160 。
   * 此更新能够带来一些问题修复与效率改进。
 
-## [v0.1.12.4](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.12.4) (2023-11-24)
+## [v0.1.12.4](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.12.4) (2023-11-24)
 
 该版本包含一些问题修复与特性改动。
 
@@ -270,7 +270,7 @@
 * 修复了多选 Note 时拖拽中心点优先级选择的问题。
 * 现在两侧 Note 的位置高亮会同时显示。
 
-## [v0.1.12.3](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.12.3) (2023-09-05)
+## [v0.1.12.3](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.12.3) (2023-09-05)
 
 该版本包含一些问题修复与新特性。
 
@@ -308,7 +308,7 @@
 * Gamemaker Runtime 版本更新至 2023.6。
 
 
-## [v0.1.12.2](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.12.2) (2023-07-05)
+## [v0.1.12.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.12.2) (2023-07-05)
 
 该版本包含一些问题修复。
 
@@ -320,7 +320,7 @@
 * 修复了“NOTE DELETE ERROR”报错导致的游戏终止问题。
 * Gamemaker Runtime 更新至 2023.6 。
 
-## [v0.1.12.1](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.12.1) (2023-06-17)
+## [v0.1.12.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.12.1) (2023-06-17)
 
 该版本修复了 v0.1.12 中的一个主要问题。这个问题可能导致输出的谱面无法正常读取。
 
@@ -330,7 +330,7 @@
   * 移除了 XML Declaration 中的 encoding 属性。
 * 稍微提高了一点 Hold 的亮度。
 
-## [v0.1.12](https://github.com/NagaseIori/DyNode/releases/tag/v0.1.12) (2023-06-11)
+## [v0.1.12](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.12) (2023-06-11)
 
 DyNode v0.1.12 相对于 v0.1.11 产生的主要变化如下。
 
