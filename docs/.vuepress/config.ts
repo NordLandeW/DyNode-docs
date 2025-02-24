@@ -72,14 +72,24 @@ export default defineUserConfig({
   ],
   theme: hopeTheme({
     logo: "/Icon.png",
+    markdown: {
+      align: true,
+      math: true,
+
+      // 启用 figure
+      figure: true,
+      // 启用图片懒加载
+      imgLazyload: true,
+      // 启用图片标记
+      mark: true,
+      // 启用图片大小
+      imgSize: true,
+    },
     plugins: {
       docsearch: {
         appId: "PX9VNWSCXQ",
         apiKey: "efdef4a898675ea367912de9d00bc6f2",
         indexName: "dyn-iorinn",
-      },
-      mdEnhance: {
-        align: true,
       },
       pwa: {
         maxSize: 1024768,
@@ -87,16 +97,8 @@ export default defineUserConfig({
         cacheImage: true,
         update: "hint",
       },
-      markdownMath: true,
-      markdownImage: {
-        // 启用 figure
-        figure: true,
-        // 启用图片懒加载
-        lazyload: true,
-        // 启用图片标记
-        mark: true,
-        // 启用图片大小
-        size: true,
+      icon: {
+        assets: "fontawesome",
       },
     },
     hostname: "https://dyn.iorinn.moe",
@@ -191,6 +193,5 @@ export default defineUserConfig({
 
     docsRepo: "NagaseIori/DyNode-docs",
     docsDir: "docs/",
-    iconAssets: "fontawesome",
   }),
 });
