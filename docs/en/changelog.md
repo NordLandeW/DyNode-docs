@@ -2,6 +2,14 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.1.17.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17.1) (2025-2-27)
+
+This version includes several bug fixes.
+
+* Fixed multiple issues where double-tap snapping note input was incorrectly cleared.  
+* Updated the compression library (Zstandard) to version 1.5.7.  
+* Replaced several links.
+
 ## [v0.1.17](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17) (2025-2-22)
 
 This release includes feature adjustments and bug fixes.

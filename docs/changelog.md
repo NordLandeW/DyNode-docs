@@ -2,6 +2,14 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.1.17.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17.1) (2025-2-27)
+
+该版本包含一些问题修复。
+
+* 修复了一系列双击吸附音符输入被错误清空的问题。
+* 更新压缩库（Zstandard）版本到 1.5.7。
+* 更换了数个链接。
+
 ## [v0.1.17](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17) (2025-2-22)
 
 该版本包含功能调整与问题修复。
