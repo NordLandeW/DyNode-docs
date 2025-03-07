@@ -2,6 +2,14 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.1.17.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17.2) (2025-03-07)
+
+This version includes stability improvements and bug fixes.
+
+- Significantly improved the reliability of project saving.  
+- Fixed an occasional issue where saving an empty project could lead to project progress loss.  
+  - This issue was caused by an external library, occurring randomly with an unknown cause.
+
 ## [v0.1.17.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17.1) (2025-2-27)
 
 This version includes several bug fixes.
