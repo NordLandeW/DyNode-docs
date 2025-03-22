@@ -28,10 +28,6 @@ Most of the art assets used by DyNode are from the game Dynamix, produced by C4C
 
 DyNode is licensed under the MIT License.
 
-Most of the art assets used by DyNode come from the game Dynamix, produced by C4Cat Entertainment Limited.
-
-DyNode is licensed under the MIT License.
-
 ------------------
 
 DyNode uses codes from the following projects.
