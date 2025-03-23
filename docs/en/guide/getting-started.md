@@ -15,7 +15,9 @@ If you have difficulty accessing GitHub from your region, you may use alternativ
 After downloading, extract the compressed file and run `DyNode.exe` to start DyNode.
 
 :::important
-Starting with version 0.1.6, DyNode no longer supports 32-bit systems. If you require a 32-bit version, please download version 0.1.5 or earlier.
+Starting from version 0.1.6, DyNode has removed support for 32-bit systems. Additionally, support for Windows 7 has been removed since version 0.1.16.10.
+
+If you require support for these systems, you may consider downloading an earlier supported version.
 :::
 
 :::info Data Collection / Privacy
