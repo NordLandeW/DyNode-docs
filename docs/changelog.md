@@ -2,7 +2,7 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
-## [v0.1.17.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17.2) (2025-3-7)
+## [v0.1.17.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17.2) (2025-03-07)
 
 该版本包含重要的稳定性改进与错误修复。
 
@@ -10,7 +10,7 @@
 * 修复了偶发性地保存空项目导致项目进度丢失的问题。
   * 这个问题由一个外部库引发，频率随机且原因不明。
 
-## [v0.1.17.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17.1) (2025-2-27)
+## [v0.1.17.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17.1) (2025-02-27)
 
 该版本包含一些问题修复。
 
@@ -18,7 +18,7 @@
 * 更新压缩库（Zstandard）版本到 1.5.7。
 * 更换了数个链接。
 
-## [v0.1.17](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17) (2025-2-22)
+## [v0.1.17](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17) (2025-02-22)
 
 该版本包含功能调整与问题修复。
 

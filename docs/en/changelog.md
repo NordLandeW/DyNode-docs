@@ -10,7 +10,7 @@ This version includes important stability improvements and bug fixes.
 - Fixed an occasional issue where saving a project resulted in an empty file, causing project progress loss.  
   - This issue was caused by an external library, occurring randomly with an unknown cause.
 
-## [v0.1.17.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17.1) (2025-2-27)
+## [v0.1.17.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17.1) (2025-02-27)
 
 This version includes several bug fixes.
 
@@ -18,7 +18,7 @@ This version includes several bug fixes.
 * Updated the compression library (Zstandard) to version 1.5.7.  
 * Replaced several links.
 
-## [v0.1.17](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17) (2025-2-22)
+## [v0.1.17](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17) (2025-02-22)
 
 This release includes feature adjustments and bug fixes.
 
