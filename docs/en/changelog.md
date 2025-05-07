@@ -7,7 +7,6 @@ This page contains detailed release notes and related instructions for DyNode up
 This release includes several bug fixes.
 
 * Fixed an issue where background videos failed to play properly.
-
   * Rolled back the Gamemaker Runtime to version 2024.8.
 * Fixed a crash caused by unknown difficulty symbols in XML files.
 * Temporarily removed the background blur effect.
