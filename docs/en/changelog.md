@@ -2,6 +2,16 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.1.17.3](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17.3) (2025-05-07)
+
+This release includes several bug fixes.
+
+* Fixed an issue where background videos failed to play properly.
+
+  * Rolled back the Gamemaker Runtime to version 2024.8.
+* Fixed a crash caused by unknown difficulty symbols in XML files.
+* Temporarily removed the background blur effect.
+
 ## [v0.1.17.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17.2) (2025-03-07)
 
 This version includes important stability improvements and bug fixes.
