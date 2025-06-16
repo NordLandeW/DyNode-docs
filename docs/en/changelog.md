@@ -2,6 +2,23 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.1.18](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.18) (2025-06-16)
+
+This version includes major visual updates and performance improvements.
+
+* Retuned particle effects.
+* Adjusted and added several existing and previously missing visual effects.
+* Updated visual styles for the `Sakura` and `Piano` themes.
+  * These optional themes may affect note readability to some extent.
+* Improved program performance.
+  * Added limits to the number of special effects and particles.
+  * DyNode’s current engine and architecture struggle with rendering large numbers of objects on screen; performance issues become severe with over 5,000 objects.
+* Holding <kbd>Alt</kbd> and left-clicking now allows quick adjustment of the playback progress bar.
+* Fixed various other UX issues.
+* Updated the download source for automatic updates.
+  * GitHub Releases is now the primary source.
+
+
 ## [v0.1.17.4](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.17.4) (2025-05-07)
 
 This version includes several bug fixes.
