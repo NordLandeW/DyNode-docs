@@ -34,7 +34,7 @@ meter: 3
 
 :::
 
-如果你对 Timing 的概念 / 编辑 / 如何获取还有更多疑问，你可以阅读下面的补充材料进行学习。DyNode 中 Timing 的概念借鉴于 osu! ，因此你也可以以 osu! 制图为关键词找到更多的学习资料，你也可以直接在 osu! 上将 Timing 配置完毕后导入 DyNode 之中。
+如果你对 Timing 的概念 / 编辑 / 如何获取还有更多疑问，你可以阅读下面的补充材料。DyNode 中 Timing 的概念借鉴于 osu! ，因此你也可以以 osu! 制图为关键词找到更多的学习资料，你也可以直接在 osu! 上将 Timing 配置完毕后导入 DyNode 之中。
 
 * [osu! - 测定时间轴 (Timing)](https://osu.ppy.sh/wiki/zh/Beatmapping/Timing)
 * [osu! - 非继承时间点 (offset)](https://osu.ppy.sh/wiki/zh/Client/Beatmap_editor/Timing#%E9%9D%9E%E7%BB%A7%E6%89%BF%E6%97%B6%E9%97%B4%E7%82%B9%EF%BC%88%E7%BA%A2%E7%BA%BF%EF%BC%89)
