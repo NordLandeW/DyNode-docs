@@ -2,6 +2,14 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.1.18.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.18.1) (2025-07-17)
+
+This version includes several bug fixes.
+
+* Fixed an issue where too many Hold particles could be added at once.
+* Fixed an issue where background files could not be loaded if the file extension contained uppercase letters.
+* Fixed an issue where the expression function could not handle positive and negative signs correctly.
+
 ## [v0.1.18](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.18) (2025-06-16)
 
 This version includes major visual updates and performance improvements.
