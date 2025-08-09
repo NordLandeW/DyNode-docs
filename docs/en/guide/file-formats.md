@@ -165,5 +165,5 @@ The conversion from `width` to judgment width (in pixels) is as follows:
 
 The conversion from `position`, which is centered on the layout, to a specific screen position (in pixels) is as follows:
 *   When `side` is `FRONT`, the x-coordinate is based on the layout's horizontal center (860px): `= 860 + (position - 2.5) * 300`.
-*   When `side` is `LEFT` or `RIGHT`, the y-coordinate is based on the layout's vertical center (540px): `= 540 + (position - 2.5) * 300`.
+*   When `side` is `LEFT` or `RIGHT`, the y-coordinate is based on the layout's vertical center (540px): `= 540 - (position - 2.5) * 150`.
 :::
