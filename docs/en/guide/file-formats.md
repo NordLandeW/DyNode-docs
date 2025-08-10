@@ -150,7 +150,7 @@ Contains data for a single note.
 | `time`     | Double     | The time of the note, with the start of the music as `0`.                                            | ms                                    |
 | `position` | Double     | The center position of the note. `2.5` is the center.                                                | Unit                                  |
 | `width`    | Double     | The width of the note.                                                                               | Unit                                  |
-| `side`     | Integer    | The target judgment area for the note.                                                               | `0` (FRONT), `1` (LEFT), `2` (RIGHT)  |
+| `side`     | Integer    | The side of the note.                                                                                | `0` (FRONT), `1` (LEFT), `2` (RIGHT)  |
 | `type`     | Integer    | The type of the note.                                                                                | `0` (NORMAL), `1` (CHAIN), `2` (HOLD) |
 | `length`   | Double     | For `HOLD` type notes, this represents the hold duration. For other `type`s, this value must be `0`. | ms                                    |
 

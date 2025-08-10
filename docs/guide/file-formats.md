@@ -152,7 +152,7 @@
 |   `time`   | Double  | Note 所在的时间。以音乐起点为 `0`。                                        | 毫秒                                  |
 | `position` | Double  | Note 中心的位置。`2.5` 为中心。                                            | Unit                                  |
 |  `width`   | Double  | Note 的宽度。                                                              | Unit                                  |
-|   `side`   | Integer | Note 的目标判定区域。                                                      | `0` (FRONT), `1` (LEFT), `2` (RIGHT)  |
+|   `side`   | Integer | Note 所在的侧面。                                                          | `0` (FRONT), `1` (LEFT), `2` (RIGHT)  |
 |   `type`   | Integer | Note 的类型。                                                              | `0` (NORMAL), `1` (CHAIN), `2` (HOLD) |
 |  `length`  | Double  | `type` 为 `HOLD` 时，代表长按的持续时间。对于其他 `type`，此值必须为 `0`。 | 毫秒                                  |
 
