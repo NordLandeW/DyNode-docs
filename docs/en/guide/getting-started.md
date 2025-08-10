@@ -10,8 +10,6 @@ Before running DyNode, ensure that the latest version of [Microsoft Visual C++ R
 
 You can download the latest version of DyNode for your platform from the [Home](/en/index.md) page.
 
-If you have difficulty accessing GitHub from your region, you may use alternative download methods.
-
 After downloading, extract the compressed file and run `DyNode.exe` to start DyNode.
 
 :::important

@@ -40,7 +40,7 @@ features:
     icon: angles-up
     details: "DyNode is continuously being improved and developed: new features, fewer bugs, and faster performance."
 
-footer: MIT Licensed | Copyright © 2024 NordLandeW
+footer: MIT Licensed | Copyright © 2025 NordLandeW
 ---
 
 ## 🚀 Installation and Usage
