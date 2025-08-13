@@ -4,6 +4,14 @@
 
 格式版本描述为 `dyn file format v1` 。`formatVersion` 版本号为 `1`。
 
+:::info 关于项目降级
+
+在 v0.2.0 之前的 DyNode 使用的格式版本描述为 `dyn file format v0`。`v1` 相对于 `v0` 版本的项目格式产生了重大变动，因此无法使用 v0.1 版本载入 `dyn file format v1` 格式的项目文件。
+
+DyNode 目前并未支持任何情况下的项目降级功能。如果你需要将项目降级并导入较早的版本使用，可以将项目 [导出](/guide/export.md) 到 Dynamaker-modified 格式后再在较早的版本新建项目导入。
+
+:::
+
 ## 约定
 
 `dyn file format v1` 是一个基于 JSON 的文件格式，见 [JSON 标准](https://www.json.org/json-en.html)。

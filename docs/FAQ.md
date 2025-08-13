@@ -25,9 +25,9 @@ toc: false
 **A:** 如果 DyNode 没有自动按你想要运行的帧率运行，你可以编辑程序目录下的 config.json，将其中 FPS 一项改为你想要的限制帧率。详见 [配置](/guide/configuration.html#fps) 。
 
 -----------
-**Q:** DyNode 使用的引擎是？
+**Q:** DyNode 使用的引擎 / 语言是？
 
-**A:** Gamemaker。
+**A:** Gamemaker。GML / C++。
 
 -----------
 **Q:** icon 是？

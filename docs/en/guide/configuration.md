@@ -26,19 +26,6 @@ The scope of data collection is described in [Getting Started/Download & Install
 
 Whether to start in fullscreen mode. The last fullscreen state when DyNode was closed is remembered.
 
-### resolutionW / resolutionH
-
-* Type: `number`
-* Default: `1920` / `1080`
-
-The rendering resolution of DyNode.
-
-:::warning
-DyNode currently does not support other resolutions very well.
-
-Changing the resolution may cause unpredictable display issues.
-:::
-
 ### FPS
 
 * Type: `number`

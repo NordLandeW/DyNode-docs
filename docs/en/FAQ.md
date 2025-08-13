@@ -24,9 +24,9 @@ You can check the communication channels listed at the bottom of the homepage to
 **A:** If DyNode is not automatically running at your desired frame rate, you can edit the `config.json` file in the program directory and change the FPS setting to your preferred limit. See [Configuration](guide/configuration.html#fps) for details.
 
 -----------
-**Q:** What engine does DyNode use?
+**Q:** What engine / language does DyNode use?
 
-**A:** Gamemaker.
+**A:** Gamemaker. GML / C++.
 
 -----------
 **Q:** What about the icon?

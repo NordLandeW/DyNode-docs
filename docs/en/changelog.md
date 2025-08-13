@@ -2,6 +2,44 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.0](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.0) (2025-08-13)
+
+This version introduces major architectural changes, code refactoring, and optimizations for performance and rendering in DyNode.
+
+### Performance Optimizations
+
+*   Significantly improved the efficiency of chart importing, exporting, playback, and editing.
+*   Refactored the rendering module for playback mode (mode 5), now capable of efficiently rendering a large number of objects.
+*   Extensive code refactoring and other optimizations.
+*   Removed some obsolete code.
+
+### Feature Changes
+
+*   Added the ability to quickly import .xml / .dy charts via "Open Project". See [Open Project](guide/project.html#open-project) for details.
+*   The project file format has been updated to `dyn file format v1`. See [File Formats](guide/file-formats.html) for details.
+*   After performing global operations on a chart, the editor no longer forces a switch back to editing mode (mode 4).
+*   The default mode for creating a new chart is now playback mode (mode 5).
+*   A 1-second blank period has been added when replaying a chart using <kbd>Enter</kbd>.
+*   The <kbd>Ctrl+F5</kbd> shortcut for exporting charts has been deprecated.
+*   The <kbd>Ctrl+L/K</kbd> function for note time jumping has been removed.
+
+### Bug Fixes
+
+*   Fixed incorrect calculation of music latency. DyNode now correctly handles latency for all music formats.
+    *   In previous versions, this latency was introduced by FMOD's DSP Buffer, which DyNode failed to account for.
+    *   After updating, the global music offset and `FMOD_MP3_DELAY` settings will be reset to `0`.
+        *   The meaning of these settings has not changed.
+        *   You may need to reconfigure the offset if necessary.
+*   Improved handling of particle effect limits.
+*   Fixed issues with incorrect handling of relative file paths in some cases.
+
+### Visual Improvements
+
+*   The screen is now rendered at the correct resolution.
+    *   No longer locked to `1920x1080`. The resolution now changes dynamically with the window size.
+    *   Related configuration options have been removed.
+*   Slightly adjusted the transparency and blending modes of visual effects.
+
 ## [v0.1.18.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.1.18.1) (2025-07-17)
 
 This version includes several bug fixes.

@@ -10,6 +10,14 @@ DyNode has five editing modes, which you can switch between using the number key
 * **Edit Mode:** Press <kbd>4</kbd> to edit notes, such as selecting, modifying, or deleting them. See [Notes](#notes).
 * **Playback Mode:** Press <kbd>5</kbd> to preview the chart. In this mode all effects are enabled and editing features are disabled.
 
+:::tip Tip on Chart Optimization
+
+DyNode has optimized the rendering method for playback mode. Only in this mode can DyNode efficiently render a large number of objects.
+
+While DyNode can still handle editing a large number of objects, an excessive number of on-screen notes in non-playback modes will significantly increase the performance load on DyNode. Therefore, when editing charts in non-playback modes, it is recommended to keep the density of on-screen notes within a reasonable range.
+
+:::
+
 ## Notes
 
 There are three types of notes:

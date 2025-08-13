@@ -81,17 +81,21 @@ Other basic operations and key mappings are mostly the same as in Dynamaker.
 
 ### Importing Charts from Dynamaker
 
-DyNode provides a way to directly import charts from Dynamaker.
+DyNode provides a way to directly import charts from Dynamaker. Below are two ways to import charts.
 
-On the start screen, choose “Create Project” rather than “Open Existing Project.” In DyNode, a project is a self-contained entity, and all project information is stored in a JSON file with the `.dyn` extension. See [Project](project.md) for details.
+In DyNode, a project is a distinct concept. All project information is stored in JSON format in files with a `.dyn` extension. See [Project](project.html) and [File Formats](file-formats.html) for details.
+
+On the start screen, you can select "Open Project" and choose the chart you want to import. This will cause DyNode to quickly create a new project and automatically associate and load the largest music/image file in the chart's folder. DyNode has many similar convenient features, so we recommend that you keep your project, chart, music, and other related files in a separate folder, using different folders for different projects.
+
+You can also choose "Create Project" to manually import chart files.
 
 ![Create Project](project_create.png)
 
-If you already have a chart in Dynamaker, you can import it directly on the Create Project screen.
+If you already have a chart being edited in Dynamaker, you can directly import it on the create project page.
 
 At a minimum, you will need the following files:
 
-- The music file for the chart. Most common music formats are supported (such as .mp3, .flac, .wav, .ogg, .mid, etc.). For details on delays with .mp3 and .wav files, see [Timing](timing.md#mp3-and-wav-delay-handling-in-0-1-5-and-later).
+- The music file for the chart. Most common music formats are supported (such as .mp3, .flac, .wav, .ogg, .mid, etc.). For details on delays with .mp3 and .wav files, see [Timing](timing.html#mp3-and-wav-delay-handling-in-0-1-5-and-later).
 - The chart file in .xml or .dy format (exported from Dynamaker). Generally, .dy files include the music file for the chart, so if you use a .dy file, you do not need to specify a music file.
 
 Select your music file in the music file field. Choose your .xml file in the chart import field. If necessary, you may also add a background file. **All configuration fields on the right will be overwritten by the imported chart information.**
@@ -99,7 +103,7 @@ Select your music file in the music file field. Choose your .xml file in the cha
 After filling in all the information, click Create Project to enter the editor.
 
 :::tip
-Before editing the chart, make sure to correctly configure [Timing](timing.md).
+Before editing the chart, make sure to correctly configure [Timing](timing.html).
 :::
 
 ## Opening a Project

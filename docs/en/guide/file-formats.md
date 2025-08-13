@@ -4,6 +4,14 @@ This document specifies the format for project files used by DyNode, which have 
 
 The format version is described as `dyn file format v1`. The `formatVersion` number is `1`.
 
+:::info Regarding Project Downgrading
+
+DyNode versions prior to v0.2.0 used the format description `dyn file format v0`. The `v1` project format introduces significant changes compared to the `v0` version, making it impossible to load `dyn file format v1` project files in v0.1 versions.
+
+DyNode does not currently support any form of project downgrading. If you need to downgrade a project for use in an older version, you can [export](export.html) the project to the Dynamaker-modified format and then import it into a new project in the older version.
+
+:::
+
 ## Conventions
 
 `dyn file format v1` is a JSON-based file format, as specified by the [JSON standard](https://www.json.org/json-en.html).

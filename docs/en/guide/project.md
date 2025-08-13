@@ -35,13 +35,19 @@ Fill in all the required information (fields marked with an asterisk are mandato
 
 After filling in all the information, click Create Project to enter the editor.
 
-:::tip
-Before you begin editing the chart, make sure to correctly configure [Timing](timing.md).
+:::tip Tip on Creating Projects
+
+We recommend keeping the project and its related files in a separate folder, using different folders for different projects. DyNode relies on this to provide many convenient features, such as quickly creating default projects, backing up projects, etc.
+
+Before you start editing the chart, you should correctly configure [Timing](timing.html).
+
 :::
 
 ## Opening a Project
 
 Select “Open Existing Project” on the start screen or press <kbd>F1</kbd> in the editor to open an existing project.
+
+You can also open a supported chart file (.xml / .dy) directly through "Open Project". This will cause DyNode to quickly create a new project and automatically associate and load the largest music/image file in the chart's folder. Projects created this way still need to be manually saved at least once to enable the auto-save feature.
 
 ## Saving a Project
 
