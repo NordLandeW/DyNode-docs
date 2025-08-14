@@ -2,6 +2,19 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.0.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.0.1) (2025-08-14)
+
+This version contains a hotfix patch for the previous version.
+
+*   Fixed a rendering error that occurred after globally adjusting note times.
+    *   This issue was caused by Sub not correctly synchronizing Hold data.
+*   Fixed a rendering error that could be caused by some undo operations.
+    *   This issue was caused by Sub not correctly synchronizing Hold data.
+*   Fixed an issue where changing only the `time` variable in an expression still changed the Hold length.
+*   Fixed an issue where multiple asynchronous project save events could be triggered simultaneously.
+
+For the complete changelog, please see the v0.2.0 release.
+
 ## [v0.2.0](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.0) (2025-08-13)
 
 This version introduces major architectural changes, code refactoring, and optimizations for performance and rendering in DyNode.
