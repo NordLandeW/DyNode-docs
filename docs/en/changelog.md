@@ -2,6 +2,18 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.0.3](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.0.3) (2025-08-18)
+
+This version is a hotfix patch that includes some performance optimizations and stability improvements.
+
+* Fixed a stuttering issue when saving projects.
+* Further reduced the opacity of visual effects and adjusted to a more natural blending mode.
+* Attempted to mitigate an issue where DyNode could not start / initialize properly in some environments.
+* Attempted to mitigate stuttering issues caused by excessive visual effects in some cases.
+  * A hard limit has now been added to the visual effects cap.
+
+For the complete changelog, please see the v0.2.0 release.
+
 ## [v0.2.0.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.0.2) (2025-08-16)
 
 This version is a hotfix patch that includes some major bug fixes and stability improvements.
