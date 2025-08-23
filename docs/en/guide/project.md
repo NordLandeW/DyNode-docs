@@ -6,10 +6,10 @@ This page explains the concept of projects in DyNode.
 
 A DyNode project contains all the information needed to create a chart, such as difficulty, title, music, background files, timing, and the chart data itself.
 
-Projects are saved in a compressed JSON format with the file extension `.dyn`.
+Project files use a JSON-based file format and may be compressed with ZSTD. See [File Formats](/guide/file-formats.md) for details.
 
 :::tip
-This file does not contain the actual content of the music or background files; it only stores their **relative paths**.
+The project file does not contain the actual content of the music or background files; it only stores their **relative paths**.
 
 The music, background, and video files associated with the chart are copied to the same directory as the project file when it is saved. If these files are moved or deleted, they may fail to load, but your chart data remains intact. You can simply reload the files and save again.
 :::
