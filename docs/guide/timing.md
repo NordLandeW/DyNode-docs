@@ -82,21 +82,17 @@ DyNode 中添加 Timing Point 的方式共有三种。
 
 ### 手动修改
 
-你可以直接编辑项目的 .dyn 文件。.dyn 文件以 JSON 形式直接存储 Timing Points 的信息，因此你可以直接对 .dyn 中包含的 Timing Points 信息进行编辑。
+你可以直接编辑项目的 .dyn 文件。在编辑之前，你可能先要将 .dyn 文件解压，或将配置中的压缩等级设置为 `0` 以获取项目的纯文本形式。详见 [文件格式](/guide/file-formats) 页面。
 
 ```json
 {
-    "beatLength": 324.324324324324,
-    "meter": 4,
-    "time": 419
+    "offset": 0,
+    "bpm": 120,
+    "meter": 4
 }
 ```
 
-上面是 Timing Point json 格式的一个样例，其中 `beatLength` 代表一拍的长度（以毫秒计），`meter` 代表节拍，`time` 代表 offset。
-
-从 `beatLength` 到 `BPM` 的换算以上方为例有：$1 / 324.324324324324 * 1000 * 60 = 185$。
-
-编辑完成后，你需要手动重新打开该项目的文件。详见 [文件格式](/guide/file-formats) 页面。
+编辑完成后，你需要手动重新打开该项目的文件。
 
 ### 撤销/还原
 

@@ -76,23 +76,17 @@ Place and select a Note at the time where you wish to delete a Timing Point, the
 
 ### Manual Editing
 
-You can directly edit the project’s .dyn file. The .dyn file stores Timing Points in JSON format, so you can manually edit the Timing Point information.
-
-Example JSON for a Timing Point:
+You can directly edit the project’s .dyn file. Before editing, you might need to decompress the .dyn file, or set the compression level in the configuration to `0` to get the project in plain text format. For details, see the [File Formats](file-formats.md) page.
 
 ```json
 {
-    "beatLength": 324.324324324324,
-    "meter": 4,
-    "time": 419
+    "offset": 0,
+    "bpm": 120,
+    "meter": 4
 }
 ```
 
-In this example, `beatLength` represents the length of one beat (in milliseconds), `meter` is the time signature, and `time` is the offset.
-
-For example, converting from `beatLength` to BPM: $1 / 324.324324324324 * 1000 * 60 \approx 185$.
-
-After editing, you must manually reload the project. See the [File Formats](file-formats.md) page for details.
+After editing, you must manually reload the project.
 
 ### Undo/Redo
 
