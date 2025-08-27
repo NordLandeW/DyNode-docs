@@ -2,6 +2,18 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.0.4](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.0.4) (2025-08-27)
+
+This version contains some important bug fixes and compatibility improvements.
+
+* Fixed a crash issue when DyNode starts on some CPU models.
+  * Removed AVX instruction set optimization to be compatible with unsupported CPU models.
+* Fixed an issue where the video was played in advance during the blank time of the beatmap playback.
+* Fixed a calculation error for the Timing Points and note offsets of exported Dynamaker-modified format charts.
+  * Both Timing Points and note offsets were incorrectly added with an offset determined by the first Timing Point.
+* Restricted the creation of Timing Points. It is now not possible to create two different Timing Points at the same time.
+  * This restriction has not yet been added to imported Timing Points.
+
 ## [v0.2.0.3](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.0.3) (2025-08-18)
 
 This version is a hotfix patch that includes some performance optimizations and stability improvements.

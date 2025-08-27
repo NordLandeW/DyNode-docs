@@ -2,6 +2,18 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.2.0.4](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.0.4) (2025-08-27)
+
+该版本包含了一些重要的问题修复与兼容性改进。
+
+* 修复了 DyNode 在部分 CPU 型号下启动时崩溃的问题。
+  * 移除了 AVX 指令集优化以兼容不支持的 CPU 型号。
+* 修复了在谱面播放的空白时间中，视频被提前播放的问题。
+* 修复了导出的 Dynamaker-modified 谱面 Timing Points 和物件偏移量计算错误的问题。
+  * Timing Points 和偏移量都被错误地添加了一个由第一个 Timing Point 决定的偏移量。
+* 限制了对 Timing Point 的创建。现在无法在同一时间上创建两个不同的 Timing Point。
+  * 对导入的 Timing Point 暂未添加此限制。
+
 ## [v0.2.0.3](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.0.3) (2025-08-18)
 
 该版本是一个热修复补丁，包含了一些性能优化与稳定性改进。
