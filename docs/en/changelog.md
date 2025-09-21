@@ -2,6 +2,14 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.0.5](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.0.5) (2025-09-21)
+
+This version contains several bug fixes.
+
+* Fixed a rare crash that could occur after undoing a rapid batch adjustment of note widths.
+* Fixed an issue where charts containing Japanese/Korean characters could not be saved correctly.
+* Fixed an issue where projects could not be created correctly if the program path contained Japanese/Korean characters.
+
 ## [v0.2.0.4](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.0.4) (2025-08-27)
 
 This version contains some important bug fixes and compatibility improvements.
