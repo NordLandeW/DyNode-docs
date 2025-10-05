@@ -4,8 +4,6 @@ This page is intended to provide a quick tutorial on how to get started with cha
 
 ## Download & Installation
 
-Before running DyNode, ensure that the latest version of [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) is installed on your system.
-
 ### Standard Download
 
 You can download the latest version of DyNode for your platform from the [Home](/en/index.md) page.
@@ -13,7 +11,7 @@ You can download the latest version of DyNode for your platform from the [Home](
 After downloading, extract the compressed file and run `DyNode.exe` to start DyNode.
 
 :::important
-Starting from version 0.1.6, DyNode has removed support for 32-bit systems. Additionally, support for Windows 7 has been removed since version 0.1.16.10.
+Starting from version 0.1.6, DyNode has removed support for 32-bit systems.
 
 If you require support for these systems, you may consider downloading an earlier supported version.
 :::
@@ -29,9 +27,7 @@ You can disable data collection completely in [Configuration](configuration.md).
 
 ### Building from Source
 
-Building the project requires the latest version of Gamemaker. Use either the `GMS2 VM` or `GMS2 YYC` compilation method. If using `GMS2 YYC`, you will also need Visual Studio 2022 and to configure Gamemaker accordingly [as described here](https://help.gamemaker.io/hc/en-us/articles/235186048-Setting-Up-For-Windows). You can obtain Gamemaker from its official website or its Steam page. For non-commercial use, no paid license is required. Projects built from source do not include any data collection features by default.
-
-The project already includes a precompiled DyCore binary. If you need to build DyCore from source, please install CMake, LLVM, and the Ninja toolchain, and compile using the `x64 Release` configuration.
+Building the project requires the latest version of Gamemaker. Use either the `GMS2 VM` or `GMS2 YYC` compilation method. If using `GMS2 YYC`, you will also need Visual Studio 2022 and to configure Gamemaker accordingly [as described here](https://help.gamemaker.io/hc/en-us/articles/235186048-Setting-Up-For-Windows). You can obtain Gamemaker from its official website or its Steam page. For non-commercial use, no paid license is required. DyCore (the C++ core extension used by DyNode) will also be built during the main project compilation process, which also requires you to install the CMake, LLVM, and Ninja toolchains.
 
 ## Getting Started with DyNode
 

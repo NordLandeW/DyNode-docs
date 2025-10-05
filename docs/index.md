@@ -49,11 +49,8 @@ footer: MIT Licensed | Copyright © 2025 NordLandeW
 
 ## 🚀 安装与使用
 :::info 建议系统要求
-* 操作系统：Windows 10/11 64位
-* 内存：8GB RAM
+* 操作系统：Windows 7/10/11 64位
 * GPU：支持 DirectX 11 / 建议使用独立显卡
-
-在运行 DyNode 前，系统上应当已经安装最新版本的 [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) 。
 :::
 
 :::tip Beta 提示
