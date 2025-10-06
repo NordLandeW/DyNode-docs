@@ -2,6 +2,19 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.1) (2025-10-06)
+
+This version includes several bug fixes and feature adjustments.
+
+* Fixed an issue where the length of a dragged Hold note was calculated incorrectly in some cases.
+* Adjusted the area size for switching the falling side with the right mouse button.
+  * Increased the detection area for dual-sided editing.
+* Added hotkey support for the numeric keypad (numpad).
+* Added multilingual support for advanced expressions.
+* Fixed a font rendering error at the bottom during automatic updates.
+* Refactored and improved multilingual support for automatic updates.
+* Removed some old code and made other improvements.
+
 ## [v0.2.0.5](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.0.5) (2025-09-21)
 
 This version contains several bug fixes.
