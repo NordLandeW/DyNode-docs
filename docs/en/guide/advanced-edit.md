@@ -5,7 +5,7 @@ This page explains the advanced editing features included in DyNode.
 ## Expressions
 
 :::warning
-This is a very early **experimental** feature and may change frequently in upcoming versions. It is recommended to back up your project before using it.
+This is a very early **experimental** feature. It is recommended to back up your project before using it.
 :::
 
 Press <kbd>0</kbd> to input an expression.
