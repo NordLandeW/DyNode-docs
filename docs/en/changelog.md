@@ -2,6 +2,17 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.2) (2025-10-21)
+
+This version includes new features and bug fixes.
+
+* Added the ability to record charts to video.
+  * Use <kbd>TAB</kbd> to open the toolbar to access this feature.
+  * See [Chart Editing/Others/Record Chart to Video](guide/edit.md#record-chart-to-video) for details.
+* Added the `side` property to advanced expressions.
+  * See [Advanced Editing/Expressions](guide/advanced-edit.md) for details.
+* Fixed some other UI issues.
+
 ## [v0.2.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.1) (2025-10-06)
 
 This version includes several bug fixes and feature adjustments.

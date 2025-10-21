@@ -27,14 +27,15 @@ You can use expressions to batch modify the properties of all notes or selected 
 
 The currently supported note property variables are listed in the table below:
 
-| Property |         Function         | Unit | Note Type Restriction |
-| :------: | :----------------------: | :--: | :---------------------: |
-| time     |   The time the note occurs   | ms   |                         |
-| pos      |   The position of the note   |      |                         |
-| wid      |     The width of the note    |      |                         |
-| len      |   The duration of the note   | ms   |   HOLD                  |
-| htime    | The head time of the note (for Hold) | ms   |   HOLD                  |
-| etime    | The tail time of the note (for Hold) | ms   |   HOLD                  |
+| Property |                  Function                  | Unit | Note Type Restriction |
+| :------: | :----------------------------------------: | :--: | :---------------------: |
+| time     |            The time the note occurs            | ms   |                         |
+| pos      |            The position of the note            |      |                         |
+| side     | The falling side of the note (0-Front/1-Left/2-Right) |      |                         |
+| wid      |             The width of the note              |      |                         |
+| len      |            The duration of the note            | ms   |          HOLD           |
+| htime    |     The head time of the note (for Hold)     | ms   |          HOLD           |
+| etime    |     The tail time of the note (for Hold)     | ms   |          HOLD           |
 
 The expression is computed independently on each note. The computation process is as follows:
 * The expression’s variables are initialized based on the note’s properties.
@@ -45,16 +46,22 @@ In DyNode, multiple expressions are separated by `;` and are executed sequential
 
 Note that some variables are restricted to certain note types; that is, they only affect specific types of notes. All computations will ignore SUB type notes (the tail notes of HOLD notes). See [Modifying HOLD Properties](#modifying-hold-properties) for details.
 
+Specifically, the falling side property (`side`) will always be taken modulo 3. For example, setting `side` to `1`, `4`, or `-2` is equivalent.
+
 Below are some valid examples of expressions, each on a separate line:
 
 ```cpp
-wid = wid * 2                   // Double the width of the note
-pos = 2.5                       // Set the note position to 2.5
- time = time + 10               // Increase the note time by 10ms (adding delay)
+wid = wid * 2                       // Double the width of the note
+pos = 2.5                         // Set the note position to 2.5
+time = time + 10                    // Increase the note time by 10ms (adding delay)
 
-pos = 2 * 2.5 - pos              // Mirror the note across the center at position 2.5
- time = time / 1.5; len = len / 1.5   // Speed up the chart by a factor of 1.5 (divide note times and HOLD durations by 1.5)
-a = 20; time = a                // Define variable a and assign it to time
+pos = 2 * 2.5 - pos                  // Mirror the note across the center at position 2.5
+time = time / 1.5; len = len / 1.5   // Speed up the chart by a factor of 1.5 (divide note times and HOLD durations by 1.5)
+a = 20; time = a                    // Define variable a and assign it to time
+
+side = side + 1                     // Moves front notes to the left, left notes to the right, and right notes to the front
+pos = (side == 0) * 2 + (side != 0) * pos   // Only changes the position of front notes to 2
+side = -side                        // Swaps the left and right side notes
 ```
 
 ### Modifying HOLD Properties

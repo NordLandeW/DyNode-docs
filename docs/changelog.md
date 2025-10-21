@@ -2,6 +2,17 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.2.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.2) (2025-10-21)
+
+该版本包含了新功能与问题修复。
+
+* 新增了录制谱面到视频的功能。
+  * 使用 <kbd>TAB</kbd> 打开工具栏来使用此功能。
+  * 详见 [谱面编辑/其它/录制谱面视频](guide/edit.md#录制谱面视频)。
+* 新增 `side` 属性到高级表达式中。
+  * 详见 [高级编辑/表达式](guide/advanced-edit.md)。
+* 修复了一些其它的 UI 问题。
+
 ## [v0.2.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.1) (2025-10-06)
 
 该版本包含了一些问题修复与功能调整。

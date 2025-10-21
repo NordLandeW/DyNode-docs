@@ -428,6 +428,32 @@ DyNode 将为谱面内的所有音符与Timing Points所在的时间**加上**�
 
 你可以在 [配置](/guide/configuration.md#autosavetime) 中使用 `autoSaveTime` 一项修改这个间隔。
 
+### 录制谱面视频
+
+使用 <kbd>TAB</kbd> 打开工具栏之后选择 `录制谱面视频` 。
+
+借助 FFmpeg 的编码功能，该功能会将谱面按照指定的规格（默认 1080P@60FPS）和当前的编辑界面设置（例如音符流速，粒子效果等）以中高质量将谱面预览直接渲染到视频。使用该功能时，背景视频将不会被播放，且先前设置的音乐倍速将被忽略。在录制过程中，所有的输入操作都将被锁定。
+
+DyNode 将自动检测编码器的可用性，并优先启用系统支持的硬件加速和 HEVC 编码。
+
+:::tip 如何确认是否正确安装了 FFmpeg？
+
+该功能的使用需要已经安装了 FFmpeg 的环境。以 Windows 11 系统为例，你可以右键点击“开始菜单”后选择“终端”来打开终端，并输入下面的命令来检查 FFmpeg 的可用性。
+
+```
+ffmpeg -version
+```
+
+如果有显示 `ffmpeg version ...` 的结果，则说明 FFmpeg 已经正确安装完毕，否则说明 FFmpeg 没有正确在环境中配置，导致 DyNode 无法调用 FFmpeg 来支持此功能。
+
+你可以使用下面的命令来快速安装 FFmpeg，随后重启终端，再次使用上面的命令检查 FFmpeg 是否正确安装。
+```
+winget install --id Gyan.FFmpeg --source winget
+```
+
+在安装完毕 FFmpeg 之后，如果 DyNode 仍旧正在运行，你需要将 DyNode 重新启动才能使其正确识别到新安装的 FFmpeg 路径。
+:::
+
 ### 全屏模式
 
 使用 <kbd>F7</kbd> 来切换无边框全屏。

@@ -426,6 +426,32 @@ To enable auto‐saving, you must save the project manually at least once.
 
 You can adjust this interval via the `autoSaveTime` option in [Configuration](configuration.md#autosavetime).
 
+### Record Chart to Video
+
+Use <kbd>TAB</kbd> to open the toolbar and select `Record Chart to Video`.
+
+Powered by FFmpeg's encoding capabilities, this feature renders the chart preview directly to a video at specified settings (defaulting to 1080p@60FPS) and with the current editor interface settings (such as note flow speed, particle effects, etc.) at medium-high quality. When using this feature, the background video will not be played, and any previously set music speed multipliers will be ignored. All input operations will be locked during the recording process.
+
+DyNode will automatically detect the availability of encoders and prioritize system-supported hardware acceleration and HEVC encoding.
+
+:::tip How to check if FFmpeg is installed correctly?
+
+This feature requires an environment where FFmpeg is installed. For example, on Windows 11, you can right-click the "Start Menu," select "Terminal," and enter the following command to check FFmpeg's availability.
+
+```
+ffmpeg -version
+```
+
+If the output shows `ffmpeg version ...`, it means FFmpeg is installed correctly. Otherwise, FFmpeg is not properly configured in your environment, and DyNode cannot call it to support this feature.
+
+You can use the following command to quickly install FFmpeg. After installation, restart the terminal and use the command above again to check if FFmpeg is installed correctly.
+```
+winget install --id Gyan.FFmpeg --source winget
+```
+
+After installing FFmpeg, if DyNode is still running, you need to restart DyNode for it to correctly recognize the newly installed FFmpeg path.
+:::
+
 ### Fullscreen Mode
 
 Press <kbd>F7</kbd> to toggle borderless fullscreen mode.
