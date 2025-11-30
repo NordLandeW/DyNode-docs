@@ -2,6 +2,14 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.2.2.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.2.1) (2025-11-30)
+
+该版本包含了问题修复与性能改进。
+
+* 修复了 <kbd>Delete + Backspace</kbd> 导致程序崩溃的问题。
+* 改进了开始界面的背景绘制效率。
+* 改进了编辑界面的后端效率。
+
 ## [v0.2.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.2) (2025-10-21)
 
 该版本包含了新功能与问题修复。
