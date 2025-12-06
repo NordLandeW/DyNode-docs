@@ -2,6 +2,28 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.3](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.3) (2025-12-06)
+
+This version includes new features, bug fixes, and performance improvements.
+
+* You can now drag and drop files into the window to open projects or import music/background files.
+* A warning will now appear if you adjust beat lines without setting a Timing Point first.
+* Improved program startup speed and added a pre-loading screen.
+* Refactored the video decoding function.
+  * Videos can now be rendered on the screen at their native resolution.
+* The default language will now follow the system settings during initial setup.
+* Mitigated stuttering issues caused by frame time fluctuations.
+  * Updated Gamemaker Runtime version to 2024.14.
+* Improved some other animation performances.
+
+## [v0.2.2.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.2.1) (2025-11-30)
+
+This version includes bug fixes and performance improvements.
+
+* Fixed a crash caused by pressing <kbd>Delete + Backspace</kbd>.
+* Improved the background drawing efficiency of the start screen.
+* Improved the back-end efficiency of the editing interface.
+
 ## [v0.2.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.2) (2025-10-21)
 
 This version includes new features and bug fixes.
