@@ -46,7 +46,7 @@ footer: MIT Licensed | Copyright © 2025 NordLandeW
 ## 🚀 Installation and Usage
 
 :::info Recommended System Requirements
-* Operating System: Windows 7/10/11 (64-bit)
+* Operating System: Windows 10/11 (64-bit)
 * GPU: Supports DirectX 11 (a dedicated graphics card is recommended)
 :::
 

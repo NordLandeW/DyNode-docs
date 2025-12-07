@@ -49,7 +49,7 @@ footer: MIT Licensed | Copyright © 2025 NordLandeW
 
 ## 🚀 安装与使用
 :::info 建议系统要求
-* 操作系统：Windows 7/10/11 64位
+* 操作系统：Windows 10/11 64位
 * GPU：支持 DirectX 11 / 建议使用独立显卡
 :::
 
