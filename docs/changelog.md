@@ -2,6 +2,12 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.2.4.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.4.1) (2025-12-16)
+
+该版本修复了一个小的问题。
+
+* 修复了允许相同时间音符进行采样操作导致的崩溃问题。
+
 ## [v0.2.4](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.4) (2025-12-15)
 
 该版本包含了新功能与问题修复。
