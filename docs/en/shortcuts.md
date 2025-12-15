@@ -61,6 +61,8 @@ This page contains all the common shortcuts and operations in DyNode.
 | <kbd>K</kbd> |                   Set default width                    |
 | <kbd>`</kbd> |              Set custom beat subdivision               |
 | <kbd>0</kbd> |                   Execute expression                   |
+| <kbd>.</kbd> |                     Quick Command                      |
+| <kbd>/</kbd> |                      Open Console                      |
 
 ## Delay Adjustment
 
@@ -110,3 +112,25 @@ For more details on delay adjustment, see [Chart Editing/Delay Adjustment](guide
 |     <kbd>F11</kbd>      |               Open debug info                |
 |     <kbd>F12</kbd>      |              Open shortcut list              |
 |   <kbd>Ctrl+F12</kbd>   |                  Screenshot                  |
+
+## Common Commands
+
+Use <kbd>.</kbd> for quick command input. Use <kbd>/</kbd> to open the console.
+
+For detailed usage of commands, see [Advanced Editing/Commands](guide/advanced-edit.md#commands).
+
+|   Command   | Abbreviation |          Argument          |                Description                 |
+| :---------: | :----------: | :------------------------: | :----------------------------------------: |
+|   `width`   |  `wid`, `w`  |      <`real_number`>       |     Change the width of selected notes     |
+| `position`  |  `pos`, `p`  |      <`real_number`>       |   Change the position of selected notes    |
+|   `side`    |     `s`      |      <`0`\|`1`\|`2`>       |     Change the side of selected notes      |
+|   `snap`    |              | <`pre`\|`post`\|`nearest`> |     Snap selected notes to beat lines      |
+|   `expr`    |     `e`      |         <`string`>         |       Execute an expression on notes       |
+|  `linear`   |    `lin`     |        <`variable`>        |               Curve - Linear               |
+|  `cosine`   |    `cos`     |        <`variable`>        |               Curve - Cosine               |
+|   `cubic`   |    `cub`     |        <`variable`>        |        Curve - Natural Cubic Spline        |
+|  `catrom`   |    `crom`    |        <`variable`>        |   Curve - Centripetal Catmull-Rom Spline   |
+|  `center`   |    `cen`     |             /              | Center-align the horizontal range of notes |
+| `randomize` |    `rand`    |             /              |            Randomize the chart             |
+|   `purge`   |              |             /              |          Clear all notes in chart          |
+|    `fix`    |              |             /              |      Apply common fixes to all notes       |

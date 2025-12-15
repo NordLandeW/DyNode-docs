@@ -2,6 +2,24 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.4](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.4) (2025-12-15)
+
+This version includes new features and bug fixes.
+
+* Added command functionality. See [Advanced Editing/Commands](guide/advanced-edit.md#commands) for details.
+  * Added basic property editing commands.
+  * Added curve-filling commands.
+    * Added four types of curves: Linear / Cosine / Natural Cubic Spline / Centripetal Catmull-Rom Spline.
+  * Added batch snapping command.
+  * Added batch centering command.
+  * Added a command to fix out-of-bounds notes.
+  * Added some other advanced commands.
+* Fixed an issue where the video decoding feature could not utilize hardware acceleration.
+* Fixed a flickering issue when playing video from the beginning.
+* Fixed an issue where the color transition on the start screen failed in some cases.
+* Video playback speed will now be consistent with the music speed.
+* The background video is now rendered correctly when recording video.
+
 ## [v0.2.3](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.3) (2025-12-06)
 
 This version includes new features, bug fixes, and performance improvements.

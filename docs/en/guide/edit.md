@@ -430,7 +430,7 @@ You can adjust this interval via the `autoSaveTime` option in [Configuration](co
 
 Use <kbd>TAB</kbd> to open the toolbar and select `Record Chart to Video`.
 
-Powered by FFmpeg's encoding capabilities, this feature renders the chart preview directly to a video at specified settings (defaulting to 1080p@60FPS) and with the current editor interface settings (such as note flow speed, particle effects, etc.) at medium-high quality. When using this feature, the background video will not be played, and any previously set music speed multipliers will be ignored. All input operations will be locked during the recording process.
+Powered by FFmpeg's encoding capabilities, this feature renders the chart preview directly to a video at specified settings (defaulting to 1080p@60FPS) and with the current editor interface settings (such as note flow speed, particle effects, etc.) at medium-high quality. When using this feature, the background video will be played back at the rendering speed, and any previously set music speed multipliers will be ignored. All input operations will be locked during the recording process.
 
 DyNode will automatically detect the availability of encoders and prioritize system-supported hardware acceleration and HEVC encoding.
 
