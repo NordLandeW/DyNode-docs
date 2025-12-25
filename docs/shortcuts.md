@@ -118,6 +118,8 @@ sidebar: false
 
 使用 <kbd>.</kbd> 快速输入命令。使用 <kbd>/</kbd> 打开控制台。
 
+使用 <kbd>ESC</kbd> 或 `.q` 关闭控制台。
+
 关于命令的详细用法见 [高级操作/命令](guide/advanced-edit.md#命令)。
 
 |    命令     |    缩写    |            参数            |               描述               |
@@ -125,7 +127,7 @@ sidebar: false
 |   `width`   | `wid`, `w` |           <实数>           |        修改选中音符的宽度        |
 | `position`  | `pos`, `p` |           <实数>           |        修改选中音符的位置        |
 |   `side`    |    `s`     |      <`0`\|`1`\|`2`>       |        修改选中音符的侧面        |
-|   `snap`    |            | <`pre`\|`post`\|`nearest`> |      吸附选中音符到节拍线上      |
+|   `snap`    |            | [`pre`\|`post`\|`nearest`] |      吸附选中音符到节拍线上      |
 |   `expr`    |    `e`     |          <字符串>          |       对选中音符执行表达式       |
 |  `linear`   |   `lin`    |            可变            |         曲线生成 - 线性          |
 |  `cosine`   |   `cos`    |            可变            |         曲线生成 - 余弦          |

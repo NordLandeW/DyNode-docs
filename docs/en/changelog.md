@@ -2,6 +2,15 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.4.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.4.2) (2025-12-25)
+
+This version includes some bug fixes.
+
+* Fixed an issue where corrupted configuration files would cause the game to crash at startup.
+* The `.snap` command will now apply to all notes if no notes are selected.
+* Updated localization files.
+* Updated Gamemaker Runtime to the latest version.
+
 ## [v0.2.4.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.4.1) (2025-12-16)
 
 This release fixes a minor issue.

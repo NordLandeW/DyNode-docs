@@ -117,6 +117,8 @@ For more details on delay adjustment, see [Chart Editing/Delay Adjustment](guide
 
 Use <kbd>.</kbd> for quick command input. Use <kbd>/</kbd> to open the console.
 
+Use <kbd>Esc</kbd> or `.q` to close the console.
+
 For detailed usage of commands, see [Advanced Editing/Commands](guide/advanced-edit.md#commands).
 
 |   Command   | Abbreviation |          Argument          |                Description                 |
@@ -124,7 +126,7 @@ For detailed usage of commands, see [Advanced Editing/Commands](guide/advanced-e
 |   `width`   |  `wid`, `w`  |      <`real_number`>       |     Change the width of selected notes     |
 | `position`  |  `pos`, `p`  |      <`real_number`>       |   Change the position of selected notes    |
 |   `side`    |     `s`      |      <`0`\|`1`\|`2`>       |     Change the side of selected notes      |
-|   `snap`    |              | <`pre`\|`post`\|`nearest`> |     Snap selected notes to beat lines      |
+|   `snap`    |              | [`pre`\|`post`\|`nearest`] |     Snap selected notes to beat lines      |
 |   `expr`    |     `e`      |         <`string`>         |       Execute an expression on notes       |
 |  `linear`   |    `lin`     |        <`variable`>        |               Curve - Linear               |
 |  `cosine`   |    `cos`     |        <`variable`>        |               Curve - Cosine               |

@@ -2,6 +2,15 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.2.4.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.4.2) (2025-12-25)
+
+该版本包含了一些问题修复。
+
+* 修复了配置文件损坏会导致游戏启动时崩溃的问题。
+* 现在 `.snap` 命令在不选择任何音符时将作用于全体音符。
+* 更新了本地化文件。
+* 更新 Gamemaker Runtime 至最新版本。
+
 ## [v0.2.4.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.4.1) (2025-12-16)
 
 该版本修复了一个小的问题。
