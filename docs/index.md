@@ -11,11 +11,11 @@ actions:
   - text: 快速上手
     link: /guide/getting-started.html
     type: primary
-  - text: 下载 - Github
-    link: https://github.com/NordLandeW/DyNode/releases/latest
+  - text: 下载
+    link: "#download"
     type: secondary
-  - text: 下载 - 网盘
-    link: https://pan.baidu.com/s/1RyZdpPNNMWxifeuhUdRcow?pwd=6gwt
+  - text: Github Releases
+    link: https://github.com/NordLandeW/DyNode/releases/latest
     type: secondary
 heroImage: /Icon.png
 heroFullScreen: true
@@ -86,3 +86,46 @@ QQ 交流/反馈群：347048298
 如果不出意外，$\text{Iori}$ 会很快速地回答你的疑问与反馈喵。
 
 *当然也没必要期待以光速回复。*
+
+<script setup>
+import { onMounted } from "vue";
+const JSON_URL = "https://d.g.iorinn.moe/dyn/info.json"; 
+const BASE_URL = "https://d.g.iorinn.moe/dyn/";
+function getOrCreateDownloadIframe() {
+  let iframe = document.getElementById("__download_iframe__");
+  if (!iframe) {
+    iframe = document.createElement("iframe");
+    iframe.id = "__download_iframe__";
+    iframe.style.display = "none";
+    document.body.appendChild(iframe);
+  }
+  return iframe;
+}
+async function getLatestWindowsUrl() {
+  const resp = await fetch(JSON_URL, { cache: "no-store" });
+  if (!resp.ok) throw new Error("fetch json failed");
+  const data = await resp.json();
+  const fileName = data?.artifacts?.windows;
+  if (!fileName) throw new Error("invalid json: artifacts.windows missing");
+  return BASE_URL + fileName;
+}
+onMounted(() => {
+  const btn = document.querySelector('a[href="#download"]');
+  if (!btn) return;
+  const iframe = getOrCreateDownloadIframe();
+  btn.addEventListener("click", async (e) => {
+    e.preventDefault();
+    try {
+      const url = await getLatestWindowsUrl();
+      const u = new URL(url);
+      u.searchParams.set("_t", Date.now().toString());
+      iframe.src = u.toString();
+    } catch (err) {
+      console.error(err);
+      alert("获取下载链接失败，请使用 Github 下载。");
+    } finally {
+      btn.textContent = oldText;
+    }
+  });
+});
+</script>

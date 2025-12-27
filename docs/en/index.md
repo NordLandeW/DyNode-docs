@@ -11,6 +11,9 @@ actions:
   - text: Getting Started
     link: guide/getting-started.html
     type: primary
+  - text: Download
+    link: "#download"
+    type: secondary
   - text: Github Releases
     link: https://github.com/NordLandeW/DyNode/releases/latest
     type: secondary
@@ -77,3 +80,44 @@ Our documentation does not include detailed instructions on using or downloading
 :::
 
 If you encounter any issues while using DyNode, please [submit an Issue](https://github.com/NordLandeW/DyNode/issues/new) or visit [Discussions](https://github.com/NordLandeW/DyNode/discussions) for help.
+
+<script setup>
+import { onMounted } from "vue";
+const JSON_URL = "https://d.g.iorinn.moe/dyn/info.json";
+const BASE_URL = "https://d.g.iorinn.moe/dyn/";
+function getOrCreateDownloadIframe() {
+  let iframe = document.getElementById("__download_iframe__");
+  if (!iframe) {
+    iframe = document.createElement("iframe");
+    iframe.id = "__download_iframe__";
+    iframe.style.display = "none";
+    document.body.appendChild(iframe);
+  }
+  return iframe;
+}
+async function getLatestWindowsUrl() {
+  const resp = await fetch(JSON_URL, { cache: "no-store" });
+  if (!resp.ok) throw new Error("fetch json failed");
+  const data = await resp.json();
+  const fileName = data?.artifacts?.windows;
+  if (!fileName) throw new Error("invalid json: artifacts.windows missing");
+  return BASE_URL + fileName;
+}
+onMounted(() => {
+  const btn = document.querySelector('a[href="#download"]');
+  if (!btn) return;
+  const iframe = getOrCreateDownloadIframe();
+  btn.addEventListener("click", async (e) => {
+    e.preventDefault();
+    try {
+      const url = await getLatestWindowsUrl();
+      const u = new URL(url);
+      u.searchParams.set("_t", Date.now().toString());
+      iframe.src = u.toString();
+    } catch (err) {
+      console.error(err);
+      alert("Failed to fetch download link, please use Github to download.");
+    }
+  });
+});
+</script>
