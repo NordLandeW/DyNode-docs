@@ -2,6 +2,14 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.5](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.5) (2026-01-11)
+
+This version includes new features and bug fixes.
+
+* Added quick duplicate and deduplicate commands. See [Advanced Features/Duplicate and Deduplicate Commands](guide/advanced-edit.md#duplicate-and-deduplicate-commands) for details.
+* Fixed an issue where the current project's memory was not correctly released when opening another project.
+* Fixed several issues in localization files.
+
 ## [v0.2.4.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.4.2) (2025-12-25)
 
 This version includes some bug fixes.

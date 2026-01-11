@@ -39,9 +39,9 @@ In addition, the XML data format includes an extra type:
 The width of the last manually placed single note will become the _default width_ for subsequent note placements.
 
 :::center
-![Place Note](drop-a-note.gif =400x)
+![Place Note =400x](drop-a-note.gif)
 
-![Place Hold](drop-a-hold.gif =400x)
+![Place Hold =400x](drop-a-hold.gif)
 :::
 
 ### Moving Notes
@@ -51,7 +51,7 @@ Simply drag to move.
 To move an entire Hold note, if only a single Hold is selected, hold <kbd>Ctrl</kbd> and drag its head. In multi-select mode, a Hold note will be moved as a whole.
 
 :::center
-![Drag Note](drag_note.gif =400x)
+![Drag Note =400x](drag_note.gif)
 :::
 
 ### Selecting Notes
@@ -61,7 +61,7 @@ Click on a single note or drag a selection box with the mouse to select multiple
 You can hold <kbd>Ctrl</kbd> to individually click or box-select notes to add or remove them from the selection.
 
 :::center
-![Multi-select Notes](select_note_2.gif =400x)
+![Multi-select Notes =400x](select_note_2.gif)
 :::
 
 ### Snapping Notes
@@ -73,7 +73,7 @@ When snapping multiple selected notes, the double-clicked note becomes the snap 
 Clicking again will place the snapped notes.
 
 :::center
-![Snap Notes](double_click.gif =400x)
+![Snap Notes =400x](double_click.gif)
 :::
 
 You can use <kbd>Ctrl + ←/→</kbd> or <kbd>Alt + Mouse Wheel</kbd> to change the snap center note.
@@ -101,13 +101,13 @@ After selecting a **single** note, use <kbd>Ctrl+C</kbd> to copy its width as th
 After selecting notes, press <kbd>Ctrl+C</kbd> to copy them; a prompt will indicate the number of notes copied.
 
 :::center
-![Copy Notes](select_note.gif =400x)
+![Copy Notes =400x](select_note.gif)
 :::
 
 Use <kbd>Ctrl+D</kbd> to quickly duplicate the selected notes to the next beat following the latest note among them.
 
 :::center
-![Quick Duplicate Notes](quick_duplicate.gif =600x)
+![Quick Duplicate Notes =600x](quick_duplicate.gif)
 :::
 
 #### Pasting Notes
@@ -123,7 +123,7 @@ You can also use <kbd>Up</kbd> or right-click to change the falling side for the
 You can use <kbd>Ctrl+1</kbd>/<kbd>2</kbd> to batch-convert the pasted notes.
 
 :::center
-![Paste Notes](paste_note.gif =400x)
+![Paste Notes =400x](paste_note.gif)
 :::
 
 ### Multi-select Across Sides
@@ -133,7 +133,7 @@ Switching the editing side does not clear the current selection, so you can sele
 Selected notes can still be subject to batch operations such as copy, paste, snapping, dragging, and width adjustment. However, when multi-selecting across sides, the behavior and logic of editing may change.
 
 :::center
-![Multi-select Across Sides](multiside-select.gif =400x)
+![Multi-select Across Sides =400x](multiside-select.gif)
 :::
 
 #### Toggling Multi-select Binding Across Sides
@@ -194,7 +194,7 @@ For example, if you change the front default width to 1.0, the side's default wi
 Unlike the other modes, in the visually consistent mode, pasted/snapped notes will automatically adjust their width to remain visually consistent.
 
 :::center
-![](visual-consistency.gif =400x)
+![=400x](visual-consistency.gif)
 :::
 
 #### Front and Side Separated
@@ -224,7 +224,7 @@ The available editing sides are:
 - [Dual-sided Editing](#dual-sided-editing)
 
 :::center
-![Switch Editing Side](switch_side.gif =400x)
+![Switch Editing Side =400x](switch_side.gif)
 :::
 
 ### Dual-sided Editing
@@ -238,7 +238,7 @@ In this mode, some editing interactions may change.
 Press <kbd>F</kbd> to fade out notes that are not on the active editing side.
 
 :::center
-![](side_faded.gif =400x)
+![=400x](side_faded.gif)
 :::
 
 ### Toggling Falling Note Type for a Side

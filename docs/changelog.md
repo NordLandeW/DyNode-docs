@@ -2,6 +2,14 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.2.5](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.5) (2026-01-11)
+
+该版本包含一些新功能与问题修复。
+
+* 新增了快速复制命令与去重命令。详见 [高级功能/复制与去重指令](guide/advanced-edit.md#复制与去重指令)。
+* 修复了打开其它项目时，当前项目内存未正确释放的问题。
+* 修复了本地化翻译文件中的一些问题。
+
 ## [v0.2.4.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.4.2) (2025-12-25)
 
 该版本包含了一些问题修复。

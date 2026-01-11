@@ -167,6 +167,25 @@ Different arguments determine the snapping target.
 - `post`: Each note will snap to the nearest succeeding beat line.
 - `nearest`: Each note will snap to the closest beat line.
 
+#### Duplicate and Deduplicate Commands
+
+The `duplicate` command allows you to perform multiple batch quick duplications rapidly. This is equivalent to using the quick duplicate function several times consecutively on selected notes.
+
+```
+.duplicate [integer]
+    // Batch duplicate selected notes to the next beat line after the latest note.
+    // The optional argument specifies the number of times to repeat this operation.
+    .dup
+```
+
+The `deduplicate` command allows you to quickly deduplicate selected or all notes. For all notes with identical properties, this command will only keep one.
+
+```
+.deduplicate
+    // Deduplicate selected or all notes.
+    .dedup
+```
+
 #### Other Commands
 
 ```

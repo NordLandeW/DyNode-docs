@@ -121,18 +121,20 @@ Use <kbd>Esc</kbd> or `.q` to close the console.
 
 For detailed usage of commands, see [Advanced Editing/Commands](guide/advanced-edit.md#commands).
 
-|   Command   | Abbreviation |          Argument          |                Description                 |
-| :---------: | :----------: | :------------------------: | :----------------------------------------: |
-|   `width`   |  `wid`, `w`  |      <`real_number`>       |     Change the width of selected notes     |
-| `position`  |  `pos`, `p`  |      <`real_number`>       |   Change the position of selected notes    |
-|   `side`    |     `s`      |      <`0`\|`1`\|`2`>       |     Change the side of selected notes      |
-|   `snap`    |              | [`pre`\|`post`\|`nearest`] |     Snap selected notes to beat lines      |
-|   `expr`    |     `e`      |         <`string`>         |       Execute an expression on notes       |
-|  `linear`   |    `lin`     |        <`variable`>        |               Curve - Linear               |
-|  `cosine`   |    `cos`     |        <`variable`>        |               Curve - Cosine               |
-|   `cubic`   |    `cub`     |        <`variable`>        |        Curve - Natural Cubic Spline        |
-|  `catrom`   |    `crom`    |        <`variable`>        |   Curve - Centripetal Catmull-Rom Spline   |
-|  `center`   |    `cen`     |             /              | Center-align the horizontal range of notes |
-| `randomize` |    `rand`    |             /              |            Randomize the chart             |
-|   `purge`   |              |             /              |          Clear all notes in chart          |
-|    `fix`    |              |             /              |      Apply common fixes to all notes       |
+|    Command    | Abbreviation |          Argument          |                       Description                       |
+| :-----------: | :----------: | :------------------------: | :-----------------------------------------------------: |
+|    `width`    |  `wid`, `w`  |      <`real_number`>       |           Change the width of selected notes            |
+|  `position`   |  `pos`, `p`  |      <`real_number`>       |          Change the position of selected notes          |
+|    `side`     |     `s`      |      <`0`\|`1`\|`2`>       |            Change the side of selected notes            |
+|    `snap`     |              | [`pre`\|`post`\|`nearest`] |             Snap target notes to beat lines             |
+|  `duplicate`  |    `dup`     |      [`real_number`]       | Quickly duplicate notes for a specified number of times |
+| `deduplicate` |   `dedup`    |             /              |                Deduplicate target notes                 |
+|    `expr`     |     `e`      |         <`string`>         |             Execute an expression on notes              |
+|   `linear`    |    `lin`     |        <`variable`>        |                     Curve - Linear                      |
+|   `cosine`    |    `cos`     |        <`variable`>        |                     Curve - Cosine                      |
+|    `cubic`    |    `cub`     |        <`variable`>        |              Curve - Natural Cubic Spline               |
+|   `catrom`    |    `crom`    |        <`variable`>        |         Curve - Centripetal Catmull-Rom Spline          |
+|   `center`    |    `cen`     |             /              |       Center-align the horizontal range of notes        |
+|  `randomize`  |    `rand`    |             /              |                   Randomize the chart                   |
+|    `purge`    |              |             /              |                Clear all notes in chart                 |
+|     `fix`     |              |             /              |             Apply common fixes to all notes             |

@@ -81,7 +81,7 @@ export default defineUserConfig({
       // 启用图片懒加载
       imgLazyload: true,
       // 启用图片标记
-      mark: true,
+      imgMark: true,
       // 启用图片大小
       imgSize: true,
     },
