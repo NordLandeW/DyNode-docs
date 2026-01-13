@@ -89,7 +89,7 @@ export default defineUserConfig({
       docsearch: {
         appId: "PX9VNWSCXQ",
         apiKey: "efdef4a898675ea367912de9d00bc6f2",
-        indexName: "dyn-iorinn",
+        indices: ["dyn-iorinn"],
       },
       pwa: {
         maxSize: 1024768,
