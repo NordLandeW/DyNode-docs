@@ -2,6 +2,15 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.5.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.5.1) (2026-02-05)
+
+This version contains several bug fixes.
+
+* Added an option to completely disable particle effects.
+* Fixed an issue where undoing large-scale operations in preview mode would cause lag.
+* Fixed an issue where note width was unexpectedly snapped when copying and pasting notes.
+* Updated GameMaker Runtime to the latest version.
+
 ## [v0.2.5](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.5) (2026-01-11)
 
 This version includes new features and bug fixes.

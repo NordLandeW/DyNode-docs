@@ -2,6 +2,15 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.2.5.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.5.1) (2026-02-05)
+
+该版本包含一些问题修复。
+
+* 新增了完全关闭粒子效果的选项。
+* 修复了在预览模式下撤销大规模操作时卡顿的问题。
+* 修复了在复制粘贴音符时音符宽度被意外吸附的问题。
+* 更新 Gamemaker Runtime 至最新版本。
+
 ## [v0.2.5](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.5) (2026-01-11)
 
 该版本包含一些新功能与问题修复。
