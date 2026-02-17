@@ -135,13 +135,6 @@ The compression level used by the ZSTD algorithm for project files. Higher level
 
 Setting this value to `0` will save the project in plain text (uncompressed).
 
-### VIDEO_UPDATE_FREQUENCY
-
-* Type: `number`
-* Default: `60`
-
-The refresh rate (in Hz) used when playing videos.
-
 ### ANNOUNCEMENT_MAX_LIMIT
 
 * Type: `number`
