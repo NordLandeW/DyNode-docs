@@ -134,7 +134,10 @@ All the commands above share the same arguments and effects; they only differ in
 Your selected notes must be on the **same falling side**.
 
 You can append any number of arguments to the commands above. They will be applied in order to this curve generation.
-- If an argument is an integer `x`, it will override your current beat subdivision setting. The filled notes will be `4*x`-th notes.
+- If an argument is a positive integer `x`, it will override your current beat subdivision setting. The filled notes will be `4*x`-th notes.
+- If an argument is a negative integer `-x`, it will override your current beat interval setting.
+  - It will start placing notes from the next `x` beat lines after the first note, and then place the second note on the next `x` beat lines after the placed note, until it exceeds the last note of this segment.
+  - The default interval setting is `1`.
 - If an argument is a note type, the filled notes will be of the type you selected.
   - TAP: represented by `tap` / `normal` / `note`.
   - SLIDE: represented by `slide` / `chain`.
@@ -145,6 +148,12 @@ For example, `.cubic slide 8` means to fill with SLIDE notes between the selecte
 
 :::center
 ![.cubic slide 8 operating on three NOTE notes](cubic-slide-8.png)
+:::
+
+`.cubic 8 -2` makes the generated notes spaced by one 32nd note. This allows you to generate curves in an interleaved manner.
+
+:::center
+![.cubic 8 -2 operating on six notes (top-left, middle, bottom-right and bottom-left, middle, top-right) twice](cubic-n2.png)
 :::
 
 ### Batch Advanced Operations
@@ -218,34 +227,62 @@ The `deduplicate` command allows you to quickly deduplicate selected or all note
 
 ## Expressions
 
-Press <kbd>0</kbd> to input an expression.
+Press <kbd>0</kbd> or use `.expr` / `.e` to input an expression.
 
-A valid expression is a meaningful statement composed of a series of operators, numbers, and variables, for example: `a=10+b*c`, `100>90`, etc.
+A valid expression is a meaningful statement composed of a series of operators, numbers, variables, and functions, for example: `a=10+b*c`, `100>90`, etc.
 
 Expressions support the basic arithmetic operators `+,-,*,/,%`, bitwise operators `<<,>>,|,&`, logical operators `&&,||,!`, relational operators `>,<,>=,<=,==,!=`, and the assignment operator `=`.
+
+Functions are called using `function_name(arg1, arg2, ...)`. For example `sin(0)`, `pow(2,3)`, etc.
 
 You can write expressions in a C-like syntax. Some valid expression examples are as follows:
 
 ```cpp
-a=(10+20)*30     // a becomes 900
-b=a              // b becomes 900
-b=a=20           // b is assigned (a=20), right-associative
-c=10*20/20       // c becomes (10*20)/20, left-associative
+a=(10+20)*30        // a=900
+b=a                 // b=900
+b=a=20              // b=(a=20), right-associative
+c=10*20/20          // c=(10*20)/20, left-associative
+
+a=rand(5)           // rand(5) returns a random real number in [0, 5]
+b=pow(2,3)          // b=8, pow(2,3) is 2 raised to the power of 3, which is 8
+c=sin(0)+cos(0)     // c=1
 ```
 
 You can use expressions to batch modify the properties of all notes or selected notes.
 
 The currently supported note property variables are listed in the table below:
 
-| Property |                       Function                        | Unit  | Note Type Restriction |
-| :------: | :---------------------------------------------------: | :---: | :-------------------: |
-|   time   |               The time the note occurs                |  ms   |                       |
-|   pos    |               The position of the note                |       |                       |
-|   side   | The falling side of the note (0-Front/1-Left/2-Right) |       |                       |
-|   wid    |                 The width of the note                 |       |                       |
-|   len    |               The duration of the note                |  ms   |         HOLD          |
-|  htime   |         The head time of the note (for Hold)          |  ms   |         HOLD          |
-|  etime   |         The tail time of the note (for Hold)          |  ms   |         HOLD          |
+| Property |                         Function                          | Unit  | Note Type Restriction |
+| :------: | :-------------------------------------------------------: | :---: | :-------------------: |
+|   time   |                 The time the note occurs                  |  ms   |                       |
+|   pos    |                 The position of the note                  |       |                       |
+|   side   |   The falling side of the note (0-Front/1-Left/2-Right)   |       |                       |
+|   wid    |                   The width of the note                   |       |                       |
+|  index   | The index of the current note in the sequence (0-indexed) |       |                       |
+|   len    |                 The duration of the note                  |  ms   |         HOLD          |
+|  htime   |           The head time of the note (for Hold)            |  ms   |         HOLD          |
+|  etime   |           The tail time of the note (for Hold)            |  ms   |         HOLD          |
+
+`index` is a special variable. Expressions sort the selected notes by time and position in ascending order (smaller time is processed first). Then, the `index` variable for the first processed note is `0`, for the second is `1`, and so on. This variable can be modified, but changing it has no effect.
+
+The currently supported functions and built-in variables are listed in the table below:
+
+|       Function       |                    Function                     |
+| :------------------: | :---------------------------------------------: |
+|     `pow(a, b)`      |            Returns `a` raised to `b`            |
+|        `pi()`        |         Returns the precise value of π          |
+|       `sin(x)`       |        Returns the sine of `x` (radians)        |
+|       `cos(x)`       |       Returns the cosine of `x` (radians)       |
+|   `step(edge, x)`    | Step function, returns 1 if `x >= edge`, else 0 |
+| `clamp(x, min, max)` |     Constrains `x` between `min` and `max`      |
+|       `exp(x)`       |            Returns `e` raised to `x`            |
+|      `floor(x)`      |            Round `x` down to integer            |
+|      `ceil(x)`       |             Round `x` up to integer             |
+|      `round(x)`      |        Round `x` to the nearest integer         |
+|      `rand(x)`       |    Returns a random real number in `[0, x]`     |
+|    `randr(l, r)`     |    Returns a random real number in `[l, r]`     |
+|      `irand(x)`      |      Returns a random integer in `[0, x]`       |
+|    `irandr(l, r)`    |      Returns a random integer in `[l, r]`       |
 
 The expression is computed independently on each note. The computation process is as follows:
 * The expression’s variables are initialized based on the note’s properties.

@@ -395,44 +395,42 @@ Press <kbd>Ctrl+H</kbd> to toggle hit sounds.
 
 Use the top toolbar to adjust the background brightness.
 
-### Disable Pitch Change
+### Disable Pitch Shift
 
-:::warning
-This is an experimental feature.
-:::
-
-Use the disable pitch change option to prevent music from changing pitch when its speed is altered.
+Use the Disable Pitch Shift option to prevent the music pitch from changing when the speed is adjusted.
 
 ## Other
 
 ### Chart Statistics
 
-Press the <kbd>Middle Mouse</kbd> button to display chart statistics, which include:
-* The BPM at the current time
+Press <kbd>Middle Mouse Button</kbd> to display chart statistics.
+
+You can view the following statistics in order:
+* BPM at the current time
 * Note count statistics
-* Project run time
+* Project runtime
 * Notes per second (KPS)
-  * Measured over a 400ms window
-  * In non‐playback mode, notes from the current time forward are measured
-  * In playback mode, notes from the current time backward are measured
+  * The measurement window is 400ms.
+  * In non-preview mode, it measures notes from the current time onwards.
+  * In preview mode, it measures notes from the current time backwards.
 
-### Auto‐saving Projects
+### Auto-save Project
 
-Press <kbd>F8</kbd> to enable auto‐saving of projects.
+Press <kbd>F8</kbd> to enable auto-save.
 
-By default, the project is auto‐saved every three minutes. Auto‐saves back up the previous project files into a subfolder named `backups` in the current directory.
+By default, the project is auto-saved every three minutes. Auto-save will backup old project files to the `backups` subdirectory in the current directory.
 
-To enable auto‐saving, you must save the project manually at least once.
+For auto-save to take effect, you need to manually save the project at least once.
 
-You can adjust this interval via the `autoSaveTime` option in [Configuration](configuration.md#autosavetime).
+You can modify this interval using the `autoSaveTime` option in [Configuration](configuration.md#autosavetime).
 
-### Record Chart to Video
+### Record Chart Video
 
-Use <kbd>TAB</kbd> to open the toolbar and select `Record Chart to Video`.
+Use <kbd>TAB</kbd> to open the toolbar and select `Record Chart Video`.
 
-Powered by FFmpeg's encoding capabilities, this feature renders the chart preview directly to a video at specified settings (defaulting to 1080p@60FPS) and with the current editor interface settings (such as note flow speed, particle effects, etc.) at medium-high quality. When using this feature, the background video will be played back at the rendering speed, and any previously set music speed multipliers will be ignored. All input operations will be locked during the recording process.
+Using FFmpeg's encoding capabilities, this feature renders the chart preview directly to a video file at medium-high quality based on specified specifications (default 1080P@60FPS) and current editor settings (e.g., note flow speed, particle effects). When using this feature, background videos will play at the rendering speed, and any previously set music speed multiplier will be ignored. All input operations are locked during recording.
 
-DyNode will automatically detect the availability of encoders and prioritize system-supported hardware acceleration and HEVC encoding.
+DyNode will automatically detect encoder availability and prioritize system-supported hardware acceleration and H.264 encoding.
 
 :::tip How to check if FFmpeg is installed correctly?
 

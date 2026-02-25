@@ -2,6 +2,25 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.6](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6) (2026-02-25)
+
+This version includes new features, bug fixes, and other improvements.
+
+- Expressions now have basic support for functions.
+  - Added a series of built-in functions.
+- Improved audio synchronization and fixed some latency issues.
+  - There will no longer be uncertain slight delays when playing back charts.
+  - The device music playback delay may have changed compared to the previous version depending on the file. The delay settings may need to be readjusted accordingly.
+- Improved the effect, latency, and fixed related issues of the "Disable Pitch Shift" feature.
+  - Removed the experimental flag for the "Disable Pitch Shift" feature.
+- Added read support for older versions of the XML chart format.
+- The default encoder for video recording is now changed to H.264 to improve compatibility.
+- Added an available interval parameter for curve generation commands.
+- Further improved the rendering efficiency of the preview mode.
+- Fixed an issue where the window size failed to reset when exiting full screen.
+- Fixed an issue where importing dyn / xml files failed under some versions.
+- Updated the about page and the credits list.
+
 ## [v0.2.5.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.5.1) (2026-02-05)
 
 This version contains several bug fixes.
