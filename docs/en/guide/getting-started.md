@@ -17,12 +17,13 @@ If you require support for these systems, you may consider downloading an earlie
 :::
 
 :::info Data Collection / Privacy
-Since version 0.1.16, DyNode collects a minimal amount of anonymous data by default. We only collect the following:
-- The version of DyNode being used
+Starting from DyNode 0.1.16, we have introduced minimal anonymous data collection. We only collect:
+- The current DyNode version number
+- Feature usage statistics to help improve development
 
-This data is not linked to any personal information (such as IP address, location, or system/hardware details), and no personal data is transmitted.
+This information will never be associated with your personal identity, and we will not transmit any form of personal data.
 
-You can disable data collection completely in [Configuration](configuration.md).
+You always have full control. If you prefer not to share this information, you can completely disable it at any time in the [Configuration](configuration.md).
 :::
 
 ### Building from Source
