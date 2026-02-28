@@ -2,6 +2,15 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.6.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6.1) (2026-03-01)
+
+This release includes bug fixes and other improvements.
+
+- Increased the rendering limit for beat subdivisions from `28` to `128`.
+- Fixed an issue where the Input Method Editor (IME) interfered with application input.
+- Improved analytics features.
+- Improved stability when exiting the application.
+
 ## [v0.2.6](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6) (2026-02-25)
 
 This version includes new features, bug fixes, and other improvements.
