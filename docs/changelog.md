@@ -2,13 +2,14 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
-## [v0.2.6.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6.1) (2026-03-01)
+## [v0.2.6.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6.2) (2026-03-01)
 
 该版本包含问题修复与其他改进。
 
+- 修复了打开项目时可能出现的静默崩溃问题。
 - 节拍细分的绘制上限由 `28` 提升至 `128`。
 - 修复了输入法干扰应用输入的问题。
-- 改进了数据收集功能。
+- 改进了数据收集和错误上传功能。
 - 改进了退出应用时的稳定性。
 
 ## [v0.2.6](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6) (2026-02-25)
