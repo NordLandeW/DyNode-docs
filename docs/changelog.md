@@ -2,6 +2,12 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.2.6.3](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6.3) (2026-03-02)
+
+该版本包含一个兼容性修复。
+
+* 修复了备份项目时可能导致程序崩溃的 Windows 10 兼容问题。
+
 ## [v0.2.6.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6.2) (2026-03-01)
 
 该版本包含问题修复与其他改进。

@@ -2,6 +2,12 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.6.3](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6.3) (2026-03-02)
+
+This release includes a compatibility fix.
+
+* Fixed a Windows 10 compatibility issue that could cause a crash when backing up a project.
+
 ## [v0.2.6.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6.2) (2026-03-01)
 
 This release includes bug fixes and other improvements.
