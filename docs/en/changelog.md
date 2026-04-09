@@ -2,6 +2,15 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.6.4](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6.4) (2026-04-09)
+
+This release contains a few bug fixes.
+
+* Updated the engine version.
+  * This fixes an issue where the window was placed incorrectly when maximized in some cases.
+* Fixed an issue where the application would crash when opening a project in rare cases.
+* Fixed an issue where the background animation on the startup screen was inconsistent across different framerates.
+
 ## [v0.2.6.3](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6.3) (2026-03-02)
 
 This release includes a compatibility fix.
