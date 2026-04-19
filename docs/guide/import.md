@@ -15,13 +15,7 @@
 :::
 
 :::info 关于 Dynamaker-modified
-DyNode 提供对 Dynamaker-modified 谱面格式导入的完整支持。
-:::
-
-:::info 关于早期版本的 Dynamaker 谱面格式
-DyNode 目前无法直接读取早期版本的 Dynamaker 谱面格式。
-
-若你遇见了相关警告，请尝试将谱面导入最新版的 [Dynamaker-modified](https://github.com/jmakxd/dynamaker-modified) 后重新导出再使用 DyNode 进行读取。
+DyNode 提供对 Dynamaker / Dynamaker-modified 谱面格式导入的完整支持。
 :::
 
 ## 新建项目时导入 .xml/.dy 谱面

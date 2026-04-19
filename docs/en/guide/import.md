@@ -15,13 +15,7 @@ Although we recommend that all charts have the same BPM before merging for easie
 :::
 
 :::info About Dynamaker-modified
-DyNode fully supports importing charts in the Dynamaker-modified format.
-:::
-
-:::info About Early Versions of Dynamaker Charts
-DyNode currently cannot directly read early versions of Dynamaker chart formats.
-
-If you encounter related warnings, try importing the chart into the latest [Dynamaker-modified](https://github.com/jmakxd/dynamaker-modified) first, then re-export and import it into DyNode.
+DyNode fully supports importing charts in the Dynamaker / Dynamaker-modified format.
 :::
 
 ## Importing .xml/.dy Charts When Creating a Project
