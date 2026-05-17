@@ -2,6 +2,20 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+
+## [v0.2.6.5](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6.5) (2026-05-17)
+
+This version includes some bug fixes.
+
+* Improved the project file saving process to reduce the risk of project file corruption caused by application errors, system errors, or interrupted writes during saving.
+* A small number of emergency backups will now be kept automatically when saving projects.
+* Fixed an issue where a failed save could still be reported as successful and update the current project path to the failed target.
+* Fixed an issue where opening some projects containing encoding errors could cause the application to crash or fail to report the error correctly.
+* Fixed an issue where undo/redo could report errors in some cases.
+* Fixed an issue where undoing/redoing Timing Points could lead to incorrect results.
+* Fixed minor stuttering when saving existing projects.
+
+
 ## [v0.2.6.4](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6.4) (2026-04-09)
 
 This release contains a few bug fixes.
