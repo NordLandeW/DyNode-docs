@@ -3,6 +3,12 @@
 This page contains detailed release notes and related instructions for DyNode updates.
 
 
+## [v0.2.6.6](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6.6) (2026-05-18)
+
+This version includes a bug fix.
+
+* Fixed an issue where, after failing to open a corrupted project file, creating and saving a new project could produce invalid project data.
+
 ## [v0.2.6.5](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6.5) (2026-05-17)
 
 This version includes some bug fixes.

@@ -3,6 +3,12 @@
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
 
+## [v0.2.6.6](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6.6) (2026-05-18)
+
+该版本包含一个错误修复。
+
+* 修复了打开损坏项目文件失败后，新建项目再保存时可能产生异常项目数据的问题。
+
 ## [v0.2.6.5](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6.5) (2026-05-17)
 
 该版本包含一些错误修复。
