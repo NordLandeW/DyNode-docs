@@ -3,6 +3,15 @@
 This page contains detailed release notes and related instructions for DyNode updates.
 
 
+## [v0.2.6.7](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6.7) (2026-06-21)
+
+This version includes some bug fixes and a new feature.
+
+* Fixed a compatibility issue affecting some systems.
+* Fixed an issue where backing up a non-existent project could cause an error.
+* Improved project backup behavior so an incorrect timestamp is less likely to fall back to 1970.
+* A warning will now appear when placing a Tap note that may be completely covered by another Tap note.
+
 ## [v0.2.6.6](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6.6) (2026-05-18)
 
 This version includes a bug fix.
