@@ -6,7 +6,7 @@ This page explains the concept of projects in DyNode.
 
 A DyNode project contains all the information needed to create a chart, such as difficulty, title, music, background files, timing, and the chart data itself.
 
-Project files use a JSON-based file format and may be compressed with ZSTD. See [File Formats](/guide/file-formats.md) for details.
+Project files use a JSON-based file format and may be compressed with ZSTD. See [File Formats](file-formats.md) for details.
 
 :::tip
 The project file does not contain the actual content of the music or background files; it only stores their **relative paths**.

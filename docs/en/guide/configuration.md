@@ -116,7 +116,7 @@ The interval (in seconds) for auto‐saving the chart.
 * Type: `number`
 * Default: `0`
 
-The delay (in milliseconds) applied when FMOD plays .mp3 files. See [Timing](guide/timing.html#mp3-and-wav-delay-handling) for details.
+The delay (in milliseconds) applied when FMOD plays .mp3 files. See [Timing](timing.md#mp3-and-wav-format-delays) for details.
 
 ## Advanced Configuration
 
