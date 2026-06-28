@@ -279,7 +279,7 @@ You cannot modify read-only variables or read write-only variables in expression
 :::tip About the bar/abar properties
 These properties let you move notes directly by measure number without doing BPM conversion manually.
 
-For example, `bar = bar + 3/16` moves the note backward by 3 sixteenth notes, while `bar = bar + 2 + 3/28` moves it backward by two measures and 3 twenty-eighth notes.
+For example, `bar = bar + 3/16` moves the note later by 3 sixteenth notes, while `bar = bar + 2 + 3/28` moves it later by two measures and 3 twenty-eighth notes.
 
 This property also supports calculations across Timing Points, because when `bar` is written, it is not calculated based on an **absolute value**.
 * It is calculated based on a **relative value**, namely the change in `bar`.
