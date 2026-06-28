@@ -2,6 +2,19 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.2.7](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.7) (2026-06-28)
+
+该版本包含一些错误修复与新功能。
+
+* 修复了 Timing Point 清空在部分情况下无法正确生效的问题。
+* 表达式功能得到了主要的功能更新。
+  * 现在，属性变量将实时与音符的属性进行关联。
+  * 添加了 `bar` / `abar` / `bpm` / `meter` / `tptime` 音符属性。
+  * 添加了只读与只写变量的支持。
+    * `pi` 从函数变为只读变量。
+    * `index` 变为只读属性变量。
+  * 添加了 `ttb` / `btt` / `tabd` 函数。
+  * 更多修改详见 [高级编辑/表达式](guide/advanced-edit.md#表达式)。
 
 ## [v0.2.6.7](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6.7) (2026-06-21)
 

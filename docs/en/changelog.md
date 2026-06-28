@@ -3,6 +3,21 @@
 This page contains detailed release notes and related instructions for DyNode updates.
 
 
+## [v0.2.7](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.7) (2026-06-28)
+
+This version includes some bug fixes and new features.
+
+* Fixed an issue where clearing Timing Points did not work correctly in some cases.
+* The expression feature received a major feature update.
+  * Property variables are now bound to note properties in real time.
+  * Added the `bar` / `abar` / `bpm` / `meter` / `tptime` note properties.
+  * Added support for read-only and write-only variables.
+    * `pi` changed from a function to a read-only variable.
+    * `index` is now a read-only property variable.
+  * Added the `ttb` / `btt` / `tabd` functions.
+  * For more details, see [Advanced Editing/Expressions](guide/advanced-edit.md#expressions).
+
+
 ## [v0.2.6.7](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.6.7) (2026-06-21)
 
 This version includes some bug fixes and a new feature.
