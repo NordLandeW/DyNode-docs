@@ -252,44 +252,78 @@ You can use expressions to batch modify the properties of all notes or selected 
 
 The currently supported note property variables are listed in the table below:
 
-| Property |                         Function                          | Unit  | Note Type Restriction |
-| :------: | :-------------------------------------------------------: | :---: | :-------------------: |
-|   time   |                 The time the note occurs                  |  ms   |                       |
-|   pos    |                 The position of the note                  |       |                       |
-|   side   |   The falling side of the note (0-Front/1-Left/2-Right)   |       |                       |
-|   wid    |                   The width of the note                   |       |                       |
-|  index   | The index of the current note in the sequence (0-indexed) |       |                       |
-|   len    |                 The duration of the note                  |  ms   |         HOLD          |
-|  htime   |           The head time of the note (for Hold)            |  ms   |         HOLD          |
-|  etime   |           The tail time of the note (for Hold)            |  ms   |         HOLD          |
+| Property | Function                                                                 | Unit  | Note Type Restriction |
+| :------: | :----------------------------------------------------------------------- | :---: | :-------------------: |
+|  `time`  | The time the note occurs.                                                |  ms   |                       |
+|  `bar`   | The note's Bar (measure number).                                         |       |                       |
+|  `abar`  | The note's absolute Bar value, **write-only**.                           |       |                       |
+|  `pos`   | The position of the note.                                                |       |                       |
+|  `side`  | The falling side of the note (0-Front/1-Left/2-Right).                   |       |                       |
+|  `wid`   | The width of the note.                                                   |       |                       |
+| `index`  | The index of the current note among all processed notes, counted from 0. |       |                       |
+|  `bpm`   | The BPM value of the Timing Point containing the note.                   |       |                       |
+| `meter`  | The meter value of the Timing Point containing the note.                 |       |                       |
+| `tptime` | The start time of the Timing Point containing the note.                  |       |                       |
+|  `len`   | The duration of the note.                                                |  ms   |         HOLD          |
+| `htime`  | The head time of the note.                                               |  ms   |         HOLD          |
+| `etime`  | The tail time of the note.                                               |  ms   |         HOLD          |
 
-`index` is a special variable. Expressions sort the selected notes by time and position in ascending order (smaller time is processed first). Then, the `index` variable for the first processed note is `0`, for the second is `1`, and so on. This variable can be modified, but changing it has no effect.
+These property variables are bound to the note's properties in real time. As a result, modifying some variables may also affect other variables. For example, modifying `htime` or `etime` also affects `time` and `len`, while modifications to `time` and `bar` affect each other in real time.
+
+`index` is a special variable. Expressions sort the selected notes by time and position in ascending order (smaller time is processed first). Then, the `index` variable for the first processed note is `0`, for the second is `1`, and so on. This is a **read-only variable**.
+
+:::tip Read-only and write-only variables
+You cannot modify read-only variables or read write-only variables in expressions. Doing so will cause expression execution to fail.
+:::
+
+:::tip About the bar/abar properties
+These properties let you move notes directly by measure number without doing BPM conversion manually.
+
+For example, `bar = bar + 3/16` moves the note backward by 3 sixteenth notes, while `bar = bar + 2 + 3/28` moves it backward by two measures and 3 twenty-eighth notes.
+
+This property also supports calculations across Timing Points, because when `bar` is written, it is not calculated based on an **absolute value**.
+* It is calculated based on a **relative value**, namely the change in `bar`.
+  * After obtaining the bar delta, note movement skips bar values that do not exist at Timing Point gaps. This makes movement operations such as `+3/16` convenient to use.
+  * If you are not sure what an **absolute value** means here, it is the absolute measure number in DyNode. See [Timing/Time and Bar Numbers](timing.md#time-and-bar-numbers). You can also see the absolute measure number by pressing <kbd>Ctrl+B</kbd> or by checking the number to the right of the white measure line.
+* Therefore, directly assigning values such as `bar = 20` will probably not give the result you want.
+
+If you need absolute-value writing, use the `abar` variable. `abar` is a **write-only** variable dedicated to modifying the absolute measure number.
+:::
 
 The currently supported functions and built-in variables are listed in the table below:
 
-|       Function       |                    Function                     |
-| :------------------: | :---------------------------------------------: |
-|     `pow(a, b)`      |            Returns `a` raised to `b`            |
-|        `pi()`        |         Returns the precise value of π          |
-|       `sin(x)`       |        Returns the sine of `x` (radians)        |
-|       `cos(x)`       |       Returns the cosine of `x` (radians)       |
-|   `step(edge, x)`    | Step function, returns 1 if `x >= edge`, else 0 |
-| `clamp(x, min, max)` |     Constrains `x` between `min` and `max`      |
-|       `exp(x)`       |            Returns `e` raised to `x`            |
-|      `floor(x)`      |            Round `x` down to integer            |
-|      `ceil(x)`       |             Round `x` up to integer             |
-|      `round(x)`      |        Round `x` to the nearest integer         |
-|      `rand(x)`       |    Returns a random real number in `[0, x]`     |
-|    `randr(l, r)`     |    Returns a random real number in `[l, r]`     |
-|      `irand(x)`      |      Returns a random integer in `[0, x]`       |
-|    `irandr(l, r)`    |      Returns a random integer in `[l, r]`       |
+|        Function        | Function                                                                                         |
+| :--------------------: | :----------------------------------------------------------------------------------------------- |
+|      `pow(a, b)`       | Returns `a` raised to `b`.                                                                       |
+|        `sin(x)`        | Returns the sine of `x` (radians).                                                               |
+|        `cos(x)`        | Returns the cosine of `x` (radians).                                                             |
+|    `step(edge, x)`     | Step function, returns 1 if `x >= edge`, else 0.                                                 |
+|  `clamp(x, min, max)`  | Constrains `x` between `min` and `max`.                                                          |
+|        `exp(x)`        | Returns `e` raised to `x`.                                                                       |
+|       `floor(x)`       | Rounds `x` down to integer.                                                                      |
+|       `ceil(x)`        | Rounds `x` up to integer.                                                                        |
+|       `round(x)`       | Rounds `x` to the nearest integer.                                                               |
+|       `rand(x)`        | Returns a random real number in `[0, x]`.                                                        |
+|     `randr(l, r)`      | Returns a random real number in `[l, r]`.                                                        |
+|       `irand(x)`       | Returns a random integer in `[0, x]`.                                                            |
+|     `irandr(l, r)`     | Returns a random integer in `[l, r]`.                                                            |
+|       `btt(bar)`       | Converts an absolute measure number to absolute time in ms.                                      |
+|      `ttb(time)`       | Converts absolute time in ms to an absolute measure number.                                      |
+| `tabd(time, deltaBar)` | Returns the absolute time after moving `time` by `deltaBar` measures, skipping nonexistent bars. |
+
+| Variable | Description                                             |
+| :------: | :------------------------------------------------------ |
+|   `pi`   | Read-only constant that returns the precise value of π. |
+
+`bar`, `abar`, `bpm`, `meter`, `tptime`, `btt`, `ttb`, and `tabd` all require Timing Points to be set correctly. If no Timing Point exists, the expression will fail.
 
 The expression is computed independently on each note. The computation process is as follows:
-* The expression’s variables are initialized based on the note’s properties.
-* The expression is evaluated, and the variables may change during computation.
-* The final values of the variables are used to update the note’s properties.
+* The expression's variables are initialized based on the note's properties.
+* The expression is evaluated, and variables may change during computation.
+  * During this process, the note's properties also change in real time as the expression variables change.
+* The final modified note properties are applied to the actual notes in the chart.
 
-In DyNode, multiple expressions are separated by `;` and are executed sequentially. All variables are stored as double‐precision floating-point numbers.
+In DyNode, multiple expressions are separated by `;` and are executed sequentially. All variables are stored as double-precision floating-point numbers.
 
 Note that some variables are restricted to certain note types; that is, they only affect specific types of notes. All computations will ignore SUB type notes (the tail notes of HOLD notes). See [Modifying HOLD Properties](#modifying-hold-properties) for details.
 
@@ -298,17 +332,17 @@ Specifically, the falling side property (`side`) will always be taken modulo 3. 
 Below are some valid examples of expressions, each on a separate line:
 
 ```cpp
-wid = wid * 2                       // Double the width of the note
-pos = 2.5                         // Set the note position to 2.5
-time = time + 10                    // Increase the note time by 10ms (adding delay)
+wid=wid*2                       // Double the width of the note
+pos=2.5                         // Set the note position to 2.5
+time=time+10                    // Increase the note time by 10ms (adding delay)
 
-pos = 2 * 2.5 - pos                  // Mirror the note across the center at position 2.5
-time = time / 1.5; len = len / 1.5   // Speed up the chart by a factor of 1.5 (divide note times and HOLD durations by 1.5)
-a = 20; time = a                    // Define variable a and assign it to time
+pos=2*2.5-pos                   // Mirror the note across the center at position 2.5
+time=time/1.5;len=len/1.5       // Speed up the chart by a factor of 1.5 (divide all note times and HOLD durations by 1.5)
+a=20;time=a                     // Define variable a and assign it to time
 
-side = side + 1                     // Moves front notes to the left, left notes to the right, and right notes to the front
-pos = (side == 0) * 2 + (side != 0) * pos   // Only changes the position of front notes to 2
-side = -side                        // Swaps the left and right side notes
+side=side+1                     // Move front notes to the left, left notes to the right, and right notes to the front
+pos=(side==0)*2+(side!=0)*pos   // Only change the position of front notes to 2
+side=-side                      // Swap left and right side notes
 ```
 
 
@@ -316,27 +350,43 @@ side = -side                        // Swaps the left and right side notes
 
 All expression evaluations ignore SUB type notes. Instead, for HOLD type notes there are special property variables available:
 
-| Property |         Function          | Unit  |
-| :------: | :-----------------------: | :---: |
-|   len    | The duration of the note  |  ms   |
-|  htime   | The head time of the note |  ms   |
-|  etime   | The tail time of the note |  ms   |
+| Property | Function                   | Unit  |
+| :------: | :------------------------- | :---: |
+|  `len`   | The duration of the note.  |  ms   |
+| `htime`  | The head time of the note. |  ms   |
+| `etime`  | The tail time of the note. |  ms   |
 
 This means that modifying the `time` property of a HOLD note will not affect its duration; changing `time` effectively moves the entire HOLD note rather than adjusting its head and tail separately.
 
 If you want to modify the head and tail separately, you need to change the `htime` and `etime` properties instead of `time`.
 
-You may notice that these three properties can conflict; that is, if you modify `htime` and `etime`, then `len` would theoretically change. However, during expression evaluation, variables are not bound to each other – a change in one does not automatically update another.
+Modifying these three properties may cause their values to change together. For example, if you modify `htime` or `etime`, then `len` (and `time`) will also change in real time.
 
-In practice, we do not recommend including two HOLD-related variables in the same expression. The conflict resolution is as follows:
-* If both `time` and `htime` are modified, the modification to `htime` takes precedence.
-* If both `len` and `etime` are modified, the modification to `len` takes precedence.
+:::tip
+When you modify multiple such properties in one expression, they do not conflict because expressions are executed one by one in order.
+
+For example:
+
+`etime=etime-10; time=time+10`
+
+This means:
+* **First**, modify the tail's absolute time by -10.
+* **Then**, move the whole note by +10.
+  * This operation also increases both `etime` and `htime` by 10. However, because expressions are executed sequentially rather than in parallel, it does not conflict with the previous operation.
+* In the end, `htime` is increased by 10 relative to the original value, while `etime` is unchanged relative to the original value.
+:::
+
+:::tip What if I want to use bar in HOLD-only properties?
+For other time modification needs, you can use the `btt` / `ttb` / `tabd` functions to perform absolute or relative conversions between measure numbers and time.
+
+`bar` and `abar` are also essentially wrappers around these functions.
+:::
 
 Here are some valid examples of modifying HOLD properties:
 
 ```cpp
-htime = htime + 10; etime = etime - 10       // Increase the head time by 10ms and decrease the tail time by 10ms for all HOLD notes
-len = len / 2                                // Halve the duration of all HOLD notes
-htime = 100                                  // Set the head time of all HOLD notes to 100ms
-htime = 100; len = 100                        // Equivalent to setting time and duration to 100ms
+htime=htime+10;etime=etime-10       // Increase the head time by 10ms and decrease the tail time by 10ms for all HOLD notes
+len=len/2                           // Halve the duration of all HOLD notes
+htime=100                           // Set the head time of all HOLD notes to 100ms
+htime=100;len=100                   // Equivalent to time=100;len=100
 ```
