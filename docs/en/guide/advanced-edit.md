@@ -261,9 +261,9 @@ The currently supported note property variables are listed in the table below:
 |  `side`  | The falling side of the note (0-Front/1-Left/2-Right).                   |       |                       |
 |  `wid`   | The width of the note.                                                   |       |                       |
 | `index`  | The index of the current note among all processed notes, counted from 0. |       |                       |
-|  `bpm`   | The BPM value of the Timing Point containing the note.                   |       |                       |
-| `meter`  | The meter value of the Timing Point containing the note.                 |       |                       |
-| `tptime` | The start time of the Timing Point containing the note.                  |       |                       |
+|  `bpm`   | The BPM value of the Timing Point containing the note, **read-only**.    |       |                       |
+| `meter`  | The meter value of the Timing Point containing the note, **read-only**.  |       |                       |
+| `tptime` | The start time of the Timing Point containing the note, **read-only**.   |       |                       |
 |  `len`   | The duration of the note.                                                |  ms   |         HOLD          |
 | `htime`  | The head time of the note.                                               |  ms   |         HOLD          |
 | `etime`  | The tail time of the note.                                               |  ms   |         HOLD          |
