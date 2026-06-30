@@ -3,6 +3,13 @@
 This page contains detailed release notes and related instructions for DyNode updates.
 
 
+## [v0.2.7.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.7.1) (2026-06-30)
+
+This version includes some bug fixes.
+
+* Fixed an issue where some project settings, such as the title, might not refresh correctly in the editor after creating a new project.
+* Fixed an issue where changes to selected notes might not be reflected immediately in some cases.
+
 ## [v0.2.7](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.7) (2026-06-28)
 
 This version includes some bug fixes and new features.

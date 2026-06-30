@@ -2,6 +2,13 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.2.7.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.7.1) (2026-06-30)
+
+该版本包含一些错误修复。
+
+* 修复了新建项目时部分项目配置如标题等可能不会在编辑器正确刷新的问题。
+* 修复了被选中的音符在一些情况下不会立即体现其改动的问题。
+
 ## [v0.2.7](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.7) (2026-06-28)
 
 该版本包含一些错误修复与新功能。
