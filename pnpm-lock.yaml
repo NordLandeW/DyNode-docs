@@ -31,7 +31,7 @@ importers:
         specifier: ^1.99.0
         version: 1.99.0
       vue:
-        specifier: ^3.5.34
+        specifier: 3.5.34
         version: 3.5.34
       vuepress:
         specifier: 2.0.0-rc.30
