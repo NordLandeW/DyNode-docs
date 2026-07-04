@@ -82,11 +82,40 @@ Our documentation does not include detailed instructions on using or downloading
 If you encounter any issues while using DyNode, please [submit an Issue](https://github.com/NordLandeW/DyNode/issues/new) or visit [Discussions](https://github.com/NordLandeW/DyNode/discussions) for help.
 
 <script setup>
-import { onMounted } from "vue";
+import { nextTick, onBeforeUnmount, onMounted, watch } from "vue";
+import { useRoute } from "vuepress/client";
 
 const JSON_URL = "https://d.g.iorinn.moe/dyn/info.json";
 const BASE_URL = "https://d.g.iorinn.moe/dyn/";
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+const TEXTS = {
+  zh: {
+    idle: "下载",
+    loading: "正在获取…",
+    done: "下载已开始",
+    error: "获取失败，请从 GitHub 下载",
+  },
+  en: {
+    idle: "Download",
+    loading: "Fetching…",
+    done: "Download started",
+    error: "Failed — use GitHub instead",
+  },
+};
+
+const route = useRoute();
+
+let btn = null;
+let label = null;
+let cleanupClick = null;
+let busy = false;
+let mounted = false;
+let operationToken = 0;
+
+const getTexts = () => (route.path.startsWith("/en/") ? TEXTS.en : TEXTS.zh);
+const isCurrentOperation = (token) =>
+  mounted && token === operationToken && btn !== null && label !== null;
 
 function getOrCreateDownloadIframe() {
   let iframe = document.getElementById("__download_iframe__");
@@ -108,88 +137,199 @@ async function getLatestWindowsUrl() {
   return BASE_URL + fileName;
 }
 
+function findDownloadButton() {
+  const buttons = Array.from(
+    document.querySelectorAll('a.vp-hero-action[href="#download"], a[href="#download"]'),
+  );
+  return buttons.find((element) => element.closest(".vp-hero-actions")) ?? buttons[0] ?? null;
+}
+
 // Inject animatable structure: shine layer + content layer (state icon + label).
-// The button keeps the theme's original display to preserve baseline alignment.
-function decorateButton(btn) {
-  btn.classList.add("dyn-dl-btn");
-  const text = btn.textContent.trim();
-  btn.textContent = "";
+// VuePress may reuse or rebuild the same hero action during locale switches, so this can run repeatedly.
+function decorateButton(target) {
+  target.classList.add("dyn-dl-btn");
+
+  const existingLabel = target.querySelector(".dyn-dl-label");
+  if (target.dataset.dynDlDecorated === "true" && existingLabel) return existingLabel;
+
+  const text = target.textContent.trim() || getTexts().idle;
+  target.dataset.dynDlDecorated = "true";
+  target.textContent = "";
+
   const shine = document.createElement("span");
   shine.className = "dyn-dl-shine";
+
   const inner = document.createElement("span");
   inner.className = "dyn-dl-inner";
+
   const icon = document.createElement("span");
   icon.className = "dyn-dl-icon";
   icon.setAttribute("aria-hidden", "true");
   icon.innerHTML =
     '<svg class="dyn-spin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="42.4" stroke-dashoffset="30"/></svg>' +
     '<svg class="dyn-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-  const label = document.createElement("span");
-  label.className = "dyn-dl-label";
-  label.textContent = text;
+
+  const nextLabel = document.createElement("span");
+  nextLabel.className = "dyn-dl-label";
+  nextLabel.textContent = text;
+
   inner.appendChild(icon);
-  inner.appendChild(label);
-  btn.appendChild(shine);
-  btn.appendChild(inner);
-  return label;
+  inner.appendChild(nextLabel);
+  target.appendChild(shine);
+  target.appendChild(inner);
+
+  return nextLabel;
+}
+
+function cancelCurrentOperation() {
+  operationToken += 1;
+  busy = false;
+}
+
+function applyIdleText() {
+  if (!btn || !label) return;
+
+  const { idle } = getTexts();
+  btn.classList.remove("is-loading", "is-done", "is-error", "dyn-swapping", "dyn-measuring");
+  btn.style.width = "";
+  btn.setAttribute("aria-label", idle);
+  label.textContent = idle;
+}
+
+function setState(token, state, text) {
+  return new Promise((resolve) => {
+    if (!isCurrentOperation(token)) {
+      resolve(false);
+      return;
+    }
+
+    btn.classList.add("dyn-swapping");
+
+    window.setTimeout(() => {
+      if (!isCurrentOperation(token)) {
+        resolve(false);
+        return;
+      }
+
+      const prev = btn.getBoundingClientRect().width;
+      btn.classList.remove("is-loading", "is-done", "is-error");
+      if (state) btn.classList.add(state);
+      label.textContent = text;
+      btn.setAttribute("aria-label", text);
+      btn.classList.add("dyn-measuring");
+      btn.style.width = "auto";
+      const next = btn.getBoundingClientRect().width;
+      btn.style.width = prev + "px";
+      void btn.offsetWidth;
+      btn.classList.remove("dyn-measuring");
+      btn.style.width = next + "px";
+      btn.classList.remove("dyn-swapping");
+
+      window.setTimeout(() => {
+        if (!isCurrentOperation(token)) {
+          resolve(false);
+          return;
+        }
+
+        if (!state) btn.style.width = "";
+        resolve(true);
+      }, 380);
+    }, 200);
+  });
+}
+
+async function bindDownloadButton() {
+  await nextTick();
+  if (!mounted) return;
+
+  const nextBtn = findDownloadButton();
+  if (!nextBtn) {
+    cleanupClick?.();
+    cleanupClick = null;
+    btn = null;
+    label = null;
+    cancelCurrentOperation();
+    return;
+  }
+
+  if (nextBtn !== btn) {
+    cleanupClick?.();
+    cleanupClick = null;
+    btn = nextBtn;
+    label = decorateButton(btn);
+
+    const boundBtn = btn;
+    const handleClick = async (e) => {
+      e.preventDefault();
+
+      if (busy) return;
+      busy = true;
+
+      const token = operationToken + 1;
+      operationToken = token;
+      const t0 = Date.now();
+      const texts = getTexts();
+
+      if (!(await setState(token, "is-loading", texts.loading))) return;
+
+      try {
+        const url = await getLatestWindowsUrl();
+        if (!isCurrentOperation(token)) return;
+
+        // Keep the loading state visible for a moment to avoid flicker.
+        await sleep(Math.max(0, 700 - (Date.now() - t0)));
+        if (!isCurrentOperation(token)) return;
+
+        const u = new URL(url);
+        u.searchParams.set("_t", Date.now().toString());
+        getOrCreateDownloadIframe().src = u.toString();
+
+        if (!(await setState(token, "is-done", texts.done))) return;
+        await sleep(2400);
+      } catch (err) {
+        if (!isCurrentOperation(token)) return;
+
+        console.error(err);
+        if (!(await setState(token, "is-error", texts.error))) return;
+        await sleep(3000);
+      } finally {
+        if (isCurrentOperation(token)) {
+          await setState(token, "", getTexts().idle);
+          busy = false;
+        }
+      }
+    };
+
+    boundBtn.addEventListener("click", handleClick);
+    cleanupClick = () => boundBtn.removeEventListener("click", handleClick);
+  } else {
+    label = decorateButton(btn);
+  }
+
+  cancelCurrentOperation();
+  applyIdleText();
 }
 
 onMounted(() => {
-  const btn = document.querySelector('a[href="#download"]');
-  if (!btn) return;
-  const iframe = getOrCreateDownloadIframe();
-  const label = decorateButton(btn);
-  const idleText = label.textContent;
-  let busy = false;
+  mounted = true;
+  bindDownloadButton();
+});
 
-  // State switch: fade the whole content out -> swap & measure while invisible
-  // -> smooth width transition + fade content back in
-  const setState = (state, text) =>
-    new Promise((resolve) => {
-      btn.classList.add("dyn-swapping");
-      setTimeout(() => {
-        const prev = btn.getBoundingClientRect().width;
-        btn.classList.remove("is-loading", "is-done", "is-error");
-        if (state) btn.classList.add(state);
-        label.textContent = text;
-        btn.classList.add("dyn-measuring");
-        btn.style.width = "auto";
-        const next = btn.getBoundingClientRect().width;
-        btn.style.width = prev + "px";
-        void btn.offsetWidth;
-        btn.classList.remove("dyn-measuring");
-        btn.style.width = next + "px";
-        btn.classList.remove("dyn-swapping");
-        setTimeout(() => {
-          if (!state) btn.style.width = "";
-          resolve();
-        }, 380);
-      }, 200);
-    });
+watch(
+  () => route.path,
+  () => {
+    bindDownloadButton();
+  },
+  { flush: "post" },
+);
 
-  btn.addEventListener("click", async (e) => {
-    e.preventDefault();
-    if (busy) return;
-    busy = true;
-    const t0 = Date.now();
-    await setState("is-loading", "Fetching…");
-    try {
-      const url = await getLatestWindowsUrl();
-      // Keep the loading state visible for a moment to avoid flicker
-      await sleep(Math.max(0, 700 - (Date.now() - t0)));
-      const u = new URL(url);
-      u.searchParams.set("_t", Date.now().toString());
-      iframe.src = u.toString();
-      await setState("is-done", "Download started");
-      await sleep(2400);
-    } catch (err) {
-      console.error(err);
-      await setState("is-error", "Failed — use GitHub instead");
-      await sleep(3000);
-    }
-    await setState("", idleText);
-    busy = false;
-  });
+onBeforeUnmount(() => {
+  mounted = false;
+  cleanupClick?.();
+  cleanupClick = null;
+  btn = null;
+  label = null;
+  cancelCurrentOperation();
 });
 </script>
 
