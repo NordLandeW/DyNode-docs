@@ -66,9 +66,9 @@ You can follow the steps below to quickly generate a curve among the selected no
 4. Press Enter.
 
 :::center
-![Curve Filling - Linear](lin.gif)
+![Curve Filling - Linear](./lin.gif)
 
-![Curve Filling - Cubic](cub.gif)
+![Curve Filling - Cubic](./cub.gif)
 :::
 
 :::tip Regarding Curve Command Variants
@@ -147,13 +147,13 @@ You can append any number of arguments to the commands above. They will be appli
 For example, `.cubic slide 8` means to fill with SLIDE notes between the selected notes using a natural cubic spline curve at a 32nd note subdivision.
 
 :::center
-![.cubic slide 8 operating on three NOTE notes](cubic-slide-8.png)
+![.cubic slide 8 operating on three NOTE notes](./cubic-slide-8.png)
 :::
 
 `.cubic 8 -2` makes the generated notes spaced by one 32nd note. This allows you to generate curves in an interleaved manner.
 
 :::center
-![.cubic 8 -2 operating on six notes (top-left, middle, bottom-right and bottom-left, middle, top-right) twice](cubic-n2.png)
+![.cubic 8 -2 operating on six notes (top-left, middle, bottom-right and bottom-left, middle, top-right) twice](./cubic-n2.png)
 :::
 
 ### Batch Advanced Operations

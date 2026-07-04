@@ -86,7 +86,7 @@ On the start screen, you can select "Open Project" and choose the chart you want
 
 You can also choose "Create Project" to manually import chart files.
 
-![Create Project](project_create.png)
+![Create Project](./project_create.png)
 
 If you already have a chart being edited in Dynamaker, you can directly import it on the create project page.
 

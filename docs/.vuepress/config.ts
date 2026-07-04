@@ -1,5 +1,5 @@
 import { defineUserConfig } from "vuepress";
-import { hopeTheme, pwa } from "vuepress-theme-hope";
+import { hopeTheme } from "vuepress-theme-hope";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 import { viteBundler } from "@vuepress/bundler-vite";
 
@@ -89,7 +89,7 @@ export default defineUserConfig({
       docsearch: {
         appId: "PX9VNWSCXQ",
         apiKey: "efdef4a898675ea367912de9d00bc6f2",
-        indices: ["dyn-iorinn"],
+        indexName: "dyn-iorinn",
       },
       pwa: {
         maxSize: 1024768,

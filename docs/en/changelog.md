@@ -630,7 +630,7 @@ This version includes some bug fixes and new features.
 * Notes at the same timestamp will now be highlighted with a block.
 * You can now double‐click a snapped note.
   * The double‐clicked note becomes the snap center.
-    ![Double Click Snap](guide/double_click.gif)
+    ![Double Click Snap](./guide/double_click.gif)
 * The error correction function now replaces the millisecond rounding function.
   * By default, consecutive notes within a 2ms error will be aligned to the earliest note in that group.
 * Added an experimental option to disable pitch change in the TAB toolbar.

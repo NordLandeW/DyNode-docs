@@ -87,7 +87,7 @@ DyNode 提供从 Dynamaker 直接导入谱面的方式。下面介绍两种导�
 
 你也可以选择“创建项目”来手动导入谱面文件。
 
-![创建项目](project_create.png)
+![创建项目](./project_create.png)
 
 以此方式你至少需要的文件有：
 
@@ -119,7 +119,7 @@ Timing 在 DyNode 中是与 Dynamaker 中的 Bar 存在差异的概念。详见 
 
 以某谱面为例，正常的编辑界面应当如下（此时节拍细分默认为 1/4）：
 
-![](bad-chart.png)
+![](./bad-chart.png)
 
 ### 在这之后...
 
