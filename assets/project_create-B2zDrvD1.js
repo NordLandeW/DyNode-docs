@@ -1,0 +1,1 @@
+var e=`/assets/project_create-DKtYmsN2.png`;export{e as t};

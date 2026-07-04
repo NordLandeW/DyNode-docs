@@ -1,0 +1,1 @@
+var e=`/Icon.png`;export{e as t};

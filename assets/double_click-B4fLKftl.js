@@ -1,0 +1,1 @@
+var e=`/assets/double_click-BqAtXJf9.gif`;export{e as t};
