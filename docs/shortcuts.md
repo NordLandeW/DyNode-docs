@@ -128,7 +128,7 @@ sidebar: false
 |  `position`   | `pos`, `p` |           <实数>           |        修改选中音符的位置        |
 |    `side`     |    `s`     |      <`0`\|`1`\|`2`>       |        修改选中音符的侧面        |
 |    `snap`     |            | [`pre`\|`post`\|`nearest`] |      吸附目标音符到节拍线上      |
-|  `duplicate`  |   `dup`    |          \[实数]           |      以指定次数快速复制音符      |
+|  `duplicate`  | `dup`, `d` |          \[实数]           |      以指定次数快速复制音符      |
 | `deduplicate` |  `dedup`   |             /              |      对目标音符进行去重操作      |
 |    `expr`     |    `e`     |          <字符串>          |       对选中音符执行表达式       |
 |   `linear`    |   `lin`    |            可变            |         曲线生成 - 线性          |

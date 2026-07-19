@@ -184,6 +184,7 @@ The `duplicate` command allows you to perform multiple batch quick duplications 
 .duplicate [integer]
     // Batch duplicate selected notes to the next beat line after the latest note.
     // The optional argument specifies the number of times to repeat this operation.
+    .d
     .dup
 ```
 

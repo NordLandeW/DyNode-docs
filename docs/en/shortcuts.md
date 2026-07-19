@@ -127,7 +127,7 @@ For detailed usage of commands, see [Advanced Editing/Commands](guide/advanced-e
 |  `position`   |  `pos`, `p`  |      <`real_number`>       |          Change the position of selected notes          |
 |    `side`     |     `s`      |      <`0`\|`1`\|`2`>       |            Change the side of selected notes            |
 |    `snap`     |              | [`pre`\|`post`\|`nearest`] |             Snap target notes to beat lines             |
-|  `duplicate`  |    `dup`     |      [`real_number`]       | Quickly duplicate notes for a specified number of times |
+|  `duplicate`  |  `dup`, `d`  |      [`real_number`]       | Quickly duplicate notes for a specified number of times |
 | `deduplicate` |   `dedup`    |             /              |                Deduplicate target notes                 |
 |    `expr`     |     `e`      |         <`string`>         |             Execute an expression on notes              |
 |   `linear`    |    `lin`     |        <`variable`>        |                     Curve - Linear                      |
