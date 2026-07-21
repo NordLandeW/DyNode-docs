@@ -46,6 +46,10 @@ FMODGMS (under [BSD 2-Clause "Simplified" License](https://github.com/mstop4/FMO
 
 Zstandard (under BSD License) Copyright (c) Meta Platforms, Inc. and affiliates
 
+[Lua](https://www.lua.org/license.html) (under MIT License) Copyright © 1994-2025 Lua.org, PUC-Rio.
+
+[LuaBridge3](https://github.com/kunitoki/LuaBridge3) (under MIT License) Copyright (c) 2020 kunitoki
+
 -------------------
 
 DyNode uses assets & designs from the following projects.
