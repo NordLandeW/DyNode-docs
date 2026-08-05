@@ -2,6 +2,15 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.7.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.7.2) (2026-08-05)
+
+This version includes new features, bug fixes, and performance improvements.
+
+* Added `.d` as a new alias for the `.dup` command.
+* Fixed an issue where Tap note hitboxes were offset.
+* Fixed an issue where side flashing indicators reduced rendering performance.
+* Further improved note rendering performance.
+
 
 ## [v0.2.7.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.7.1) (2026-06-30)
 

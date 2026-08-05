@@ -2,6 +2,15 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.2.7.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.7.2) (2026-08-05)
+
+该版本包含一些新功能、错误修复与性能改进。
+
+* 为 `.dup` 命令添加了新的别名 `.d`。
+* 修复了 Tap 音符碰撞箱偏移的问题。
+* 修复了侧面闪烁提示导致渲染效率低下的问题。
+* 进一步改进了音符的渲染效率。
+
 ## [v0.2.7.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.7.1) (2026-06-30)
 
 该版本包含一些错误修复。
