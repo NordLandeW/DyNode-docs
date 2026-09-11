@@ -2,6 +2,21 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.7.3](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.7.3) (2026-09-12)
+
+This version includes some bug fixes.
+
+* Fixed an issue where switching projects during a save could write the new project's content to the previous project's file and incorrectly update the current project path.
+* Fixed an issue where a failed save could leave the application stuck in the saving state, preventing further manual saves and autosaves.
+* Fixed an issue where repeatedly using Save As to save to different directories could leave music, background, or video files uncopied to the new directory.
+* Fixed an issue where moving a Timing Point past other Timing Points could produce incorrect beatlines, snapping, and BPM query results.
+* Fixed an issue where entering a BPM below 0 could cause beatline rendering to hang the application.
+* Fixed an issue where undo could produce incorrect results after quickly adjusting note widths.
+* Fixed an issue where a chart import or export could still be reported as complete after failing.
+* Fixed an issue where a video decoding failure during recording could leave synchronous frame retrieval waiting indefinitely, causing the application to freeze.
+* Fixed memory leaks caused by beatline rendering resources not being released when switching projects and an extra buffer not being released when importing XML / DY charts.
+* Fixed several other issues.
+
 ## [v0.2.7.2](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.7.2) (2026-08-05)
 
 This version includes new features, bug fixes, and performance improvements.
