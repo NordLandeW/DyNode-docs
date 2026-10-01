@@ -48,7 +48,6 @@ This page contains all the common shortcuts and operations in DyNode.
 |                       <kbd>Ctrl+Y</kbd>                       |                                          Redo                                           |
 |                      <kbd>Ctrl+O/P</kbd>                      |                                 Adjust chart difficulty                                 |
 |                       <kbd>Ctrl+T</kbd>                       |                                     Set chart title                                     |
-|                         <kbd>N</kbd>                          |                                 Toggle simplified mode                                  |
 |                        <kbd>Tab</kbd>                         |                                 Toggle toolbar display                                  |
 |                     <kbd>Right Alt</kbd>                      |                               Show full note information                                |
 

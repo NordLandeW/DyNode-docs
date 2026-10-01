@@ -65,13 +65,6 @@ DyNode 的显示主题。
 最新的版本将会带来新的功能、错误修复以及性能改进，且 DyNode 目前仍不够稳定。我们不建议关闭此项。
 :::
 
-### simplify
-
-* 类型：`true | false`
-* 默认值：`false`
-
-是否开启简化模式。
-
 ### graphics
 
 #### graphics.AA

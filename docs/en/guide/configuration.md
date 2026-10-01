@@ -65,13 +65,6 @@ Whether to enable automatic update checks.
 New versions bring new features, bug fixes, and performance improvements, and DyNode is still not fully stable. We do not recommend disabling this option.
 :::
 
-### simplify
-
-* Type: `true | false`
-* Default: `false`
-
-Whether to enable simplified mode.
-
 ### graphics
 
 #### graphics.AA

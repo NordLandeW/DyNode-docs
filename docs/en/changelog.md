@@ -2,6 +2,25 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.7.4](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.7.4) (2026-10-01)
+
+This version includes some bug fixes and performance improvements.
+
+* Improved note rendering performance.
+* Fixed an issue where exiting the application before a project save finished could interrupt the save.
+* Improved resource cleanup and handling during application shutdown.
+* Fixed potential window message handling errors during application shutdown.
+* Improved the handling of usage statistics and error reports during application shutdown.
+* Video frame caches are now released when closing a video or resetting the background.
+* Fixed concurrent read and write issues involving notes and Timing Points.
+  * Thanks to Keternal for the clues that helped fix this issue.
+* Fixed an issue where the `.lin`, `.cos`, `.crom`, and `.cub` curve commands could generate duplicate notes at existing control points in some cases.
+* Fixed an issue where chart titles containing line breaks or characters forbidden in Windows filenames could result in invalid default filenames for Save As, export, and similar operations.
+* Fixed an issue where icon resources were not released when repeatedly opening input dialogs.
+  * Thanks to Keternal for the clues that helped fix this issue.
+* Removed simplified mode.
+  * The `simplify` setting in existing configurations will be ignored.
+
 ## [v0.2.7.3](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.7.3) (2026-09-12)
 
 This version includes some bug fixes.
