@@ -2,6 +2,14 @@
 
 本页面包含 DyNode 版本更新的详细说明与相关指引。
 
+## [v0.2.8.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.8.1) (2026-11-19)
+
+该版本是针对 v0.2.8 的热更新，包含了一些问题修复。
+
+* 修复了 Dynamite 风格下左右轨音符宽度偏小的问题。
+* 修复了使用 `side` 指令换轨后，音符立即回到原轨道的问题。
+* 改进了 Dynamix 风格下视觉效果的渲染顺序。
+
 ## [v0.2.8](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.8) (2026-11-19)
 
 该版本包含对新风格的支持、错误修复与性能改进。

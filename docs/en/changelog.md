@@ -2,6 +2,14 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.8.1](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.8.1) (2026-11-19)
+
+This is a hotfix for v0.2.8.
+
+* Fixed an issue where notes on the left and right lanes were too narrow in the Dynamite style.
+* Fixed an issue where notes moved with the `side` command immediately returned to their original lane.
+* Improved the drawing order of visual effects in the Dynamix style.
+
 ## [v0.2.8](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.8) (2026-11-19)
 
 This version adds support for a new style and includes bug fixes and performance improvements.
