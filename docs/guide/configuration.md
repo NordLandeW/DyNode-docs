@@ -54,6 +54,13 @@ DyNode 的显示语言。
 
 DyNode 的显示主题。
 
+### style
+
+* 类型：`0 | 1`
+* 默认值：`0`
+
+编辑和播放谱面时的视觉风格：`0` 为 Dynamix，`1` 为 Dynamite。
+
 ### autoupdate
 
 * 类型：`true | false`

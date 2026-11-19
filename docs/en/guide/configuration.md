@@ -54,6 +54,13 @@ The display language for DyNode.
 
 The display theme for DyNode.
 
+### style
+
+* Type: `0 | 1`
+* Default: `0`
+
+The visual style for chart editing and playback: `0` for Dynamix or `1` for Dynamite.
+
 ### autoupdate
 
 * Type: `true | false`
