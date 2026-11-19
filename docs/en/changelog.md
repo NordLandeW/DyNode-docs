@@ -2,6 +2,22 @@
 
 This page contains detailed release notes and related instructions for DyNode updates.
 
+## [v0.2.8](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.8) (2026-11-19)
+
+This version adds support for a new style and includes bug fixes and performance improvements.
+
+* Use <kbd>Ctrl+F9</kbd> to switch between the Dynamix and Dynamite styles.
+* Addressed some rendering issues.
+* Improved notifications for asynchronous project saves.
+* Fixed an issue where font fallback did not work correctly in chart titles.
+* Improved chart readability.
+  * Adjusted the drawing order of some visual effects.
+  * Reduced the density of some particle effects.
+* Improved the reliability of project imports.
+* Fixed an issue where a downgrade warning could appear even when the version in the configuration was equivalent to the application version.
+* Further improved rendering performance.
+* Updated the engine runtime to version 2026.1.
+
 ## [v0.2.7.4](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.7.4) (2026-10-01)
 
 This version includes some bug fixes and performance improvements.
