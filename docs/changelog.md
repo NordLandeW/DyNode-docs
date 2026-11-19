@@ -8,7 +8,7 @@
 
 * 修复了 Dynamite 风格下左右轨音符宽度偏小的问题。
 * 修复了使用 `side` 指令换轨后，音符立即回到原轨道的问题。
-* 改进了 Dynamix 风格下视觉效果的渲染顺序。
+* 调整了一部分视觉效果的绘制顺序。
 
 ## [v0.2.8](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.8) (2026-11-19)
 

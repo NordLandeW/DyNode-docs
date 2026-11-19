@@ -8,7 +8,7 @@ This is a hotfix for v0.2.8.
 
 * Fixed an issue where notes on the left and right lanes were too narrow in the Dynamite style.
 * Fixed an issue where notes moved with the `side` command immediately returned to their original lane.
-* Improved the drawing order of visual effects in the Dynamix style.
+* Adjusted the drawing order of some visual effects.
 
 ## [v0.2.8](https://github.com/NordLandeW/DyNode/releases/tag/v0.2.8) (2026-11-19)
 
