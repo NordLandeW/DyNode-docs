@@ -26,6 +26,8 @@ Created by NagaseIori x NordLandeW
 
 Most of the art assets used by DyNode are from the game Dynamix, produced by C4Cat Entertainment Limited.
 
+The Dynamite theme uses artwork from Dynamite, produced by TunerGames.
+
 DyNode is licensed under the MIT License.
 
 ------------------
@@ -59,5 +61,7 @@ Dynamaker-modifed (under MIT License) Copyright (c) 2021 jmakxd
 Dynamaker (under MIT License) Copyright (c) 2019 omegaPi
 
 Dynamix produced by C4Cat Entertainment Limited
+
+Dynamite produced by TunerGames
 
 Arcaea produced by lowiro limited
