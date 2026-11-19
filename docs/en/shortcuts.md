@@ -87,7 +87,7 @@ For more details on delay adjustment, see [Chart Editing/Delay Adjustment](guide
 | <kbd>Middle Mouse</kbd> |         Show chart statistics          |
 |    <kbd>Ctrl+H</kbd>    |   Toggle hit sounds in editing mode    |
 |      <kbd>P</kbd>       | Toggle the score board in editing mode |
-|      <kbd>O</kbd>       |   Cycle particle effects: off, full, low   |
+|      <kbd>O</kbd>       | Cycle particle effects: off, full, low |
 |    <kbd>Ctrl+B</kbd>    |        Toggle Bar/Time display         |
 
 ## Function Keys & Import/Export
@@ -108,7 +108,7 @@ For more details on delay adjustment, see [Chart Editing/Delay Adjustment](guide
 |      <kbd>F7</kbd>      |                  Fullscreen                  |
 |      <kbd>F8</kbd>      |        Toggle auto-save functionality        |
 |      <kbd>F9</kbd>      |                 Switch theme                 |
-|   <kbd>Ctrl+F9</kbd>    |   Switch between Dynamix and Dynamite styles   |
+|   <kbd>Ctrl+F9</kbd>    |                 Switch style                 |
 |     <kbd>F11</kbd>      |               Open debug info                |
 |     <kbd>F12</kbd>      |              Open shortcut list              |
 |   <kbd>Ctrl+F12</kbd>   |                  Screenshot                  |

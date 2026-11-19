@@ -459,7 +459,9 @@ Press <kbd>F7</kbd> to toggle borderless fullscreen mode.
 Press <kbd>Ctrl+T</kbd> to change the chart title.
 
 :::tip Want to use Scribble's formatting tags?
-Include `[_scribble]` anywhere in the title to enable formatting tags. This mode does not support Chinese, Japanese, or Korean (CJK) characters. To display them, use a plain title without `[_scribble]`, such as `夏影 [EX]`.
+Simply include `[_scribble]` anywhere in the title. The title will then be parsed using Scribble's string formatting.
+
+This mode does not support titles containing Chinese, Japanese, or Korean (CJK) characters.
 :::
 
 ### Changing Chart Difficulty

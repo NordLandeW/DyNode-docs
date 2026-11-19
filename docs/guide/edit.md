@@ -459,7 +459,9 @@ winget install --id Gyan.FFmpeg --source winget
 使用 <kbd>Ctrl+T</kbd> 来更改谱面标题。
 
 :::tip 想要使用 Scribble 的格式标签？
-在标题的任意位置加入 `[_scribble]` 即可启用格式标签。此模式不支持中日韩（CJK）字符。要显示这类字符，请使用不含 `[_scribble]` 的普通标题，例如 `夏影 [EX]`。
+在标题的任意位置处加入 `[_scribble]` 来使用 Scribble 的格式标签，此时标题将会以 Scribble 字符串格式进行解析。
+
+此模式不支持包含中日韩（CJK）字符的标题。
 :::
 
 ### 更改谱面难度

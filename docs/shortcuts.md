@@ -88,7 +88,7 @@ sidebar: false
 | <kbd>鼠标中键</kbd> |         显示谱面统计数据          |
 |  <kbd>Ctrl+H</kbd>  |          打开/关闭打击音          |
 |    <kbd>P</kbd>     | 打开/关闭编辑模式下默认隐藏分数板 |
-|    <kbd>O</kbd>     |   循环切换粒子效果：关闭、完整、低   |
+|    <kbd>O</kbd>     | 循环切换粒子效果：关闭、完整、低  |
 |  <kbd>Ctrl+B</kbd>  |        切换 Bar/Time 显示         |
 
 ## 功能键 & 导入导出
@@ -109,7 +109,7 @@ sidebar: false
 |      <kbd>F7</kbd>      |                 全屏                 |
 |      <kbd>F8</kbd>      |        启用/关闭自动保存功能         |
 |      <kbd>F9</kbd>      |               切换主题               |
-|   <kbd>Ctrl+F9</kbd>    |    切换 Dynamix / Dynamite 风格     |
+|   <kbd>Ctrl+F9</kbd>    |               切换风格               |
 |     <kbd>F11</kbd>      |             打开调试信息             |
 |     <kbd>F12</kbd>      |          快速打开快捷键列表          |
 |   <kbd>Ctrl+F12</kbd>   |                 截图                 |
